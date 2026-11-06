@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curated Collections | Saree Showroom - Pure Silk & Handloom Sarees</title>
+  <meta name="description" content="Explore pure Kanchipuram silk, Banarasi brocades, soft silk, organic linen, and handloom cotton sarees filtered by fabric, occasion, and color." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Site Header (3-Tier Luxury Architecture)
+       Tier 1: Top Ribbon (Offers & Showroom Timings)
+       Tier 2: Main Brand & Utility Bar (Logo, Pill Search, Utility Controls, Book a Visit)
+       Tier 3: Primary Navigation Links & Handloom Certified Trust Ribbon
+       ========================================================================== -->
+  <header class="site-header">
+    
+    <!-- Tier 1: Top Ribbon (Offers & Showroom Timings) -->
+    <div class="header-tier-top">
+      <div class="header-tier-top-inner">
+        <div class="header-top-item">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 12 20 22 4 22 4 12"/>
+            <rect x="2" y="7" width="20" height="5"/>
+            <line x1="12" y1="22" x2="12" y2="7"/>
+            <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+            <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+          </svg>
+          <span>Free insured packaging & blouse finishing over ₹25,000 · Pure Zari Certified</span>
+        </div>
+        <div class="header-top-item d-none d-md-inline-flex">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <span>Flagships Open Daily: 10:00–21:00 · VIP Concierge: +91 98765 43210</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tier 2: Main Brand & Utility Bar -->
+    <div class="header-tier-main">
+      <div class="header-tier-main-inner">
+        
+        <!-- Brand Logo (Tier 2 Left) -->
+        <a href="index.html" class="brand-logo-group" aria-label="Saree Showroom Home">
+          <svg class="brand-emblem-svg" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="2.5" stroke-dasharray="4 2"/>
+            <path d="M50 18 C38 18 30 28 30 42 C30 58 44 72 56 80 C52 70 56 60 62 54 C68 48 70 40 68 32 C66 24 58 18 50 18 Z" fill="#641C2D"/>
+            <circle cx="48" cy="38" r="5" fill="#C49A45"/>
+            <polygon points="50,8 52,14 50,16 48,14" fill="#C49A45"/>
+          </svg>
+          <div class="brand-title-wrap">
+            <span class="brand-name">SAREE SHOWROOM</span>
+            <span class="brand-tagline">South Indian Heritage × Luxury Silk</span>
+          </div>
+        </a>
+
+        <!-- Pill Search Bar (Tier 2 Center) -->
+        <div class="header-search-wrapper">
+          <div class="header-search-pill">
+            <svg class="header-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input type="text" class="header-search-input" placeholder="Search pure Kanchipuram silks, Banarasi brocades, motifs, colors..." aria-label="Search Catalog" />
+            <!-- Quick Silk Swatches in Search Bar -->
+            <div class="search-swatches-quick d-none d-lg-flex" title="Quick Color Filters">
+              <span class="search-swatch-dot" style="background: #641C2D;" onclick="window.location.href='collections.html?search=maroon'"></span>
+              <span class="search-swatch-dot" style="background: #C49A45;" onclick="window.location.href='collections.html?search=gold'"></span>
+              <span class="search-swatch-dot" style="background: #1B5E20;" onclick="window.location.href='collections.html?search=emerald'"></span>
+              <span class="search-swatch-dot" style="background: #4A1521;" onclick="window.location.href='collections.html?search=wine'"></span>
+            </div>
+          </div>
+
+          <!-- Suggestions Dropdown Popup -->
+          <div class="search-suggestions-popup">
+            <div class="suggestions-title">Trending Weaves & Motifs:</div>
+            <div class="suggestions-tags">
+              <a href="collections.html?fabric=kanchipuram" class="suggestion-tag">Pure Kanchipuram Korvai</a>
+              <a href="collections.html?occasion=wedding" class="suggestion-tag">Sacred Muhurtham Crimson</a>
+              <a href="collections.html?fabric=banarasi" class="suggestion-tag">Banarasi Shikargah</a>
+              <a href="collections.html?fabric=cotton" class="suggestion-tag">Chettinad Mango Buta</a>
+              <a href="collections.html?fabric=soft-silk" class="suggestion-tag">Mulberry Soft Silk</a>
+            </div>
+            <div class="d-flex align-items-center justify-content-between pt-2 border-top border-light" style="font-size: 0.78rem; color: var(--color-text-muted);">
+              <span>Press <strong>Enter</strong> to explore all matches</span>
+              <a href="collections.html" style="color: var(--color-gold); font-weight: 600;">View Entire Vault →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Utility Controls (Tier 2 Right) -->
+        <div class="header-utility-controls">
+          <!-- RTL Toggle Pill Button -->
+          <button class="btn-pill-utility rtl-toggle-btn" title="Toggle Text Direction" aria-label="Toggle Direction">
+            <span class="rtl-label" style="font-weight: 700;">RTL</span>
+          </button>
+
+          <!-- Light / Dark Mode Toggle Pill Button -->
+          <button class="btn-pill-utility theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+            <i data-lucide="moon" class="theme-icon" style="width: 15px; height: 15px;"></i>
+            <span class="theme-label">Dark</span>
+          </button>
+
+          <!-- Wishlist Round Icon Button -->
+          <button class="btn-icon-utility open-wishlist-btn" title="Saved Weaves" aria-label="Wishlist">
+            <i data-lucide="heart" style="width: 18px; height: 18px;"></i>
+            <span class="badge-count wishlist-count-badge">0</span>
+          </button>
+
+          <!-- Shopping Bag Round Icon Button -->
+          <button class="btn-icon-utility open-cart-btn" title="Shopping Bag" aria-label="Bag">
+            <i data-lucide="shopping-bag" style="width: 18px; height: 18px;"></i>
+            <span class="badge-count cart-count-badge">0</span>
+          </button>
+
+          <!-- Book a Visit Deep Maroon Pill CTA -->
+          <button class="btn-book-visit-pill" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            <span>Book a Visit</span>
+          </button>
+        </div>
+
+        <!-- Hamburger Button (<= 1024px, 768px, 360px) -->
+        <button class="hamburger-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Open Mobile Menu">
+          <div class="hamburger-icon">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Tier 3: Bottom Navigation Bar & Certified Handloom Ribbon -->
+    <div class="header-tier-nav">
+      <div class="header-tier-nav-inner">
+        
+        <!-- Navigation Links with Dropdowns & Mega Menu -->
+        <ul class="desktop-nav-links">
+          
+          <!-- Home Dropdown -->
+          <li class="nav-tier-item">
+            <a href="index.html" class="nav-tier-link">
+              Home <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+            </a>
+            <ul class="dropdown-menu-luxury">
+              <li><a href="index.html">Home 1 — Classical Heritage</a></li>
+              <li><a href="home-2.html">Home 2 — Royal Editorial Atelier</a></li>
+            </ul>
+          </li>
+
+          <!-- Collections Mega Menu Dropdown -->
+          <li class="nav-tier-item">
+            <a href="collections.html" class="nav-tier-link active">
+              Collections <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+            </a>
+
+            <!-- Mega Menu -->
+            <div class="mega-menu-wrapper">
+              <div class="mega-menu-grid">
+                <div>
+                  <h4 class="mega-column-title">Shop by Fabric</h4>
+                  <ul class="mega-link-list">
+                    <li><a href="collections.html?fabric=kanchipuram">Kanchipuram Silk <span class="badge-gold">GI</span></a></li>
+                    <li><a href="collections.html?fabric=banarasi">Banarasi Silk</a></li>
+                    <li><a href="collections.html?fabric=soft-silk">Soft Silk</a></li>
+                    <li><a href="collections.html?fabric=cotton">Cotton Sarees</a></li>
+                    <li><a href="collections.html?fabric=linen">Linen Sarees</a></li>
+                    <li><a href="collections.html?fabric=organza">Organza Sarees</a></li>
+                    <li><a href="collections.html?fabric=handloom">Handloom Sarees</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="mega-column-title">Shop by Occasion</h4>
+                  <ul class="mega-link-list">
+                    <li><a href="collections.html?occasion=wedding">Wedding Wear</a></li>
+                    <li><a href="collections.html?occasion=festive">Festive Wear</a></li>
+                    <li><a href="collections.html?occasion=daily">Daily Wear</a></li>
+                    <li><a href="collections.html?occasion=office">Office Wear</a></li>
+                    <li><a href="bridal.html">Muhurtham Trousseau</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="mega-column-title">Master Crafts</h4>
+                  <ul class="mega-link-list">
+                    <li><a href="bridal.html#zari-details">Korvai Triple Warp</a></li>
+                    <li><a href="bridal.html#zari-details">24K Pure Gold Zari</a></li>
+                    <li><a href="bridal.html#zari-details">Temple Gopuram Spire</a></li>
+                    <li><a href="bridal.html#zari-details">Mayil & Mango Buta</a></li>
+                    <li><a href="contact.html">Live Video Styling</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="mega-card-preview">
+                    <img src="IMGAE/shades-by-43-Rm9DL9DmGi4-unsplash.jpg" alt="Bridal Preview" />
+                    <div class="mega-card-overlay">
+                      <span style="font-size: 0.72rem; text-transform: uppercase; color: var(--color-gold-light); font-weight: 700;">The Royal Muhurtham</span>
+                      <h5 style="font-size: 1.1rem; color: #FFFFFF; font-family: var(--font-serif-heading); margin-bottom: 0.5rem;">Pure Zari Kanchipuram</h5>
+                      <a href="bridal.html" class="btn-gold py-1 px-3" style="font-size: 0.72rem;">Explore Bridal</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Bridal Sarees -->
+          <li class="nav-tier-item">
+            <a href="bridal.html" class="nav-tier-link">Bridal Sarees</a>
+          </li>
+
+          <!-- Fabrics Direct Dropdown -->
+          <li class="nav-tier-item">
+            <a href="collections.html" class="nav-tier-link">
+              Fabrics <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+            </a>
+            <ul class="dropdown-menu-luxury">
+              <li><a href="collections.html?fabric=kanchipuram">Pure Kanchipuram Silk</a></li>
+              <li><a href="collections.html?fabric=banarasi">Banarasi Katan Silk</a></li>
+              <li><a href="collections.html?fabric=soft-silk">Mulberry Soft Silk</a></li>
+              <li><a href="collections.html?fabric=cotton">Chettinad Cotton</a></li>
+              <li><a href="collections.html?fabric=organza">Tissue & Organza</a></li>
+            </ul>
+          </li>
+
+          <!-- Our Heritage -->
+          <li class="nav-tier-item">
+            <a href="index.html#heritage" class="nav-tier-link">Our Heritage</a>
+          </li>
+
+          <!-- Showroom & Contact -->
+          <li class="nav-tier-item">
+            <a href="contact.html" class="nav-tier-link">Showroom & Contact</a>
+          </li>
+
+        </ul>
+
+        <!-- Tier 3 Right Handloom Trust Ribbon (Like "Hand-delivered today" in user's image) -->
+        <div class="header-nav-trust-badge">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          <span>Hand-woven on Pit Looms · 100% Certified Pure Zari</span>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Mobile Offcanvas Drawer -->
+  <div class="offcanvas offcanvas-end offcanvas-luxury" tabindex="-1" id="mobileNavOffcanvas">
+    <div class="offcanvas-header">
+      <div class="d-flex align-items-center gap-2">
+        <svg style="width: 24px; height: 24px;" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="3"/>
+          <path d="M50 18 C38 18 30 28 30 42 C30 58 44 72 56 80 C52 70 56 60 62 54 C68 48 70 40 68 32 C66 24 58 18 50 18 Z" fill="#641C2D"/>
+        </svg>
+        <span style="font-family: var(--font-serif-heading); font-weight: 700; color: var(--color-maroon); font-size: 1.1rem; letter-spacing: 0.1em;">SAREE SHOWROOM</span>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home 1 — Classical Heritage <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a></li>
+        <li><a href="home-2.html">Home 2 — Royal Editorial Atelier <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a></li>
+        <li><a href="collections.html" class="active">All Collections <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a></li>
+        <li><a href="bridal.html">Bridal Sarees & Muhurtham <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a></li>
+        <li><a href="contact.html">Showroom & Contact <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a></li>
+      </ul>
+
+      <div class="mobile-actions-bar">
+        <div class="mobile-action-pill open-wishlist-btn" data-bs-dismiss="offcanvas">
+          <i data-lucide="heart" style="width: 18px; height: 18px;"></i>
+          <span>Wishlist (<span class="wishlist-count-badge">0</span>)</span>
+        </div>
+        <div class="mobile-action-pill open-cart-btn" data-bs-dismiss="offcanvas">
+          <i data-lucide="shopping-bag" style="width: 18px; height: 18px;"></i>
+          <span>Bag (<span class="cart-count-badge">0</span>)</span>
+        </div>
+        <div class="mobile-action-pill" onclick="window.scrollTo({top: 400, behavior: 'smooth'});" data-bs-dismiss="offcanvas">
+          <i data-lucide="filter" style="width: 18px; height: 18px;"></i>
+          <span>Filters</span>
+        </div>
+        <a href="https://wa.me/919876543210" target="_blank" class="mobile-action-pill" style="text-decoration: none;">
+          <i data-lucide="message-circle" style="width: 18px; height: 18px; color: #25D366;"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+
+      <div class="mobile-toggles-row">
+        <button class="btn btn-outline-gold w-50 py-2 d-flex align-items-center justify-content-center gap-2 theme-toggle-btn" style="font-size: 0.78rem;">
+          <i data-lucide="moon" class="theme-icon" style="width: 16px; height: 16px;"></i> Theme Mode
+        </button>
+        <button class="btn btn-outline-gold w-50 py-2 d-flex align-items-center justify-content-center gap-2 rtl-toggle-btn" style="font-size: 0.78rem;">
+          <span class="rtl-label" style="font-weight: 700;">RTL</span> Direction
+        </button>
+      </div>
+
+      <div class="mt-3">
+        <button class="btn-gold w-100 py-3" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-bs-dismiss="offcanvas">
+          <i data-lucide="calendar" style="width: 16px; height: 16px;"></i> Book Private Styling Salon
+        </button>
+      </div>
+
+      <div class="mt-4 pt-3 border-top" style="font-size: 0.8rem; color: var(--color-text-muted);">
+        <div><strong>Anna Nagar Flagship:</strong> +91 98765 43210</div>
+        <div>Open Daily: 10:00 AM – 9:00 PM</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Collections Page Header & Banner
+       ========================================================================== -->
+  <section class="py-5 bg-surface border-bottom" style="background: var(--color-surface);">
+    <div class="container text-center" data-aos="fade-up">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-2" style="font-size: 0.82rem; font-family: var(--font-serif-heading);">
+          <li class="breadcrumb-item"><a href="index.html" style="color: var(--color-gold);">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Curated Collections</li>
+        </ol>
+      </nav>
+      <div class="section-tag">Handwoven Treasures</div>
+      <h1 class="section-title">The Complete Saree Repertoire</h1>
+      <p class="section-subtitle">
+        Categorized by rare fabrics, auspicious occasions, and hand-dye palettes. Every piece is an authentic original woven by registered artisan clusters.
+      </p>
+
+      <div class="ornament-divider">
+        <div class="ornament-line"></div>
+        <div class="ornament-icon">
+          <svg viewBox="0 0 60 80" style="width: 20px; height: 20px; fill: currentColor;">
+            <path d="M30 5 C15 5 5 18 5 35 C5 55 22 70 35 78 C30 68 35 56 42 49 C49 42 52 33 50 24 C48 14 40 5 30 5 Z"/>
+          </svg>
+        </div>
+        <div class="ornament-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Main Collections Engine: Filters, Live Search & Product Grid
+       ========================================================================== -->
+  <section class="py-5">
+    <div class="container">
+      
+      <!-- Top Interactive Filter Bar -->
+      <div class="collections-toolbar" data-aos="fade-up">
+        
+        <!-- Fabric Filter Quick Pills -->
+        <div class="filter-pill-group">
+          <button class="filter-pill active" data-filter-fabric="all">All Fabrics</button>
+          <button class="filter-pill" data-filter-fabric="kanchipuram">Kanchipuram Silk</button>
+          <button class="filter-pill" data-filter-fabric="banarasi">Banarasi Silk</button>
+          <button class="filter-pill" data-filter-fabric="soft-silk">Soft Silk</button>
+          <button class="filter-pill" data-filter-fabric="cotton">Cotton Sarees</button>
+          <button class="filter-pill" data-filter-fabric="linen">Linen Sarees</button>
+          <button class="filter-pill" data-filter-fabric="organza">Organza Sarees</button>
+          <button class="filter-pill" data-filter-fabric="handloom">Handloom Sarees</button>
+        </div>
+
+        <!-- Mobile Filter Button & Clear All -->
+        <div class="d-flex align-items-center gap-2 ms-auto">
+          <button class="btn btn-sm btn-outline-secondary d-md-none" id="mobileFilterToggleBtn">
+            <i data-lucide="sliders-horizontal" style="width: 15px; height: 15px;"></i> Filters
+          </button>
+          <button class="btn btn-sm text-muted p-1" id="resetFiltersBtn" title="Reset all filters">
+            <i data-lucide="rotate-ccw" style="width: 15px; height: 15px;"></i> Clear All
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Second Row: Search, Occasion, Sort, Live Count -->
+      <div class="row align-items-center justify-content-between g-3 mb-4" data-aos="fade-up">
+        <!-- Live Search Input -->
+        <div class="col-md-4 col-12">
+          <div class="input-group">
+            <span class="input-group-text bg-transparent border-end-0" style="border-color: var(--color-border); color: var(--color-gold);">
+              <i data-lucide="search" style="width: 16px; height: 16px;"></i>
+            </span>
+            <input type="text" id="collectionSearchInput" class="form-control form-control-luxury border-start-0" placeholder="Search by weave, zari, or motif..." />
+          </div>
+        </div>
+
+        <!-- Occasion Filter Tabs -->
+        <div class="col-md-5 col-12">
+          <div class="d-flex flex-wrap gap-2 justify-content-md-center">
+            <button class="filter-pill active" data-filter-occasion="all">All Occasions</button>
+            <button class="filter-pill" data-filter-occasion="wedding">Wedding Wear</button>
+            <button class="filter-pill" data-filter-occasion="festive">Festive Wear</button>
+            <button class="filter-pill" data-filter-occasion="daily">Daily Wear</button>
+            <button class="filter-pill" data-filter-occasion="office">Office Wear</button>
+          </div>
+        </div>
+
+        <!-- Sort Select & Counter -->
+        <div class="col-md-3 col-12 d-flex align-items-center justify-content-md-end gap-2">
+          <select id="productSortSelect" class="form-select form-control-luxury w-auto" style="font-size: 0.85rem;">
+            <option value="featured">Featured Weaves</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Highest Customer Rating</option>
+            <option value="newest">New Arrivals First</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Live Count & Color Filter Chips Bar -->
+      <div class="d-flex flex-wrap align-items-center justify-content-between pb-3 mb-4 border-bottom border-light">
+        <div id="filteredCountDisplay" style="font-family: var(--font-serif-heading); font-size: 0.88rem; color: var(--color-gold); font-weight: 700;">
+          Showing 16 Handcrafted Sarees
+        </div>
+
+        <!-- Color Swatch Filters -->
+        <div class="d-flex align-items-center gap-2 mt-2 mt-md-0">
+          <span style="font-size: 0.82rem; color: var(--color-text-muted); font-weight: 600;">Filter by Color:</span>
+          <div class="color-swatch-list">
+            <button class="color-swatch-btn" data-filter-color="maroon" style="background: #641C2D;" title="Deep Maroon"></button>
+            <button class="color-swatch-btn" data-filter-color="gold" style="background: #C49A45;" title="Antique Gold"></button>
+            <button class="color-swatch-btn" data-filter-color="emerald" style="background: #1B5E20;" title="Emerald Green"></button>
+            <button class="color-swatch-btn" data-filter-color="wine" style="background: #4A1521;" title="Royal Wine"></button>
+            <button class="color-swatch-btn" data-filter-color="pastel" style="background: #A3C9A8;" title="Pastel Green"></button>
+            <button class="color-swatch-btn" data-filter-color="blue" style="background: #005F73;" title="Peacock Blue"></button>
+            <button class="color-swatch-btn" data-filter-color="pink" style="background: #E8A598;" title="Blush Rose"></button>
+            <button class="color-swatch-btn" data-filter-color="mustard" style="background: #E09F3E;" title="Mustard Gold"></button>
+            <button class="color-swatch-btn" data-filter-color="ivory" style="background: #FDFBF7; border: 1px solid #CCC;" title="Warm Ivory"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Grid (Populated dynamically via filter.js) -->
+      <div class="row g-4 products-grid-container" id="collectionsProductGrid">
+        <!-- Rendered by filter.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Fabric Guide & Care Accordion (Editorial Feature)
+       ========================================================================== -->
+  <section class="py-5 bg-surface" style="background: var(--color-surface); border-top: 1px solid var(--color-border);">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8" data-aos="fade-up">
+          <div class="text-center mb-4">
+            <div class="section-tag">Connoisseur Guide</div>
+            <h2 class="section-title">Silk Mark & Handloom Care</h2>
+            <p class="section-subtitle">Preserving your heirloom weaves for generations to come.</p>
+          </div>
+
+          <div class="accordion accordion-flush" id="sareeCareAccordion">
+            
+            <div class="accordion-item border mb-2 rounded bg-card" style="background: var(--color-card-bg); border-color: var(--color-border) !important;">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed font-serif" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background: transparent; color: var(--color-dark-brown); font-family: var(--font-serif-heading); font-weight: 600;">
+                  How do I verify the authenticity of Pure Kanchipuram Silk & Real Zari?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#sareeCareAccordion">
+                <div class="accordion-body" style="color: var(--color-text-muted); font-size: 0.92rem; line-height: 1.7;">
+                  All authentic Kanchipuram sarees at Saree Showroom carry the official <strong>Silk Mark India</strong> tag and Geographical Indication (GI) registry. Genuine Korvai sarees have an interlocked warp seam where body and border meet. In our pure zari weaves, silver thread is electroplated with 24K real gold, which burns cleanly to ash without synthetic melting.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border mb-2 rounded bg-card" style="background: var(--color-card-bg); border-color: var(--color-border) !important;">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background: transparent; color: var(--color-dark-brown); font-family: var(--font-serif-heading); font-weight: 600;">
+                  How should I store pure silk sarees to prevent zari oxidation?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#sareeCareAccordion">
+                <div class="accordion-body" style="color: var(--color-text-muted); font-size: 0.92rem; line-height: 1.7;">
+                  Wrap your silk saree in pure breathable unbleached muslin or cotton cloth. Avoid plastic covers as trapped humidity can cause zari tarnishing. Change the fold every six months and air the saree in a mild morning shaded breeze without direct harsh sunlight.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border mb-2 rounded bg-card" style="background: var(--color-card-bg); border-color: var(--color-border) !important;">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background: transparent; color: var(--color-dark-brown); font-family: var(--font-serif-heading); font-weight: 600;">
+                  Do you offer blouse customization and falling/edging (pico)?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#sareeCareAccordion">
+                <div class="accordion-body" style="color: var(--color-text-muted); font-size: 0.92rem; line-height: 1.7;">
+                  Yes! Every saree includes complimentary cotton fall attachment, hand-rolled edging (pico), and tassel finish. Our in-house bridal ateliers also offer bespoke blouse embroidery and stitching consultations via video call.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Drawers & Modals (Cart, Wishlist, Quick View, Appointment)
+       ========================================================================== -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Cart Drawer -->
+  <div class="luxury-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
+    <div class="drawer-header">
+      <div class="drawer-title" id="cartDrawerTitle">
+        <i data-lucide="shopping-bag" style="width: 20px; height: 20px; color: var(--color-gold);"></i>
+        <span>Your Shopping Bag</span>
+      </div>
+      <button class="btn-close close-cart-btn" aria-label="Close Bag"></button>
+    </div>
+    <div class="drawer-body" id="cartDrawerItems"></div>
+    <div class="drawer-footer">
+      <div class="drawer-subtotal-row">
+        <span>Subtotal:</span>
+        <span id="cartSubtotalAmount" style="color: var(--color-maroon); font-weight: 700;">₹0</span>
+      </div>
+      <a href="https://wa.me/919876543210" target="_blank" class="btn-gold w-100 justify-content-center" id="cartCheckoutWhatsAppBtn" style="display: none;">
+        <i data-lucide="message-circle" style="width: 17px; height: 17px;"></i> Inquire & Checkout via WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Wishlist Drawer -->
+  <div class="luxury-drawer" id="wishlistDrawer" role="dialog" aria-modal="true" aria-labelledby="wishlistDrawerTitle">
+    <div class="drawer-header">
+      <div class="drawer-title" id="wishlistDrawerTitle">
+        <i data-lucide="heart" style="width: 20px; height: 20px; color: var(--color-gold);"></i>
+        <span>Saved Weaves (Wishlist)</span>
+      </div>
+      <button class="btn-close close-wishlist-btn" aria-label="Close Wishlist"></button>
+    </div>
+    <div class="drawer-body" id="wishlistDrawerItems"></div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal fade modal-luxury" id="quickViewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 pt-0">
+          <div class="row g-4">
+            <div class="col-md-5">
+              <div style="aspect-ratio: 3/4; border-radius: 4px; overflow: hidden; border: 1px solid var(--color-border);">
+                <img id="qvModalImage" src="" alt="Saree Preview" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div id="qvModalCategory" style="font-family: var(--font-serif-heading); font-size: 0.75rem; text-transform: uppercase; color: var(--color-gold); font-weight: 700; margin-bottom: 0.35rem;"></div>
+              <h3 id="qvModalTitle" style="font-family: var(--font-serif-editorial); font-size: 1.45rem; font-weight: 700; margin-bottom: 0.25rem;"></h3>
+              <p id="qvModalSubtitle" style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 1rem;"></p>
+              
+              <div class="d-flex align-items-baseline gap-3 mb-3">
+                <span id="qvModalPrice" style="font-family: var(--font-serif-heading); font-size: 1.5rem; font-weight: 700; color: var(--color-maroon);"></span>
+                <span id="qvModalOriginalPrice" style="font-size: 1rem; text-decoration: line-through; color: var(--color-text-muted);"></span>
+              </div>
+
+              <div class="p-3 mb-3" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 4px; font-size: 0.82rem;">
+                <div class="mb-1"><strong>Zari Purity:</strong> <span id="qvModalZari"></span></div>
+                <div class="mb-1"><strong>Weaving:</strong> <span id="qvModalWeave"></span></div>
+                <div class="mb-1"><strong>Blouse Piece:</strong> <span id="qvModalBlouse"></span></div>
+                <div><strong>Total Length:</strong> <span id="qvModalLength"></span></div>
+              </div>
+
+              <p id="qvModalDesc" style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 1.5rem;"></p>
+
+              <div class="d-flex flex-wrap gap-2">
+                <button id="qvModalAddToCartBtn" class="btn-gold flex-grow-1">
+                  <i data-lucide="shopping-bag" style="width: 16px; height: 16px;"></i> Add to Bag
+                </button>
+                <a id="qvModalWhatsAppBtn" href="#" target="_blank" class="btn-outline-gold" style="border-color: #25D366; color: #25D366;">
+                  <i data-lucide="message-circle" style="width: 16px; height: 16px;"></i> WhatsApp Enquiry
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Appointment Modal -->
+  <div class="modal fade modal-luxury" id="appointmentModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-light">
+          <h5 class="modal-title" style="font-family: var(--font-serif-heading); color: var(--color-maroon);">
+            <i data-lucide="calendar" style="width: 18px; height: 18px; color: var(--color-gold);"></i> Book VIP Showroom Experience
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form class="appointment-form">
+            <div class="mb-3">
+              <label class="form-label" style="font-size: 0.82rem; font-weight: 600;">Full Name *</label>
+              <input type="text" class="form-control form-control-luxury" placeholder="e.g. Radhika Sundaram" required />
+            </div>
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <label class="form-label" style="font-size: 0.82rem; font-weight: 600;">Phone Number *</label>
+                <input type="tel" class="form-control form-control-luxury" placeholder="+91 98765 43210" required />
+              </div>
+              <div class="col-6">
+                <label class="form-label" style="font-size: 0.82rem; font-weight: 600;">Location *</label>
+                <select class="form-select form-control-luxury" required>
+                  <option value="anna-nagar">Anna Nagar, Chennai</option>
+                  <option value="t-nagar">T. Nagar, Chennai</option>
+                  <option value="jubilee-hills">Jubilee Hills, Hyderabad</option>
+                  <option value="video-call">Virtual Video Consultation</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" style="font-size: 0.82rem; font-weight: 600;">Date *</label>
+              <input type="date" class="form-control form-control-luxury" required />
+            </div>
+            <button type="submit" class="btn-gold w-100 py-3 mt-2">
+              <i data-lucide="check" style="width: 16px; height: 16px;"></i> Book Private Styling Salon
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-top-ornament">
+      <svg viewBox="0 0 100 100" style="width: 32px; height: 32px;">
+        <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="2"/>
+        <path d="M50 18 C38 18 30 28 30 42 C30 58 44 72 56 80 C52 70 56 60 62 54 C68 48 70 40 68 32 C66 24 58 18 50 18 Z" fill="#C49A45"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        
+        <div class="col-lg-4 col-md-6">
+          <h3 style="font-family: var(--font-serif-display); font-size: 1.4rem; color: #FFFFFF; letter-spacing: 0.12em; margin-bottom: 1rem;">
+            SAREE SHOWROOM
+          </h3>
+          <p style="color: #D9BEB0; font-size: 0.88rem; line-height: 1.7; margin-bottom: 1.25rem;">
+            South Indian Heritage × Luxury Silk × Modern Editorial. Handpicked handloom masterpieces from master weavers since 1943.
+          </p>
+          <div class="footer-cert-badges">
+            <span class="badge-gold">Silk Mark India</span>
+            <span class="badge-gold">Handloom Mark</span>
+            <span class="badge-gold">100% Pure Zari</span>
+          </div>
+
+          <div class="footer-social-row">
+            <a href="https://instagram.com" target="_blank" class="social-link-btn" title="Instagram" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="social-link-btn" title="Facebook" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://wa.me/919876543210" target="_blank" class="social-link-btn" title="WhatsApp" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="social-link-btn" title="YouTube" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"></polygon></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <h4 class="footer-title">Fabrics</h4>
+          <ul class="footer-links">
+            <li><a href="collections.html?fabric=kanchipuram">Kanchipuram Silk</a></li>
+            <li><a href="collections.html?fabric=banarasi">Banarasi Silk</a></li>
+            <li><a href="collections.html?fabric=soft-silk">Soft Silk</a></li>
+            <li><a href="collections.html?fabric=cotton">Cotton Sarees</a></li>
+            <li><a href="collections.html?fabric=linen">Linen Sarees</a></li>
+            <li><a href="collections.html?fabric=organza">Organza Sarees</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <h4 class="footer-title">Showroom</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Anna Nagar Flagship</a></li>
+            <li><a href="contact.html">T. Nagar Boutique</a></li>
+            <li><a href="contact.html">Jubilee Hills Salon</a></li>
+            <li><a href="bridal.html">Muhurtham Trousseau</a></li>
+            <li><a href="contact.html">Video Styling Call</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Flagship Hours</h4>
+          <div style="font-size: 0.85rem; color: #D9BEB0; line-height: 1.8;">
+            <div><strong>Anna Nagar, Chennai:</strong> 10 AM – 9 PM</div>
+            <div><strong>Jubilee Hills, Hyderabad:</strong> 10 AM – 9 PM</div>
+            <div>Open All 7 Days including Holidays</div>
+            <div class="mt-2 text-gold">Helpline: +91 98765 43210</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>© 2026 Saree Showroom Private Limited. All Rights Reserved.</div>
+        <div class="d-flex gap-3">
+          <a href="contact.html" style="color: inherit;">Privacy</a>
+          <span>•</span>
+          <a href="contact.html" style="color: inherit;">Terms</a>
+          <span>•</span>
+          <a href="contact.html" style="color: inherit;">Silk Mark India</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <script src="js/products-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/filter.js"></script>
+</body>
+</html>
+

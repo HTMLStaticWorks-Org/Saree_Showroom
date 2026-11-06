@@ -1,0 +1,1371 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saree Showroom | South Indian Heritage × Luxury Silk × Modern Editorial</title>
+  <meta name="description" content="Discover exquisite handwoven Kanchipuram silk, Banarasi brocades, and heirloom bridal sarees carefully handpicked since 1943. Experience royal heritage craftsmanship." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Site Header (3-Tier Luxury Editorial Navigation)
+       Tier 1: Top Ribbon (Offers & Showroom Timings)
+       Tier 2: Brand Logo, Pill Search Bar, Utility Controls (RTL, Dark/Light, Wishlist, Bag, Book a Visit)
+       Tier 3: Primary Navigation Links & Handloom Certified Trust Ribbon
+       ========================================================================== -->
+  <header class="site-header">
+    
+    <!-- Tier 1: Top Ribbon (Offers & Showroom Timings) -->
+    <div class="header-tier-top">
+      <div class="header-tier-top-inner">
+        <div class="header-top-item">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 12 20 22 4 22 4 12"/>
+            <rect x="2" y="7" width="20" height="5"/>
+            <line x1="12" y1="22" x2="12" y2="7"/>
+            <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+            <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+          </svg>
+          <span>Free insured packaging & blouse finishing over ₹25,000 · Pure Zari Certified</span>
+        </div>
+        <div class="header-top-item d-none d-md-inline-flex">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <span>Flagships Open Daily: 10:00–21:00 · VIP Concierge: +91 98765 43210</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tier 2: Main Brand & Utility Bar -->
+    <div class="header-tier-main">
+      <div class="header-tier-main-inner">
+        
+        <!-- Brand Logo (Tier 2 Left) -->
+        <a href="index.html" class="brand-logo-group" aria-label="Saree Showroom Home">
+          <svg class="brand-emblem-svg" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="2.5" stroke-dasharray="4 2"/>
+            <path d="M50 18 C38 18 30 28 30 42 C30 58 44 72 56 80 C52 70 56 60 62 54 C68 48 70 40 68 32 C66 24 58 18 50 18 Z" fill="#641C2D"/>
+            <circle cx="48" cy="38" r="5" fill="#C49A45"/>
+            <polygon points="50,8 52,14 50,16 48,14" fill="#C49A45"/>
+          </svg>
+          <div class="brand-title-wrap">
+            <span class="brand-name">SAREE SHOWROOM</span>
+            <span class="brand-tagline">South Indian Heritage × Luxury Silk</span>
+          </div>
+        </a>
+
+        <!-- Pill Search Bar (Tier 2 Center) -->
+        <div class="header-search-wrapper">
+          <div class="header-search-pill">
+            <svg class="header-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input type="text" class="header-search-input" placeholder="Search pure Kanchipuram silks, Banarasi brocades, motifs, colors..." aria-label="Search Catalog" />
+            <!-- Quick Silk Swatches in Search Bar -->
+            <div class="search-swatches-quick d-none d-lg-flex" title="Quick Color Filters">
+              <span class="search-swatch-dot" style="background: #641C2D;" onclick="window.location.href='collections.html?search=maroon'"></span>
+              <span class="search-swatch-dot" style="background: #C49A45;" onclick="window.location.href='collections.html?search=gold'"></span>
+              <span class="search-swatch-dot" style="background: #1B5E20;" onclick="window.location.href='collections.html?search=emerald'"></span>
+              <span class="search-swatch-dot" style="background: #4A1521;" onclick="window.location.href='collections.html?search=wine'"></span>
+            </div>
+          </div>
+
+          <!-- Suggestions Dropdown Popup -->
+          <div class="search-suggestions-popup">
+            <div class="suggestions-title">Trending Weaves & Motifs:</div>
+            <div class="suggestions-tags">
+              <a href="collections.html?fabric=kanchipuram" class="suggestion-tag">Pure Kanchipuram Korvai</a>
+              <a href="collections.html?occasion=wedding" class="suggestion-tag">Sacred Muhurtham Crimson</a>
+              <a href="collections.html?fabric=banarasi" class="suggestion-tag">Banarasi Shikargah</a>
+              <a href="collections.html?fabric=cotton" class="suggestion-tag">Chettinad Mango Buta</a>
+              <a href="collections.html?fabric=soft-silk" class="suggestion-tag">Mulberry Soft Silk</a>
+            </div>
+            <div class="d-flex align-items-center justify-content-between pt-2 border-top border-light" style="font-size: 0.78rem; color: var(--color-text-muted);">
+              <span>Press <strong>Enter</strong> to explore all matches</span>
+              <a href="collections.html" style="color: var(--color-gold); font-weight: 600;">View Entire Vault →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Utility Controls (Tier 2 Right) -->
+        <div class="header-utility-controls">
+          <!-- RTL Toggle Pill Button -->
+          <button class="btn-pill-utility rtl-toggle-btn" title="Toggle Text Direction" aria-label="Toggle Direction">
+            <span class="rtl-label" style="font-weight: 700;">RTL</span>
+          </button>
+
+          <!-- Light / Dark Mode Toggle Pill Button -->
+          <button class="btn-pill-utility theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+            <i data-lucide="moon" class="theme-icon" style="width: 15px; height: 15px;"></i>
+            <span class="theme-label">Dark</span>
+          </button>
+
+          <!-- Wishlist Round Icon Button -->
+          <button class="btn-icon-utility open-wishlist-btn" title="Saved Weaves" aria-label="Wishlist">
+            <i data-lucide="heart" style="width: 18px; height: 18px;"></i>
+            <span class="badge-count wishlist-count-badge">0</span>
+          </button>
+
+          <!-- Shopping Bag Round Icon Button -->
+          <button class="btn-icon-utility open-cart-btn" title="Shopping Bag" aria-label="Bag">
+            <i data-lucide="shopping-bag" style="width: 18px; height: 18px;"></i>
+            <span class="badge-count cart-count-badge">0</span>
+          </button>
+
+          <!-- Book a Visit Deep Maroon Pill CTA -->
+          <button class="btn-book-visit-pill" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            <span>Book a Visit</span>
+          </button>
+        </div>
+
+        <!-- Hamburger Button (<= 1024px, 768px, 360px) -->
+        <button class="hamburger-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Open Mobile Menu">
+          <div class="hamburger-icon">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Tier 3: Bottom Navigation Bar & Certified Handloom Ribbon -->
+    <div class="header-tier-nav">
+      <div class="header-tier-nav-inner">
+        
+        <!-- Navigation Links with Dropdowns & Mega Menu -->
+        <ul class="desktop-nav-links">
+          
+          <!-- Home Dropdown -->
+          <li class="nav-tier-item">
+            <a href="index.html" class="nav-tier-link active">
+              Home <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+            </a>
+            <ul class="dropdown-menu-luxury">
+              <li><a href="index.html">Home 1 — Classical Heritage</a></li>
+              <li><a href="home-2.html">Home 2 — Royal Editorial Atelier</a></li>
+            </ul>
+          </li>
+
+          <!-- Collections Mega Menu Dropdown -->
+          <li class="nav-tier-item">
+            <a href="collections.html" class="nav-tier-link">
+              Collections <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+            </a>
+
+            <!-- Mega Menu -->
+            <div class="mega-menu-wrapper">
+              <div class="mega-menu-grid">
+                <div>
+                  <h4 class="mega-column-title">Shop by Fabric</h4>
+                  <ul class="mega-link-list">
+                    <li><a href="collections.html?fabric=kanchipuram">Kanchipuram Silk <span class="badge-gold">GI</span></a></li>
+                    <li><a href="collections.html?fabric=banarasi">Banarasi Silk</a></li>
+                    <li><a href="collections.html?fabric=soft-silk">Soft Silk</a></li>
+                    <li><a href="collections.html?fabric=cotton">Cotton Sarees</a></li>
+                    <li><a href="collections.html?fabric=linen">Linen Sarees</a></li>
+                    <li><a href="collections.html?fabric=organza">Organza Sarees</a></li>
+                    <li><a href="collections.html?fabric=handloom">Handloom Sarees</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="mega-column-title">Shop by Occasion</h4>
+                  <ul class="mega-link-list">
+                    <li><a href="collections.html?occasion=wedding">Wedding Wear</a></li>
+                    <li><a href="collections.html?occasion=festive">Festive Wear</a></li>
+                    <li><a href="collections.html?occasion=daily">Daily Wear</a></li>
+                    <li><a href="collections.html?occasion=office">Office Wear</a></li>
+                    <li><a href="bridal.html">Muhurtham Trousseau</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="mega-column-title">Master Crafts</h4>
+                  <ul class="mega-link-list">
+                    <li><a href="bridal.html#zari-details">Korvai Triple Warp</a></li>
+                    <li><a href="bridal.html#zari-details">24K Pure Gold Zari</a></li>
+                    <li><a href="bridal.html#zari-details">Temple Gopuram Spire</a></li>
+                    <li><a href="bridal.html#zari-details">Mayil & Mango Buta</a></li>
+                    <li><a href="contact.html">Live Video Styling</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="mega-card-preview">
+                    <img src="IMGAE/shades-by-43-Rm9DL9DmGi4-unsplash.jpg" alt="Bridal Preview" />
+                    <div class="mega-card-overlay">
+                      <span style="font-size: 0.72rem; text-transform: uppercase; color: var(--color-gold-light); font-weight: 700;">The Royal Muhurtham</span>
+                      <h5 style="font-size: 1.1rem; color: #FFFFFF; font-family: var(--font-serif-heading); margin-bottom: 0.5rem;">Pure Zari Kanchipuram</h5>
+                      <a href="bridal.html" class="btn-gold py-1 px-3" style="font-size: 0.72rem;">Explore Bridal</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Bridal Sarees -->
+          <li class="nav-tier-item">
+            <a href="bridal.html" class="nav-tier-link">Bridal Sarees</a>
+          </li>
+
+          <!-- Fabrics Direct Dropdown -->
+          <li class="nav-tier-item">
+            <a href="collections.html" class="nav-tier-link">
+              Fabrics <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+            </a>
+            <ul class="dropdown-menu-luxury">
+              <li><a href="collections.html?fabric=kanchipuram">Pure Kanchipuram Silk</a></li>
+              <li><a href="collections.html?fabric=banarasi">Banarasi Katan Silk</a></li>
+              <li><a href="collections.html?fabric=soft-silk">Mulberry Soft Silk</a></li>
+              <li><a href="collections.html?fabric=cotton">Chettinad Cotton</a></li>
+              <li><a href="collections.html?fabric=organza">Tissue & Organza</a></li>
+            </ul>
+          </li>
+
+          <!-- Our Heritage -->
+          <li class="nav-tier-item">
+            <a href="#heritage" class="nav-tier-link">Our Heritage</a>
+          </li>
+
+          <!-- Showroom & Contact -->
+          <li class="nav-tier-item">
+            <a href="contact.html" class="nav-tier-link">Showroom & Contact</a>
+          </li>
+
+        </ul>
+
+        <!-- Tier 3 Right Handloom Trust Ribbon (Like "Hand-delivered today" in user's image) -->
+        <div class="header-nav-trust-badge">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          <span>Hand-woven on Pit Looms · 100% Certified Pure Zari</span>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+  <!-- ==========================================================================
+       Mobile Offcanvas Drawer (Active at 360px, 768px, 1024px)
+       ========================================================================== -->
+  <div class="offcanvas offcanvas-end offcanvas-luxury" tabindex="-1" id="mobileNavOffcanvas" aria-labelledby="mobileNavOffcanvasLabel">
+    <div class="offcanvas-header">
+      <div class="d-flex align-items-center gap-2">
+        <svg style="width: 24px; height: 24px;" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="3"/>
+          <path d="M50 18 C38 18 30 28 30 42 C30 58 44 72 56 80 C52 70 56 60 62 54 C68 48 70 40 68 32 C66 24 58 18 50 18 Z" fill="#641C2D"/>
+        </svg>
+        <span style="font-family: var(--font-serif-heading); font-weight: 700; color: var(--color-maroon); font-size: 1.1rem; letter-spacing: 0.1em;">SAREE SHOWROOM</span>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <!-- Navigation Links -->
+      <ul class="mobile-nav-links">
+        <li>
+          <a href="index.html" class="active">Home 1 — Classical Heritage <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+        </li>
+        <li>
+          <a href="home-2.html">Home 2 — Royal Editorial Atelier <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+        </li>
+        <li>
+          <a href="collections.html">All Collections <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+        </li>
+        <li>
+          <a href="collections.html?fabric=kanchipuram" style="font-size: 0.95rem; padding-left: 1rem; color: var(--color-text-muted);">
+            • Kanchipuram Silk Sarees
+          </a>
+        </li>
+        <li>
+          <a href="collections.html?fabric=banarasi" style="font-size: 0.95rem; padding-left: 1rem; color: var(--color-text-muted);">
+            • Banarasi Brocades
+          </a>
+        </li>
+        <li>
+          <a href="collections.html?fabric=cotton" style="font-size: 0.95rem; padding-left: 1rem; color: var(--color-text-muted);">
+            • Handloom Cotton Sarees
+          </a>
+        </li>
+        <li>
+          <a href="bridal.html">Bridal Sarees & Muhurtham <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+        </li>
+        <li>
+          <a href="contact.html">Showroom & Contact <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+        </li>
+      </ul>
+
+      <!-- Quick Action Pills inside Drawer (Wishlist, Cart, Search, Call) -->
+      <div class="mobile-actions-bar">
+        <div class="mobile-action-pill open-wishlist-btn" data-bs-dismiss="offcanvas">
+          <i data-lucide="heart" style="width: 18px; height: 18px;"></i>
+          <span>Wishlist (<span class="wishlist-count-badge">0</span>)</span>
+        </div>
+        <div class="mobile-action-pill open-cart-btn" data-bs-dismiss="offcanvas">
+          <i data-lucide="shopping-bag" style="width: 18px; height: 18px;"></i>
+          <span>Bag (<span class="cart-count-badge">0</span>)</span>
+        </div>
+        <div class="mobile-action-pill" onclick="window.location.href='collections.html'">
+          <i data-lucide="search" style="width: 18px; height: 18px;"></i>
+          <span>Search</span>
+        </div>
+        <a href="https://wa.me/919876543210" target="_blank" class="mobile-action-pill" style="text-decoration: none;">
+          <i data-lucide="message-circle" style="width: 18px; height: 18px; color: #25D366;"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Theme & RTL Toggles inside Hamburger Drawer -->
+      <div class="mobile-toggles-row">
+        <button class="btn btn-outline-gold w-50 py-2 d-flex align-items-center justify-content-center gap-2 theme-toggle-btn" style="font-size: 0.78rem;">
+          <i data-lucide="moon" class="theme-icon" style="width: 16px; height: 16px;"></i> Theme Mode
+        </button>
+        <button class="btn btn-outline-gold w-50 py-2 d-flex align-items-center justify-content-center gap-2 rtl-toggle-btn" style="font-size: 0.78rem;">
+          <span class="rtl-label" style="font-weight: 700;">RTL</span> Direction
+        </button>
+      </div>
+
+      <!-- Book Showroom Visit Button inside Drawer -->
+      <div class="mt-3">
+        <button class="btn-gold w-100 py-3" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-bs-dismiss="offcanvas">
+          <i data-lucide="calendar" style="width: 16px; height: 16px;"></i> Book Private Styling Salon
+        </button>
+      </div>
+
+      <!-- Showroom Contact Info Footer -->
+      <div class="mt-4 pt-3 border-top" style="font-size: 0.8rem; color: var(--color-text-muted);">
+        <div><strong>Anna Nagar Flagship:</strong> +91 98765 43210</div>
+        <div>Open Daily: 10:00 AM – 9:00 PM</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Page 1: HOME PAGE CONTENT
+       ========================================================================== -->
+
+  <!-- 1. Hero Section -->
+  <section class="hero-editorial" style="background-image: url('IMGAE/shades-by-43-Rm9DL9DmGi4-unsplash.jpg');">
+    <div class="container">
+      <div class="row align-items-center min-vh-75">
+        <div class="col-lg-8 col-xl-7">
+          <div class="hero-content">
+            <div class="hero-tag">
+              <i data-lucide="sparkles" style="width: 14px; height: 14px; color: var(--color-gold-light);"></i>
+              HERITAGE HANDLOOM SINCE 1943
+            </div>
+
+            <h1 class="hero-headline">
+              Tradition Woven <br />
+              <span class="highlight-italic">Into Every Thread.</span>
+            </h1>
+
+            <p class="hero-description">
+              Immerse yourself in authentic South Indian grandeur. Handwoven pure Kanchipuram silks, luminous gold zari borders, and timeless Banarasi brocades crafted by fourth-generation master weavers.
+            </p>
+
+            <div class="hero-btn-group">
+              <a href="collections.html" class="btn-gold">
+                <span>Explore Royal Weaves</span>
+                <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              </a>
+              <button class="btn-outline-gold" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                <i data-lucide="calendar" style="width: 16px; height: 16px;"></i>
+                <span>Book Showroom Visit</span>
+              </button>
+            </div>
+
+            <!-- Features Strip -->
+            <div class="hero-features-strip">
+              <div class="hero-feature-item">
+                <div class="hero-feature-icon">
+                  <i data-lucide="award" style="width: 18px; height: 18px;"></i>
+                </div>
+                <div>
+                  <div class="hero-feature-title">100% Pure Zari</div>
+                  <div class="hero-feature-sub">Govt Tested & Certified</div>
+                </div>
+              </div>
+
+              <div class="hero-feature-item">
+                <div class="hero-feature-icon">
+                  <i data-lucide="shield-check" style="width: 18px; height: 18px;"></i>
+                </div>
+                <div>
+                  <div class="hero-feature-title">Silk Mark India</div>
+                  <div class="hero-feature-sub">Authentic Mulberry Silk</div>
+                </div>
+              </div>
+
+              <div class="hero-feature-item">
+                <div class="hero-feature-icon">
+                  <i data-lucide="gem" style="width: 18px; height: 18px;"></i>
+                </div>
+                <div>
+                  <div class="hero-feature-title">Korvai Weaving</div>
+                  <div class="hero-feature-sub">Interlocked Handloom Warp</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Value Pillars Bar -->
+  <section class="value-pillars-bar">
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3">
+          <div class="pillar-item">
+            <div class="pillar-icon-box">
+              <i data-lucide="sparkles" style="width: 20px; height: 20px;"></i>
+            </div>
+            <div>
+              <h4 class="pillar-title">Curated by Hand</h4>
+              <p class="pillar-sub">Each drape handpicked at the loom</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="pillar-item">
+            <div class="pillar-icon-box">
+              <i data-lucide="shield-check" style="width: 20px; height: 20px;"></i>
+            </div>
+            <div>
+              <h4 class="pillar-title">Silk Mark Certified</h4>
+              <p class="pillar-sub">100% pure natural silk guarantee</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="pillar-item">
+            <div class="pillar-icon-box">
+              <i data-lucide="video" style="width: 20px; height: 20px;"></i>
+            </div>
+            <div>
+              <h4 class="pillar-title">Live Video Styling</h4>
+              <p class="pillar-sub">Personal virtual drape sessions</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="pillar-item">
+            <div class="pillar-icon-box">
+              <i data-lucide="globe" style="width: 20px; height: 20px;"></i>
+            </div>
+            <div>
+              <h4 class="pillar-title">Global Shipping</h4>
+              <p class="pillar-sub">Express insured transit worldwide</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Shop Silk Sarees and Cotton Sarees Sections (Split Editorial) -->
+  <section class="editorial-split-section">
+    <div class="container">
+      
+      <div class="text-center" data-aos="fade-up">
+        <div class="section-tag">Signature Traditions</div>
+        <h2 class="section-title">The Quintessential Drapes</h2>
+        <p class="section-subtitle">From opulent bridal silk korvais to breathable Chettinad cotton handlooms, explore the two pillars of South Indian grace.</p>
+        
+        <div class="ornament-divider">
+          <div class="ornament-line"></div>
+          <div class="ornament-icon">
+            <svg viewBox="0 0 60 80" style="width: 20px; height: 20px; fill: currentColor;">
+              <path d="M30 5 C15 5 5 18 5 35 C5 55 22 70 35 78 C30 68 35 56 42 49 C49 42 52 33 50 24 C48 14 40 5 30 5 Z"/>
+            </svg>
+          </div>
+          <div class="ornament-line"></div>
+        </div>
+      </div>
+
+      <div class="editorial-split-grid mt-4">
+        <!-- Silk Sarees Card -->
+        <div class="editorial-card" data-aos="fade-right">
+          <img src="IMGAE/happysurd-photography-7q-Z4IrqyYY-unsplash.jpg" alt="Pure Silk Sarees" class="editorial-card-bg" />
+          <div class="editorial-card-content">
+            <div class="editorial-card-tag">ROYAL SILK WEAVES</div>
+            <h3 class="editorial-card-title">Shop Pure Silk Sarees</h3>
+            <p class="editorial-card-desc">Kanchipuram, Banarasi, and Mulberry Soft Silks steeped in pure silver-gold zari, temple borders, and peacock motifs.</p>
+            <a href="collections.html?fabric=kanchipuram" class="btn-gold">
+              <span>View Silk Collections</span>
+              <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cotton Sarees Card -->
+        <div class="editorial-card" data-aos="fade-left">
+          <img src="IMGAE/bulbul-ahmed-v9nCfAKxxx4-unsplash.jpg" alt="Pure Cotton Handloom Sarees" class="editorial-card-bg" />
+          <div class="editorial-card-content">
+            <div class="editorial-card-tag">EARTHEN HANDLOOM</div>
+            <h3 class="editorial-card-title">Shop Handloom Cotton Sarees</h3>
+            <p class="editorial-card-desc">Chettinad, Madhurai Sungudi, and Bengal handspun cottons featuring delicate mango butas and comforting summer drapes.</p>
+            <a href="collections.html?fabric=cotton" class="btn-gold">
+              <span>View Cotton Sarees</span>
+              <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. Featured Collections Carousel (Swiper.js) -->
+  <section class="collections-carousel-section">
+    <div class="container">
+      
+      <div class="d-flex flex-wrap align-items-end justify-content-between mb-4" data-aos="fade-up">
+        <div>
+          <div class="section-tag">Curated Edits</div>
+          <h2 class="section-title mb-1">Featured Collections</h2>
+          <p class="section-subtitle m-0">Explore our signature fabric and craft categories woven for monumental celebrations.</p>
+        </div>
+        <div class="d-flex gap-2 mt-3 mt-md-0">
+          <div class="swiper-btn-gold swiper-button-prev-custom" aria-label="Previous Slide">
+            <i data-lucide="chevron-left" style="width: 20px; height: 20px;"></i>
+          </div>
+          <div class="swiper-btn-gold swiper-button-next-custom" aria-label="Next Slide">
+            <i data-lucide="chevron-right" style="width: 20px; height: 20px;"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Swiper Slider -->
+      <div class="swiper collections-swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          
+          <!-- Collection 1: Kanchipuram Silk -->
+          <div class="swiper-slide">
+            <div class="collection-card-item">
+              <img src="IMGAE/horitoki-ltd-dCuCMZ9XnHg-unsplash.jpg" alt="Kanchipuram Silks" class="collection-card-img" />
+              <div class="collection-card-overlay">
+                <span style="font-size: 0.72rem; text-transform: uppercase; color: var(--color-gold); font-weight: 700;">Auspicious Weaves</span>
+                <h3 class="collection-card-title">Kanchipuram Silk</h3>
+                <p style="font-size: 0.85rem; color: #E8DCD4; margin-bottom: 0.5rem;">Pure silver & gold zari korvai looms</p>
+                <a href="collections.html?fabric=kanchipuram" class="collection-card-link">Explore Sarees <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collection 2: Banarasi Silk -->
+          <div class="swiper-slide">
+            <div class="collection-card-item">
+              <img src="IMGAE/samrat-khadka-WLDcs1m9d9Y-unsplash.jpg" alt="Banarasi Silk" class="collection-card-img" />
+              <div class="collection-card-overlay">
+                <span style="font-size: 0.72rem; text-transform: uppercase; color: var(--color-gold); font-weight: 700;">Royal Brocades</span>
+                <h3 class="collection-card-title">Banarasi Silk</h3>
+                <p style="font-size: 0.85rem; color: #E8DCD4; margin-bottom: 0.5rem;">Kadhwa jaal and Shikargah motifs</p>
+                <a href="collections.html?fabric=banarasi" class="collection-card-link">Explore Sarees <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collection 3: Soft Silk -->
+          <div class="swiper-slide">
+            <div class="collection-card-item">
+              <img src="IMGAE/shibnarayaninpace-woman-8060193_1920.jpg" alt="Soft Silk Sarees" class="collection-card-img" />
+              <div class="collection-card-overlay">
+                <span style="font-size: 0.72rem; text-transform: uppercase; color: var(--color-gold); font-weight: 700;">Lightweight Opulence</span>
+                <h3 class="collection-card-title">Soft Silk</h3>
+                <p style="font-size: 0.85rem; color: #E8DCD4; margin-bottom: 0.5rem;">Supple drape for contemporary soirees</p>
+                <a href="collections.html?fabric=soft-silk" class="collection-card-link">Explore Sarees <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collection 4: Pure Cotton Handloom -->
+          <div class="swiper-slide">
+            <div class="collection-card-item">
+              <img src="IMGAE/lola-azizada-Cr4BApFna1c-unsplash.jpg" alt="Cotton Sarees" class="collection-card-img" />
+              <div class="collection-card-overlay">
+                <span style="font-size: 0.72rem; text-transform: uppercase; color: var(--color-gold); font-weight: 700;">Everyday Grace</span>
+                <h3 class="collection-card-title">Cotton Sarees</h3>
+                <p style="font-size: 0.85rem; color: #E8DCD4; margin-bottom: 0.5rem;">Pure Chettinad mango buta weaves</p>
+                <a href="collections.html?fabric=cotton" class="collection-card-link">Explore Sarees <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collection 5: Organza & Tissue -->
+          <div class="swiper-slide">
+            <div class="collection-card-item">
+              <img src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=900&q=80" alt="Organza Sarees" class="collection-card-img" />
+              <div class="collection-card-overlay">
+                <span style="font-size: 0.72rem; text-transform: uppercase; color: var(--color-gold); font-weight: 700;">Sheer Elegance</span>
+                <h3 class="collection-card-title">Organza & Tissue</h3>
+                <p style="font-size: 0.85rem; color: #E8DCD4; margin-bottom: 0.5rem;">Hand-embroidered cutwork scallops</p>
+                <a href="collections.html?fabric=organza" class="collection-card-link">Explore Sarees <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. Bestselling Sarees Section with Price & Product Details -->
+  <section class="py-5">
+    <div class="container">
+      
+      <div class="text-center" data-aos="fade-up">
+        <div class="section-tag">Most Adored Weaves</div>
+        <h2 class="section-title">Bestselling Sarees</h2>
+        <p class="section-subtitle">Cherished by brides and connoisseurs worldwide for their impeccable drape, authentic zari, and timeless prestige.</p>
+        
+        <div class="ornament-divider">
+          <div class="ornament-line"></div>
+          <div class="ornament-icon">
+            <svg viewBox="0 0 120 30" style="width: 40px; height: 15px; fill: none; stroke: currentColor;">
+              <path d="M0 30 L10 10 L20 30 L30 10 L40 30 L50 10 L60 30 L70 10 L80 30 L90 10 L100 30 L110 10 L120 30" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="ornament-line"></div>
+        </div>
+      </div>
+
+      <!-- Bestseller Product Cards Grid (4 Columns) -->
+      <div class="row g-4 mt-2">
+        
+        <!-- Bestseller 1: Crimson Red Bridal Kanchipuram -->
+        <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up">
+          <div class="product-card">
+            <div class="product-badges-group">
+              <span class="product-badge gold">Bridal Heirloom</span>
+              <span class="product-badge">Silk Mark</span>
+            </div>
+            <div class="product-actions-floating">
+              <button class="action-float-btn wishlist-btn-toggle" data-product-id="saree-01" onclick="toggleWishlist('saree-01')" title="Add to Wishlist">
+                <i data-lucide="heart" style="width: 17px; height: 17px;"></i>
+              </button>
+            </div>
+            <div class="product-media-wrapper" onclick="openQuickView('saree-01')" style="cursor: pointer;">
+              <img src="IMGAE/shades-by-43-Rm9DL9DmGi4-unsplash.jpg" alt="Crimson Red Bridal Kanchipuram" class="product-img" />
+              <img src="IMGAE/happysurd-photography-7q-Z4IrqyYY-unsplash.jpg" alt="Drape Detail" class="product-img-hover" />
+              <div class="product-quick-view-bar" onclick="event.stopPropagation(); openQuickView('saree-01');">
+                <button class="quick-view-btn"><i data-lucide="eye" style="width: 15px; height: 15px;"></i> Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-fabric-tag">Kanchipuram Silk • Wedding Wear</div>
+              <h3 class="product-title"><a href="javascript:void(0)" onclick="openQuickView('saree-01')">Crimson Red Bridal Kanchipuram Pure Silk</a></h3>
+              <div class="product-meta-row">
+                <span class="product-rating"><i data-lucide="star" style="width: 13px; height: 13px; fill: currentColor;"></i> 5.0 (38)</span>
+                <span>Deep Crimson</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price">₹68,500</span>
+                <span class="product-price-original">₹78,000</span>
+                <span class="product-discount-pill">12% OFF</span>
+              </div>
+              <div class="product-card-cta">
+                <button class="btn-card-add" onclick="addToCart('saree-01')">
+                  <i data-lucide="shopping-bag" style="width: 15px; height: 15px;"></i> Add to Bag
+                </button>
+                <a href="https://wa.me/919876543210?text=Hello%20Saree%20Showroom,%20inquiring%20about%20Crimson%20Red%20Bridal%20Kanchipuram%20(₹68,500)" target="_blank" class="btn-card-whatsapp" title="WhatsApp Enquiry">
+                  <i data-lucide="message-circle" style="width: 17px; height: 17px;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bestseller 2: Royal Wine Kanchipuram -->
+        <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-card">
+            <div class="product-badges-group">
+              <span class="product-badge gold">Royal Collection</span>
+            </div>
+            <div class="product-actions-floating">
+              <button class="action-float-btn wishlist-btn-toggle" data-product-id="saree-02" onclick="toggleWishlist('saree-02')" title="Add to Wishlist">
+                <i data-lucide="heart" style="width: 17px; height: 17px;"></i>
+              </button>
+            </div>
+            <div class="product-media-wrapper" onclick="openQuickView('saree-02')" style="cursor: pointer;">
+              <img src="IMGAE/ghunnghat-delhi-nQAseP3G96Q-unsplash.jpg" alt="Royal Wine Kanchipuram" class="product-img" />
+              <img src="IMGAE/shibnarayaninpace-woman-8060193_1920.jpg" alt="Drape Detail" class="product-img-hover" />
+              <div class="product-quick-view-bar" onclick="event.stopPropagation(); openQuickView('saree-02');">
+                <button class="quick-view-btn"><i data-lucide="eye" style="width: 15px; height: 15px;"></i> Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-fabric-tag">Kanchipuram Silk • Wedding Wear</div>
+              <h3 class="product-title"><a href="javascript:void(0)" onclick="openQuickView('saree-02')">Royal Wine Kanchipuram Brocade Saree</a></h3>
+              <div class="product-meta-row">
+                <span class="product-rating"><i data-lucide="star" style="width: 13px; height: 13px; fill: currentColor;"></i> 4.9 (29)</span>
+                <span>Royal Wine</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price">₹54,900</span>
+                <span class="product-price-original">₹62,000</span>
+                <span class="product-discount-pill">11% OFF</span>
+              </div>
+              <div class="product-card-cta">
+                <button class="btn-card-add" onclick="addToCart('saree-02')">
+                  <i data-lucide="shopping-bag" style="width: 15px; height: 15px;"></i> Add to Bag
+                </button>
+                <a href="https://wa.me/919876543210?text=Hello%20Saree%20Showroom,%20inquiring%20about%20Royal%20Wine%20Kanchipuram%20(₹54,900)" target="_blank" class="btn-card-whatsapp" title="WhatsApp Enquiry">
+                  <i data-lucide="message-circle" style="width: 17px; height: 17px;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bestseller 3: Emerald Green Pure Silk -->
+        <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-card">
+            <div class="product-badges-group">
+              <span class="product-badge">Heritage Classic</span>
+            </div>
+            <div class="product-actions-floating">
+              <button class="action-float-btn wishlist-btn-toggle" data-product-id="saree-03" onclick="toggleWishlist('saree-03')" title="Add to Wishlist">
+                <i data-lucide="heart" style="width: 17px; height: 17px;"></i>
+              </button>
+            </div>
+            <div class="product-media-wrapper" onclick="openQuickView('saree-03')" style="cursor: pointer;">
+              <img src="IMGAE/sushanta-rokka-FWfhfJks5N4-unsplash.jpg" alt="Emerald Green Pure Silk" class="product-img" />
+              <img src="IMGAE/horitoki-ltd-dCuCMZ9XnHg-unsplash.jpg" alt="Drape Detail" class="product-img-hover" />
+              <div class="product-quick-view-bar" onclick="event.stopPropagation(); openQuickView('saree-03');">
+                <button class="quick-view-btn"><i data-lucide="eye" style="width: 15px; height: 15px;"></i> Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-fabric-tag">Kanchipuram Silk • Festive Wear</div>
+              <h3 class="product-title"><a href="javascript:void(0)" onclick="openQuickView('saree-03')">Emerald Green Pure Silk Temple Border</a></h3>
+              <div class="product-meta-row">
+                <span class="product-rating"><i data-lucide="star" style="width: 13px; height: 13px; fill: currentColor;"></i> 4.8 (44)</span>
+                <span>Emerald Green</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price">₹42,000</span>
+                <span class="product-price-original">₹48,000</span>
+                <span class="product-discount-pill">13% OFF</span>
+              </div>
+              <div class="product-card-cta">
+                <button class="btn-card-add" onclick="addToCart('saree-03')">
+                  <i data-lucide="shopping-bag" style="width: 15px; height: 15px;"></i> Add to Bag
+                </button>
+                <a href="https://wa.me/919876543210?text=Hello%20Saree%20Showroom,%20inquiring%20about%20Emerald%20Green%20Pure%20Silk%20(₹42,000)" target="_blank" class="btn-card-whatsapp" title="WhatsApp Enquiry">
+                  <i data-lucide="message-circle" style="width: 17px; height: 17px;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bestseller 4: Mango Buta Handloom Cotton -->
+        <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="product-card">
+            <div class="product-badges-group">
+              <span class="product-badge">Pure Handloom</span>
+            </div>
+            <div class="product-actions-floating">
+              <button class="action-float-btn wishlist-btn-toggle" data-product-id="saree-04" onclick="toggleWishlist('saree-04')" title="Add to Wishlist">
+                <i data-lucide="heart" style="width: 17px; height: 17px;"></i>
+              </button>
+            </div>
+            <div class="product-media-wrapper" onclick="openQuickView('saree-04')" style="cursor: pointer;">
+              <img src="IMGAE/bulbul-ahmed-v9nCfAKxxx4-unsplash.jpg" alt="Mango Buta Cotton Saree" class="product-img" />
+              <img src="IMGAE/lola-azizada-Cr4BApFna1c-unsplash.jpg" alt="Drape Detail" class="product-img-hover" />
+              <div class="product-quick-view-bar" onclick="event.stopPropagation(); openQuickView('saree-04');">
+                <button class="quick-view-btn"><i data-lucide="eye" style="width: 15px; height: 15px;"></i> Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-fabric-tag">Cotton Sarees • Daily Wear</div>
+              <h3 class="product-title"><a href="javascript:void(0)" onclick="openQuickView('saree-04')">Pastel Green Mango Buta Handloom Cotton</a></h3>
+              <div class="product-meta-row">
+                <span class="product-rating"><i data-lucide="star" style="width: 13px; height: 13px; fill: currentColor;"></i> 4.9 (52)</span>
+                <span>Pastel Green</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price">₹6,800</span>
+                <span class="product-price-original">₹8,500</span>
+                <span class="product-discount-pill">20% OFF</span>
+              </div>
+              <div class="product-card-cta">
+                <button class="btn-card-add" onclick="addToCart('saree-04')">
+                  <i data-lucide="shopping-bag" style="width: 15px; height: 15px;"></i> Add to Bag
+                </button>
+                <a href="https://wa.me/919876543210?text=Hello%20Saree%20Showroom,%20inquiring%20about%20Mango%20Buta%20Cotton%20(₹6,800)" target="_blank" class="btn-card-whatsapp" title="WhatsApp Enquiry">
+                  <i data-lucide="message-circle" style="width: 17px; height: 17px;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5" data-aos="fade-up">
+        <a href="collections.html" class="btn-outline-gold">
+          <span>View All 16+ Handcrafted Sarees</span>
+          <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. Our Heritage & Craftsmanship Storytelling (Kankatala-Inspired Deep Maroon Overlap) -->
+  <section class="kankatala-heritage-section" id="heritage">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        
+        <!-- Left Content -->
+        <div class="col-lg-6" data-aos="fade-right">
+          <span class="kankatala-sub">OUR HERITAGE</span>
+          <h2 class="kankatala-heading">
+            WOVEN IN TRADITION,<br />
+            DRAPED IN ELEGANCE
+          </h2>
+          <p class="kankatala-body">
+            Discover the timeless beauty of Indian sarees with Saree Showroom. From the rich zari artistry of Kanchipuram silks to the elegance of Banarasi, Paithani and contemporary designer sarees, every drape celebrates India's rich textile heritage and the artistry of its weavers.
+          </p>
+          <div class="d-flex flex-wrap gap-3 align-items-center">
+            <a href="collections.html" class="btn-white-pill">
+              <span>EXPLORE OUR COLLECTION —</span>
+            </a>
+            <button class="btn btn-outline-light rounded-circle p-2" onclick="openVideoLightbox('v/17110135_2160_3840_30fps.mp4', 'The Master Pit Loom Film')" title="Watch Heritage Weaving Film" style="width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border-color: rgba(255,255,255,0.4);">
+              <i data-lucide="play" style="width: 18px; height: 18px; fill: currentColor;"></i>
+            </button>
+            <span style="font-size: 0.82rem; color: #E8DCD4; text-transform: uppercase; letter-spacing: 0.1em;">Watch Loom Film</span>
+          </div>
+        </div>
+
+        <!-- Right Overlapping Editorial Imagery -->
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="kankatala-overlap-gallery">
+            <!-- Background Tall Portrait Card -->
+            <div class="overlap-bg-card">
+              <img src="IMGAE/happysurd-photography-7q-Z4IrqyYY-unsplash.jpg" alt="Rich Silk Saree with Zari Border" />
+            </div>
+
+            <!-- Foreground Overlapping Card (Three women walking on lawn) -->
+            <div class="overlap-fg-card">
+              <img src="IMGAE/shibnarayaninpace-woman-8060193_1920.jpg" alt="Women Draped in Heritage Silk" />
+            </div>
+
+            <!-- Floating Video Play Badge -->
+            <button class="btn-video-play-floating" onclick="openVideoLightbox('v/17110135_2160_3840_30fps.mp4', 'The Sacred Handloom Loom Film')" title="Watch Handloom Film">
+              <i data-lucide="play" style="width: 24px; height: 24px; fill: currentColor;"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Living Heritage: Handlooms in Motion (Video Reels from C:\Users\VC\Desktop\novembdr\info\SAREE SHOWROOM\v) -->
+  <section class="video-reels-section">
+    <div class="container">
+      
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-tag">Cinematic Reels</div>
+        <h2 class="section-title">Loom to Heirloom: Silk in Motion</h2>
+        <p class="section-subtitle">Gaze upon the rhythmic whisper of the pit shuttle, the natural lustre of mulberry silk, and the radiant sheen of authentic gold zari.</p>
+        
+        <div class="ornament-divider">
+          <div class="ornament-line"></div>
+          <div class="ornament-icon">
+            <svg viewBox="0 0 200 40" style="width: 60px; height: 18px; fill: currentColor;">
+              <polygon points="100,5 110,20 100,35 90,20"/>
+            </svg>
+          </div>
+          <div class="ornament-line"></div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Video Reel 1 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="video-reel-card">
+            <video id="reelVideo1" class="video-reel-player" src="v/16399930_1080_1920_30fps.mp4" autoplay muted loop playsinline></video>
+            <div class="video-reel-overlay">
+              <div class="video-reel-top">
+                <span class="badge-gold">PURE MULBERRY</span>
+                <button class="btn-reel-sound" onclick="toggleVideoSound('reelVideo1', this)" title="Toggle Sound">
+                  <i data-lucide="volume-x" style="width: 17px; height: 17px;"></i>
+                </button>
+              </div>
+              <div class="video-reel-bottom">
+                <h4 class="video-reel-title">The 6-Yard Flow</h4>
+                <p class="video-reel-desc">Lightweight grace and fluid drapery woven with natural mulberry yarn.</p>
+                <button class="btn-gold py-1 px-3 w-100" style="font-size: 0.75rem;" onclick="openVideoLightbox('v/16399930_1080_1920_30fps.mp4', 'The 6-Yard Flow: Pure Mulberry Silk')">
+                  <i data-lucide="maximize-2" style="width: 14px; height: 14px;"></i> Expand Full Reel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Reel 2 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="video-reel-card">
+            <video id="reelVideo2" class="video-reel-player" src="v/17110135_2160_3840_30fps.mp4" autoplay muted loop playsinline></video>
+            <div class="video-reel-overlay">
+              <div class="video-reel-top">
+                <span class="badge-gold">KORVAI PIT LOOM</span>
+                <button class="btn-reel-sound" onclick="toggleVideoSound('reelVideo2', this)" title="Toggle Sound">
+                  <i data-lucide="volume-x" style="width: 17px; height: 17px;"></i>
+                </button>
+              </div>
+              <div class="video-reel-bottom">
+                <h4 class="video-reel-title">The Master Loom Shuttle</h4>
+                <p class="video-reel-desc">Two master weavers interlocking solid temple borders in synchronized cadence.</p>
+                <button class="btn-gold py-1 px-3 w-100" style="font-size: 0.75rem;" onclick="openVideoLightbox('v/17110135_2160_3840_30fps.mp4', 'The Sacred Handloom Loom Film')">
+                  <i data-lucide="maximize-2" style="width: 14px; height: 14px;"></i> Expand Full Reel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Reel 3 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="video-reel-card">
+            <video id="reelVideo3" class="video-reel-player" src="v/17129963_2160_3840_30fps.mp4" autoplay muted loop playsinline></video>
+            <div class="video-reel-overlay">
+              <div class="video-reel-top">
+                <span class="badge-gold">24K PURE GOLD ZARI</span>
+                <button class="btn-reel-sound" onclick="toggleVideoSound('reelVideo3', this)" title="Toggle Sound">
+                  <i data-lucide="volume-x" style="width: 17px; height: 17px;"></i>
+                </button>
+              </div>
+              <div class="video-reel-bottom">
+                <h4 class="video-reel-title">Muhurtham Gold Shimmer</h4>
+                <p class="video-reel-desc">Silver electroplated in pure 24K gold, imparting that unmistakable heirloom aura.</p>
+                <button class="btn-gold py-1 px-3 w-100" style="font-size: 0.75rem;" onclick="openVideoLightbox('v/17129963_2160_3840_30fps.mp4', 'Muhurtham Gold Zari Film')">
+                  <i data-lucide="maximize-2" style="width: 14px; height: 14px;"></i> Expand Full Reel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. Customer Testimonials (Kankatala-Style Arched Slider with Thumbnails) -->
+  <section class="arched-testimonial-section">
+    <div class="container">
+      
+      <div class="row align-items-center g-4 justify-content-between">
+        
+        <!-- Left Prev Nav Arrow -->
+        <div class="col-auto d-none d-md-block">
+          <button class="btn-testimonial-nav" onclick="prevTestimonial()" title="Previous Story" aria-label="Previous">
+            <i data-lucide="chevron-left" style="width: 20px; height: 20px;"></i>
+          </button>
+        </div>
+
+        <!-- Arched Photo Column -->
+        <div class="col-md-4 col-lg-3 text-center" data-aos="fade-right">
+          <div class="testimonial-arch-frame mx-auto">
+            <img id="archedTestimonialImg" src="IMGAE/bulbul-ahmed-v9nCfAKxxx4-unsplash.jpg" alt="Dr. Sindhuja Rajgopal in Banarasi Saree" class="testimonial-arch-img" />
+          </div>
+        </div>
+
+        <!-- Testimonial Content Column -->
+        <div class="col-md-7 col-lg-7" data-aos="fade-left">
+          <div class="testimonial-quote-wrap">
+            <span class="testimonial-quote-mark">“</span>
+            <p id="archedTestimonialQuote" class="testimonial-quote-text">
+              "Picked this beautiful Banarasi chiffon saree from Saree Showroom Anna Nagar and absolutely loved it! Thank you for such timeless grace."
+            </p>
+            <div id="archedTestimonialAuthor" class="testimonial-author-name">
+              Dr. Sindhuja Rajgopal
+            </div>
+            <div id="archedTestimonialMeta" class="testimonial-author-meta">
+              Bangalore • Banarasi Chiffon Saree
+            </div>
+
+            <!-- Mobile Nav Arrows -->
+            <div class="d-flex gap-2 mt-3 d-md-none">
+              <button class="btn-testimonial-nav" onclick="prevTestimonial()" aria-label="Previous">
+                <i data-lucide="chevron-left" style="width: 18px; height: 18px;"></i>
+              </button>
+              <button class="btn-testimonial-nav" onclick="nextTestimonial()" aria-label="Next">
+                <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Next Nav Arrow -->
+        <div class="col-auto d-none d-md-block">
+          <button class="btn-testimonial-nav" onclick="nextTestimonial()" title="Next Story" aria-label="Next">
+            <i data-lucide="chevron-right" style="width: 20px; height: 20px;"></i>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Row of 4 Customer Thumbnails Below -->
+      <div class="testimonial-thumbs-row" data-aos="fade-up">
+        <button class="testimonial-thumb-item active" onclick="goToTestimonial(0)" title="Dr. Sindhuja Rajgopal">
+          <img src="IMGAE/bulbul-ahmed-v9nCfAKxxx4-unsplash.jpg" alt="Dr. Sindhuja Rajgopal" />
+        </button>
+        <button class="testimonial-thumb-item" onclick="goToTestimonial(1)" title="Dr. Radhika Sundaram">
+          <img src="IMGAE/sushanta-rokka-FWfhfJks5N4-unsplash.jpg" alt="Dr. Radhika Sundaram" />
+        </button>
+        <button class="testimonial-thumb-item" onclick="goToTestimonial(2)" title="Ananya Krishnan">
+          <img src="IMGAE/happysurd-photography-7q-Z4IrqyYY-unsplash.jpg" alt="Ananya Krishnan" />
+        </button>
+        <button class="testimonial-thumb-item" onclick="goToTestimonial(3)" title="Meenakshi Ramanathan">
+          <img src="IMGAE/shades-by-43-Rm9DL9DmGi4-unsplash.jpg" alt="Meenakshi Ramanathan" />
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. Showroom Visit CTA Section -->
+  <section class="showroom-cta-section">
+    <div class="container">
+      <div class="showroom-cta-box" data-aos="fade-up">
+        <div class="hero-tag" style="background: rgba(196, 154, 69, 0.25);">FLAGSHIP EXPERIENCE</div>
+        <h2 style="font-family: var(--font-serif-display); font-size: clamp(2.2rem, 4.5vw, 3.5rem); color: #FFFFFF; margin-bottom: 1.25rem;">
+          Experience The Splendour in Person
+        </h2>
+        <p style="font-size: 1.15rem; color: #E8DCD4; margin-bottom: 2.25rem; font-weight: 300;">
+          Step into our flagship salons in Anna Nagar, Chennai & Jubilee Hills, Hyderabad. Enjoy dedicated bridal stylists, velvet draping lounges, and ceremonial tea as we unveil our guarded vaults.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3 justify-content-center">
+          <button class="btn-gold" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+            <i data-lucide="calendar" style="width: 16px; height: 16px;"></i>
+            <span>Schedule Private Salon Visit</span>
+          </button>
+          <a href="https://wa.me/919876543210?text=Hello%20Saree%20Showroom,%20I%20would%20like%20to%20book%20a%20private%20bridal%20appointment." target="_blank" class="btn-outline-gold" style="border-color: #25D366; color: #FFFFFF;">
+            <i data-lucide="message-circle" style="width: 16px; height: 16px; color: #25D366;"></i>
+            <span>Instant WhatsApp Concierge</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Drawers & Modals (Cart, Wishlist, Quick View, Appointment)
+       ========================================================================== -->
+
+  <!-- Drawer Backdrop -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Cart Drawer -->
+  <div class="luxury-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
+    <div class="drawer-header">
+      <div class="drawer-title" id="cartDrawerTitle">
+        <i data-lucide="shopping-bag" style="width: 20px; height: 20px; color: var(--color-gold);"></i>
+        <span>Your Shopping Bag</span>
+      </div>
+      <button class="btn-close close-cart-btn" aria-label="Close Bag"></button>
+    </div>
+    <div class="drawer-body" id="cartDrawerItems">
+      <!-- Items dynamically populated via main.js -->
+    </div>
+    <div class="drawer-footer">
+      <div class="drawer-subtotal-row">
+        <span>Subtotal:</span>
+        <span id="cartSubtotalAmount" style="color: var(--color-maroon); font-weight: 700;">₹0</span>
+      </div>
+      <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-bottom: 1rem;">
+        *Includes GST, silk purity certificate, and insured delivery across India.
+      </p>
+      <a href="https://wa.me/919876543210" target="_blank" class="btn-gold w-100 justify-content-center" id="cartCheckoutWhatsAppBtn" style="display: none;">
+        <i data-lucide="message-circle" style="width: 17px; height: 17px;"></i> Inquire & Checkout via WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Wishlist Drawer -->
+  <div class="luxury-drawer" id="wishlistDrawer" role="dialog" aria-modal="true" aria-labelledby="wishlistDrawerTitle">
+    <div class="drawer-header">
+      <div class="drawer-title" id="wishlistDrawerTitle">
+        <i data-lucide="heart" style="width: 20px; height: 20px; color: var(--color-gold);"></i>
+        <span>Saved Weaves (Wishlist)</span>
+      </div>
+      <button class="btn-close close-wishlist-btn" aria-label="Close Wishlist"></button>
+    </div>
+    <div class="drawer-body" id="wishlistDrawerItems">
+      <!-- Items dynamically populated via main.js -->
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal fade modal-luxury" id="quickViewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 pt-0">
+          <div class="row g-4">
+            <div class="col-md-5">
+              <div style="aspect-ratio: 3/4; border-radius: 4px; overflow: hidden; border: 1px solid var(--color-border);">
+                <img id="qvModalImage" src="" alt="Saree Preview" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div id="qvModalCategory" style="font-family: var(--font-serif-heading); font-size: 0.75rem; text-transform: uppercase; color: var(--color-gold); font-weight: 700; margin-bottom: 0.35rem;"></div>
+              <h3 id="qvModalTitle" style="font-family: var(--font-serif-editorial); font-size: 1.45rem; font-weight: 700; margin-bottom: 0.25rem;"></h3>
+              <p id="qvModalSubtitle" style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 1rem;"></p>
+              
+              <div class="d-flex align-items-baseline gap-3 mb-3">
+                <span id="qvModalPrice" style="font-family: var(--font-serif-heading); font-size: 1.5rem; font-weight: 700; color: var(--color-maroon);"></span>
+                <span id="qvModalOriginalPrice" style="font-size: 1rem; text-decoration: line-through; color: var(--color-text-muted);"></span>
+              </div>
+
+              <!-- Specs Box -->
+              <div class="p-3 mb-3" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 4px; font-size: 0.82rem;">
+                <div class="mb-1"><strong>Zari Purity:</strong> <span id="qvModalZari"></span></div>
+                <div class="mb-1"><strong>Weaving:</strong> <span id="qvModalWeave"></span></div>
+                <div class="mb-1"><strong>Blouse Piece:</strong> <span id="qvModalBlouse"></span></div>
+                <div><strong>Total Length:</strong> <span id="qvModalLength"></span></div>
+              </div>
+
+              <p id="qvModalDesc" style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 1.5rem;"></p>
+
+              <div class="d-flex flex-wrap gap-2">
+                <button id="qvModalAddToCartBtn" class="btn-gold flex-grow-1">
+                  <i data-lucide="shopping-bag" style="width: 16px; height: 16px;"></i> Add to Bag
+                </button>
+                <a id="qvModalWhatsAppBtn" href="#" target="_blank" class="btn-outline-gold" style="border-color: #25D366; color: #25D366;">
+                  <i data-lucide="message-circle" style="width: 16px; height: 16px;"></i> WhatsApp Enquiry
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIP Showroom & Bridal Appointment Modal -->
+  <div class="modal fade modal-luxury" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-light">
+          <h5 class="modal-title" id="appointmentModalLabel" style="font-family: var(--font-serif-heading); color: var(--color-maroon);">
+            <i data-lucide="calendar" style="width: 18px; height: 18px; color: var(--color-gold);"></i> Book VIP Showroom Experience
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+            Enjoy a dedicated master draper, private bridal vault access, and refreshments at our flagship boutique.
+          </p>
+          <form class="appointment-form">
+            <div class="mb-3">
+              <label class="form-label" style="font-size: 0.82rem; font-weight: 600;">Full Name *</label>
+              <input type="text" class="form-control form-control-luxury" placeholder="e.g. Radhika Sundaram" required />
+            </div>
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <label class="form-label" style="font-size: 0.82rem; font-weight: 600;">Phone Number *</label>
+                <input type="tel" class="form-control form-control-luxury" placeholder="+91 98765 43210" required />
+              </div>
+              <div class="col-6">
+                <label class="form-label" style="font-size: 0.82rem; font-weight: 600;">Email Address</label>
+                <input type="email" class="form-control form-control-luxury" placeholder="name@domain.com" />
+              </div>
+            </div>
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <label class="form-label" style="font-size: 0.82rem; font-weight: 600;">Showroom Location *</label>
+                <select class="form-select form-control-luxury" required>
+                  <option value="anna-nagar">Anna Nagar, Chennai</option>
+                  <option value="t-nagar">T. Nagar, Chennai</option>
+                  <option value="jubilee-hills">Jubilee Hills, Hyderabad</option>
+                  <option value="video-call">Virtual Video Consultation</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <label class="form-label" style="font-size: 0.82rem; font-weight: 600;">Preferred Date *</label>
+                <input type="date" class="form-control form-control-luxury" required />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" style="font-size: 0.82rem; font-weight: 600;">Occasion / Sarees of Interest</label>
+              <input type="text" class="form-control form-control-luxury" placeholder="e.g. South Indian Muhurtham, Sangeet Korvai" />
+            </div>
+            <button type="submit" class="btn-gold w-100 py-3 mt-2">
+              <i data-lucide="check" style="width: 16px; height: 16px;"></i> Confirm Appointment Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-top-ornament">
+      <svg viewBox="0 0 100 100" style="width: 32px; height: 32px;">
+        <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="2"/>
+        <path d="M50 18 C38 18 30 28 30 42 C30 58 44 72 56 80 C52 70 56 60 62 54 C68 48 70 40 68 32 C66 24 58 18 50 18 Z" fill="#C49A45"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        
+        <!-- Brand Narrative & Heritage -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <h3 style="font-family: var(--font-serif-display); font-size: 1.4rem; color: #FFFFFF; letter-spacing: 0.12em; margin: 0;">
+              SAREE SHOWROOM
+            </h3>
+          </div>
+          <p style="color: #D9BEB0; font-size: 0.88rem; line-height: 1.7; margin-bottom: 1.25rem;">
+            South Indian Heritage × Luxury Silk × Modern Editorial. Handpicked handloom masterpieces from master weavers since 1943. Pure Kanchipuram, Banarasi, and sacred bridal Muhurtham silks.
+          </p>
+          <div class="footer-cert-badges">
+            <span class="badge-gold">Silk Mark India</span>
+            <span class="badge-gold">Handloom Mark</span>
+            <span class="badge-gold">100% Pure Zari</span>
+          </div>
+
+          <div class="footer-social-row">
+            <a href="https://instagram.com" target="_blank" class="social-link-btn" title="Instagram" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="social-link-btn" title="Facebook" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://wa.me/919876543210" target="_blank" class="social-link-btn" title="WhatsApp" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="social-link-btn" title="YouTube" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"></polygon></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Collections Links -->
+        <div class="col-lg-2 col-6">
+          <h4 class="footer-title">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="collections.html?fabric=kanchipuram">Kanchipuram Silk</a></li>
+            <li><a href="collections.html?fabric=banarasi">Banarasi Brocades</a></li>
+            <li><a href="collections.html?fabric=soft-silk">Soft Silk Sarees</a></li>
+            <li><a href="collections.html?fabric=cotton">Cotton Sarees</a></li>
+            <li><a href="collections.html?fabric=linen">Linen Sarees</a></li>
+            <li><a href="collections.html?fabric=organza">Organza Sarees</a></li>
+            <li><a href="collections.html?fabric=handloom">Handloom Classics</a></li>
+          </ul>
+        </div>
+
+        <!-- Bridal & Heritage Links -->
+        <div class="col-lg-2 col-6">
+          <h4 class="footer-title">Bridal & Craft</h4>
+          <ul class="footer-links">
+            <li><a href="bridal.html">Muhurtham Trousseau</a></li>
+            <li><a href="bridal.html#zari-details">Korvai Triple Warp</a></li>
+            <li><a href="bridal.html#zari-details">Real Gold Zari Test</a></li>
+            <li><a href="bridal.html#styling">Bridal Draping Guide</a></li>
+            <li><a href="contact.html">Private Styling Salon</a></li>
+            <li><a href="contact.html">Store Video Consultation</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Flagship Address -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">The Silk Gazette</h4>
+          <p style="color: #D9BEB0; font-size: 0.85rem;">
+            Receive exclusive invitations to private vault unveils and festive handloom releases.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required />
+            <button type="submit" class="newsletter-submit" aria-label="Subscribe">
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </button>
+          </form>
+
+          <div class="mt-4" style="font-size: 0.82rem; color: #D9BEB0;">
+            <div class="mb-1"><strong style="color: var(--color-gold);">Flagship Showroom:</strong></div>
+            <div>2nd Avenue, Anna Nagar, Chennai - 600040</div>
+            <div>Helpline: +91 98765 43210</div>
+            <div>Hours: 10:00 AM – 9:00 PM (All 7 Days)</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Saree Showroom Private Limited. All Rights Reserved. Handcrafted with pride in Tamil Nadu & Varanasi.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="contact.html" style="color: inherit;">Privacy Policy</a>
+          <span>•</span>
+          <a href="contact.html" style="color: inherit;">Terms of Heritage</a>
+          <span>•</span>
+          <a href="contact.html" style="color: inherit;">Silk Mark Certification</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <script src="js/products-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

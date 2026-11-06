@@ -1,0 +1,419 @@
+/* ==========================================================================
+   SAREE SHOWROOM - RESPONSIVE STYLES
+   Explicit Rule:
+   At 360px, 768px and 1024px: show ONLY logo and hamburger menu in the header.
+   Put all remaining navigation links and icons inside the hamburger menu.
+   Maintain consistent card sizing and image presentation across devices.
+   ========================================================================== */
+
+/* 4K and Ultra-wide Displays (> 1920px) */
+@media (min-width: 1921px) {
+  .header-container,
+  .container-xl,
+  .container-xxl {
+    max-width: 1780px !important;
+  }
+
+  .section-title {
+    font-size: 3.25rem;
+  }
+
+  .hero-headline {
+    font-size: 4.5rem !important;
+  }
+
+  .product-media-wrapper {
+    aspect-ratio: 3 / 4;
+  }
+}
+
+/* Desktop Screens (> 1024px) */
+@media (min-width: 1025px) {
+  .hamburger-btn {
+    display: none !important;
+  }
+
+  .desktop-nav {
+    display: flex !important;
+  }
+
+  .header-actions {
+    display: flex !important;
+  }
+}
+
+/* ==========================================================================
+   STRICT REQUIREMENT: At 1024px, 768px, 360px and all screens <= 1024px:
+   SHOW ONLY LOGO AND HAMBURGER MENU IN THE HEADER.
+   ALL OTHER NAV LINKS & ICONS RESIDE INSIDE THE HAMBURGER DRAWER.
+   ========================================================================== */
+@media (max-width: 1024px) {
+  /* Hide Tier 1 and Tier 3 on mobile/tablet */
+  .header-tier-top,
+  .header-tier-nav {
+    display: none !important;
+  }
+
+  /* Hide Tier 2 search pill and desktop utility controls */
+  .header-search-wrapper,
+  .header-utility-controls {
+    display: none !important;
+  }
+
+  /* Show hamburger button prominently */
+  .hamburger-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Header Tier 2 holds strictly Logo + Hamburger */
+  .header-tier-main {
+    padding: 0.75rem 1.25rem !important;
+  }
+
+  .header-tier-main-inner {
+    justify-content: space-between !important;
+    gap: 0 !important;
+  }
+
+  .brand-name {
+    font-size: 1.25rem;
+    letter-spacing: 0.1em;
+  }
+
+  .brand-tagline {
+    font-size: 0.55rem;
+  }
+
+  /* Grid adjustments for tablets and smaller screens */
+  .hero-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  .hero-headline {
+    font-size: clamp(2rem, 5vw, 3rem) !important;
+  }
+
+  .editorial-split-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .heritage-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+
+  /* Product Grid sizing */
+  .products-grid-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.25rem !important;
+  }
+
+  .asymmetric-category-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .category-tile.span-12,
+  .category-tile.span-8,
+  .category-tile.span-6,
+  .category-tile.span-4 {
+    grid-column: span 2 !important;
+    height: 340px !important;
+  }
+}
+
+/* Tablet Screens (<= 768px) */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0.65rem 1rem;
+  }
+
+  .announcement-bar {
+    font-size: 0.72rem;
+    padding: 0.4rem 0.5rem;
+  }
+
+  .announcement-item span.extra-text {
+    display: none;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  /* Product Card dimensions & font scaling */
+  .product-media-wrapper {
+    aspect-ratio: 3 / 4;
+  }
+
+  .product-info {
+    padding: 1rem;
+  }
+
+  .product-title {
+    font-size: 1rem;
+    height: 2.7rem;
+  }
+
+  .product-price {
+    font-size: 1.1rem;
+  }
+
+  .btn-gold,
+  .btn-maroon,
+  .btn-outline-gold {
+    padding: 0.8rem 1.4rem;
+    font-size: 0.8rem;
+  }
+
+  /* Filters Drawer on mobile / tablet */
+  .collection-filters-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 85vw;
+    background: var(--color-card-bg);
+    z-index: 1055;
+    transform: translateX(-100%);
+    transition: transform 0.35s ease;
+    padding: 1.5rem;
+    overflow-y: auto;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .collection-filters-sidebar.active {
+    transform: translateX(0);
+  }
+
+  [dir="rtl"] .collection-filters-sidebar {
+    left: auto;
+    right: 0;
+    transform: translateX(100%);
+  }
+
+  [dir="rtl"] .collection-filters-sidebar.active {
+    transform: translateX(0);
+  }
+
+  .filter-mobile-toggle-btn {
+    display: inline-flex !important;
+  }
+
+  .products-grid-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+
+  .product-badges-group {
+    top: 8px;
+    left: 8px;
+  }
+
+  .product-badge {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.45rem;
+  }
+
+  .product-actions-floating {
+    top: 8px;
+    right: 8px;
+  }
+
+  .action-float-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+}
+
+/* Mobile Screens (<= 480px, including 360px small phones) */
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0.6rem 0.85rem;
+  }
+
+  .brand-emblem-svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .brand-name {
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+  }
+
+  .brand-tagline {
+    font-size: 0.5rem;
+    letter-spacing: 0.2em;
+  }
+
+  .asymmetric-category-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .category-tile.span-12,
+  .category-tile.span-8,
+  .category-tile.span-6,
+  .category-tile.span-4 {
+    grid-column: span 1 !important;
+    height: 300px !important;
+  }
+
+  /* Single column or snug 2-col on small screen */
+  .products-grid-container {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .product-media-wrapper {
+    aspect-ratio: 3 / 4;
+  }
+
+  .product-title {
+    height: auto;
+    margin-bottom: 0.6rem;
+  }
+
+  .hero-btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-btn-group .btn-gold,
+  .hero-btn-group .btn-outline-gold {
+    width: 100%;
+  }
+
+  .ornament-divider {
+    max-width: 280px;
+  }
+
+  .zari-details-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .modal-dialog {
+    margin: 0.5rem;
+  }
+}
+
+/* ==========================================================================
+   Responsive Rules for Heritage Overlap, Arched Testimonials & Video Stages
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .kankatala-overlap-gallery {
+    min-height: 400px;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  .testimonial-quote-wrap {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .testimonial-quote-mark {
+    margin: 0 auto 0.5rem;
+  }
+
+  .home2-video-sanctum .home2-video-stage-frame {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .kankatala-heritage-section,
+  .arched-testimonial-section,
+  .video-reels-section,
+  .home2-video-sanctum {
+    padding: 4rem 0 !important;
+  }
+
+  .kankatala-overlap-gallery {
+    min-height: 340px;
+  }
+
+  .overlap-bg-card {
+    width: 68%;
+  }
+
+  .overlap-fg-card {
+    width: 58%;
+    bottom: -10px;
+  }
+
+  .testimonial-arch-frame {
+    max-width: 260px;
+    border-radius: 130px 130px 0 0;
+  }
+
+  .testimonial-thumbs-row {
+    gap: 0.85rem;
+    margin-top: 2.5rem;
+  }
+
+  .testimonial-thumb-item {
+    width: 52px;
+    height: 52px;
+  }
+
+  .home2-video-pills {
+    gap: 0.75rem;
+  }
+
+  .video-pill-option {
+    padding: 1rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .kankatala-heading {
+    font-size: 1.85rem !important;
+  }
+
+  .kankatala-overlap-gallery {
+    min-height: 270px;
+  }
+
+  .btn-white-pill {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .testimonial-arch-frame {
+    max-width: 210px;
+    border-radius: 105px 105px 0 0;
+  }
+
+  .testimonial-quote-text {
+    font-size: 1.1rem !important;
+    line-height: 1.5;
+  }
+
+  .home2-video-stage-frame {
+    max-width: 290px;
+  }
+}
+
