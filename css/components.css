@@ -785,6 +785,20 @@
   transition: var(--transition-smooth);
 }
 
+.category-tile.span-8 {
+  grid-column: span 8;
+  height: 440px;
+}
+
+.category-tile.span-4 {
+  grid-column: span 4;
+  height: 440px;
+}
+
+.category-tile.span-4.tile-short {
+  height: 380px;
+}
+
 .category-tile:hover {
   transform: translateY(-5px);
   border-color: var(--color-gold);

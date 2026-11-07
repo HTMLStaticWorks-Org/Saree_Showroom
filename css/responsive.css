@@ -290,22 +290,63 @@
     gap: 2.5rem !important;
   }
 
-  /* Product Grid sizing */
+  /* Product Grid sizing for Collections (Equal alignment & full-width balance) */
   .products-grid-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+
+  .products-grid-container > [class*="col-"] {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* At 1024px tablet landscape: 3 equal cards per row filling 100% with no gap */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    #collectionsProductGrid > [class*="col-"],
+    .products-grid-container > .col-lg-4 {
+      width: 33.333333% !important;
+      max-width: 33.333333% !important;
+      flex: 0 0 33.333333% !important;
+    }
+  }
+
+  /* Asymmetric Categories Grid on Tablet (1024px) */
+  .asymmetric-category-grid {
+    display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 1.25rem !important;
   }
 
-  .asymmetric-category-grid {
-    grid-template-columns: 1fr 1fr !important;
+  .category-tile.span-12,
+  .category-tile.span-8 {
+    grid-column: span 2 !important;
+    height: 360px !important;
   }
 
-  .category-tile.span-12,
-  .category-tile.span-8,
   .category-tile.span-6,
   .category-tile.span-4 {
-    grid-column: span 2 !important;
-    height: 340px !important;
+    grid-column: span 1 !important;
+    height: 320px !important;
+  }
+
+  /* 4-Step Craft Timeline Card font & padding scaling at 1024px */
+  .craft-step-card {
+    padding: 1.5rem 1.15rem !important;
+  }
+
+  .craft-step-card .craft-step-number {
+    font-size: 1.85rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .craft-step-card h4 {
+    font-size: 1.05rem !important;
+  }
+
+  .craft-step-card p {
+    font-size: 0.82rem !important;
+    line-height: 1.55 !important;
   }
 }
 
@@ -438,9 +479,13 @@
     display: inline-flex !important;
   }
 
-  .products-grid-container {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 1rem !important;
+  /* At 768px tablet portrait: 2 equal cards per row */
+  #collectionsProductGrid > [class*="col-"],
+  .products-grid-container > .col-md-6,
+  .products-grid-container > .col-sm-6 {
+    width: 50% !important;
+    max-width: 50% !important;
+    flex: 0 0 50% !important;
   }
 
   .product-badges-group {
@@ -503,12 +548,12 @@
     height: 300px !important;
   }
 
-  /* Single column or snug 2-col on small screen */
-  .products-grid-container {
-    grid-template-columns: 1fr !important;
-    gap: 1.25rem !important;
-    max-width: 380px;
-    margin: 0 auto;
+  /* Single column on mobile small screen */
+  #collectionsProductGrid > [class*="col-"],
+  .products-grid-container > .col-12 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
   }
 
   .product-media-wrapper {
