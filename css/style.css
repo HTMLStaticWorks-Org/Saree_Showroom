@@ -934,22 +934,28 @@ img {
 }
 
 /* Mega Menu Position in Tier 3 */
+.header-tier-nav {
+  position: relative;
+}
+
 .mega-menu-wrapper {
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translateX(-50%) translateY(12px);
-  width: 980px;
-  max-width: 95vw;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1080px;
   background: var(--color-card-bg);
   border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-dropdown);
-  border-radius: 4px;
-  padding: 2rem;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 1.75rem 2rem;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: var(--transition-smooth);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+  transform: translateY(10px);
   z-index: 1050;
 }
 
@@ -957,13 +963,14 @@ img {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateX(-50%) translateY(0);
+  transform: translateY(0);
 }
 
 .mega-menu-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr) 240px;
   gap: 1.75rem;
+  align-items: start;
 }
 
 .mega-column-title {
@@ -1005,7 +1012,8 @@ img {
   position: relative;
   border-radius: 4px;
   overflow: hidden;
-  aspect-ratio: 3/4;
+  height: 250px;
+  width: 100%;
   border: 1px solid var(--color-border);
 }
 
@@ -1862,3 +1870,105 @@ img {
   left: auto;
   right: 0;
 }
+
+/* ==========================================================================
+   Point 11: Floating Top to Bottom Navigation Control
+   ========================================================================== */
+.floating-scroll-widget {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  background: #2B0B14;
+  border: 1.5px solid var(--color-gold);
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  z-index: 1040;
+  overflow: hidden;
+  transition: transform 0.25s ease, opacity 0.25s ease, box-shadow 0.25s ease;
+}
+
+.floating-scroll-widget:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
+}
+
+.scroll-nav-btn {
+  background: transparent;
+  border: none;
+  color: var(--color-gold);
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.scroll-nav-btn svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2.5;
+  transition: transform 0.2s ease;
+}
+
+.scroll-nav-btn:hover {
+  background: var(--color-gold);
+  color: #1A0D08;
+}
+
+.scroll-nav-btn.scroll-to-top-btn {
+  border-bottom: 1px solid rgba(196, 154, 69, 0.35);
+}
+
+.scroll-nav-btn.scroll-to-top-btn:hover svg {
+  transform: translateY(-2px);
+}
+
+.scroll-nav-btn.scroll-to-bottom-btn:hover svg {
+  transform: translateY(2px);
+}
+
+/* ==========================================================================
+   Point 17: Atelier Cinema Motion Section Equal Buttons
+   ========================================================================== */
+.cinema-actions-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cinema-actions-group .btn-gold,
+.cinema-actions-group .btn-outline-gold {
+  height: 48px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.55rem !important;
+  padding: 0 1.6rem !important;
+  font-size: 0.86rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  box-sizing: border-box !important;
+  border-radius: 4px !important;
+  margin: 0 !important;
+}
+
+/* ==========================================================================
+   Point 21: Bridal Auspicious & Grand Celebrations 3rd Card Centering
+   ========================================================================== */
+@media (min-width: 576px) and (max-width: 991px) {
+  .bridal-3card-row {
+    justify-content: center !important;
+  }
+  .bridal-3card-row > .col-12:nth-child(3) {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+

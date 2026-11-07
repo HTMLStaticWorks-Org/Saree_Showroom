@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCartUI();
   initForms();
   initHeaderGlobalSearch();
+  initFloatingScrollWidget();
+  initLazyVideoPlayback();
 });
 
 /* ==========================================================================
@@ -507,24 +509,29 @@ function initSwipers() {
     });
   }
 
-  // Bridal Lookbook Swiper
+  // Bridal Lookbook Swiper - Clean alignment across tab, mobile, desktop
   if (document.querySelector('.bridal-lookbook-swiper')) {
     new Swiper('.bridal-lookbook-swiper', {
       slidesPerView: 1,
       spaceBetween: 20,
       loop: true,
-      centeredSlides: true,
+      centeredSlides: false,
       autoplay: {
-        delay: 4000
+        delay: 4500,
+        disableOnInteraction: false
       },
       breakpoints: {
-        640: {
-          slidesPerView: 1.5,
+        576: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        768: {
+          slidesPerView: 2,
           spaceBetween: 24
         },
         1024: {
-          slidesPerView: 2.2,
-          spaceBetween: 30
+          slidesPerView: 3,
+          spaceBetween: 28
         }
       }
     });
@@ -649,7 +656,7 @@ const ARCHED_TESTIMONIALS = [
     quote: "Picked this beautiful Banarasi chiffon saree from Saree Showroom Anna Nagar and absolutely loved it! Thank you for such timeless grace.",
     author: "Dr. Sindhuja Rajgopal",
     meta: "Bangalore • Banarasi Chiffon Saree",
-    img: "IMGAE/bulbul-ahmed-v9nCfAKxxx4-unsplash.jpg"
+    img: "IMGAE/shibnarayaninpace-woman-8060193_1920.jpg"
   },
   {
     quote: "The crimson Muhurtham Kanchipuram I selected from their Chennai showroom was the crown of my wedding. The weight of the real gold zari and the sharp Korvai contrast felt like wearing royal history.",
@@ -834,5 +841,49 @@ window.toggleHeroVideoMode = function(enableVideo) {
     showToast('Switched Hero to High-Resolution Editorial Still');
   }
 };
+
+/* ==========================================================================
+   Point 11: Top to Bottom Navigation Floating Control
+   ========================================================================== */
+function initFloatingScrollWidget() {
+  const topBtn = document.getElementById('scrollTopBtn');
+  const bottomBtn = document.getElementById('scrollBottomBtn');
+
+  if (topBtn) {
+    topBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  if (bottomBtn) {
+    bottomBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+    });
+  }
+}
+
+/* ==========================================================================
+   Point 12: Lazy Video & Asset Loading to Resolve Performance Issues
+   ========================================================================== */
+function initLazyVideoPlayback() {
+  const lazyVideos = document.querySelectorAll('video[data-lazy-play]');
+  if ('IntersectionObserver' in window && lazyVideos.length > 0) {
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const vid = entry.target;
+        if (entry.isIntersecting) {
+          vid.play().catch(() => {});
+        } else {
+          vid.pause();
+        }
+      });
+    }, { threshold: 0.15 });
+
+    lazyVideos.forEach(v => videoObserver.observe(v));
+  }
+}
+
 
 

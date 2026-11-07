@@ -37,17 +37,24 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(196, 154, 69, 0.2);
-  border: 1px solid var(--color-gold);
-  color: #F8F2E8;
+  background: #641C2D;
+  border: 1.5px solid var(--color-gold);
+  color: #FFFDF8;
   font-family: var(--font-serif-heading);
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  padding: 0.45rem 1rem;
-  border-radius: 2px;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
   margin-bottom: 1.5rem;
+  box-shadow: 0 4px 14px rgba(100, 28, 45, 0.32);
+}
+
+.hero-tag i,
+.hero-tag svg {
+  color: #E6CA65;
+}
   backdrop-filter: blur(4px);
 }
 
@@ -565,13 +572,13 @@
 /* Bridal Page Specifics */
 .bridal-hero {
   position: relative;
-  min-height: 80vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
-  background: radial-gradient(circle at 60% 40%, rgba(100, 28, 45, 0.6) 0%, rgba(21, 8, 12, 0.95) 100%),
-              url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
+  background: linear-gradient(180deg, rgba(35, 10, 16, 0.72) 0%, rgba(20, 5, 10, 0.88) 100%),
+              url('../IMGAE/happysurd-photography-7q-Z4IrqyYY-unsplash.jpg') center 22% / cover no-repeat;
   color: #FFFFFF;
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 
 .bridal-crown-icon {
