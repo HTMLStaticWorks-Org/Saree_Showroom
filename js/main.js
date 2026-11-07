@@ -747,10 +747,10 @@ window.openVideoLightbox = function(src, title) {
     modal.tabIndex = -1;
     modal.innerHTML = `
       <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content" style="background: #000; border: 1px solid var(--color-gold);">
-          <div class="modal-header border-0 pb-0 justify-content-between">
-            <h5 class="modal-title" id="videoLightboxTitle" style="color: var(--color-gold); font-family: var(--font-serif-heading); font-size: 1rem;"></h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content" style="background: #0B0507; border: 1.5px solid var(--color-gold); box-shadow: 0 10px 40px rgba(0,0,0,0.8);">
+          <div class="modal-header border-0 pb-0 justify-content-between align-items-center">
+            <h5 class="modal-title" id="videoLightboxTitle" style="color: var(--color-gold); font-family: var(--font-serif-heading); font-size: 1.05rem; letter-spacing: 0.05em; margin: 0;"></h5>
+            <button type="button" class="btn-close-contrast" data-bs-dismiss="modal" aria-label="Close" style="background: var(--color-gold); color: #1A0D08; border: none; border-radius: 50%; width: 34px; height: 34px; display: inline-flex; align-items: center; justify-content: center; font-size: 1rem; font-weight: 700; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.5); transition: 0.2s;" title="Close Video">✕</button>
           </div>
           <div class="modal-body p-2 text-center">
             <video id="lightboxVideoPlayer" controls autoplay style="width: 100%; max-height: 75vh; border-radius: 4px; object-fit: contain;"></video>

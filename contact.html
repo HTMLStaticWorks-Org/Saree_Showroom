@@ -274,26 +274,96 @@
 
   <!-- Mobile Offcanvas Drawer -->
   <div class="offcanvas offcanvas-end offcanvas-luxury" tabindex="-1" id="mobileNavOffcanvas">
-    <div class="offcanvas-header">
-      <div class="d-flex align-items-center gap-2">
-        <svg style="width: 24px; height: 24px;" viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="3"/>
+    <div class="offcanvas-header border-bottom border-light">
+      <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+        <svg style="width: 28px; height: 28px; flex-shrink: 0;" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="2.5" stroke-dasharray="4 2"/>
           <path d="M50 18 C38 18 30 28 30 42 C30 58 44 72 56 80 C52 70 56 60 62 54 C68 48 70 40 68 32 C66 24 58 18 50 18 Z" fill="#641C2D"/>
+          <circle cx="48" cy="38" r="5" fill="#C49A45"/>
+          <polygon points="50,8 52,14 50,16 48,14" fill="#C49A45"/>
         </svg>
-        <span style="font-family: var(--font-serif-heading); font-weight: 700; color: var(--color-maroon); font-size: 1.1rem; letter-spacing: 0.1em;">SAREE SHOWROOM</span>
-      </div>
+        <div class="d-flex flex-column">
+          <span style="font-family: var(--font-serif-display); font-weight: 700; color: var(--color-maroon); font-size: 1.05rem; letter-spacing: 0.1em; line-height: 1.1;">SAREE SHOWROOM</span>
+          <span style="font-size: 0.55rem; color: var(--color-gold); letter-spacing: 0.15em; text-transform: uppercase;">South Indian Heritage × Luxury Silk</span>
+        </div>
+      </a>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
 
     <div class="offcanvas-body">
+      <!-- Navigation Links (Matching Web View Hierarchy) -->
       <ul class="mobile-nav-links">
-        <li><a href="index.html">Home 1 — Classical Heritage <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a></li>
-        <li><a href="home-2.html">Home 2 — Royal Editorial Atelier <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a></li>
-        <li><a href="collections.html">All Collections <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a></li>
-        <li><a href="bridal.html">Bridal Sarees & Muhurtham <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a></li>
-        <li><a href="contact.html" class="active">Showroom & Contact <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a></li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#mobileHomeSubmenu" role="button" aria-expanded="false">
+            <span>Home</span>
+            <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+          </a>
+          <div class="collapse" id="mobileHomeSubmenu">
+            <ul class="mobile-subnav-list">
+              <li><a href="index.html">• Home 1 — Classical Heritage</a></li>
+              <li><a href="home-2.html">• Home 2 — Royal Editorial Atelier</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#mobileCollectionsSubmenu" role="button" aria-expanded="false">
+            <span>Collections</span>
+            <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+          </a>
+          <div class="collapse" id="mobileCollectionsSubmenu">
+            <ul class="mobile-subnav-list">
+              <li><a href="collections.html">• All Vault Collections</a></li>
+              <li><a href="collections.html?fabric=kanchipuram">• Kanchipuram Silk (GI Certified)</a></li>
+              <li><a href="collections.html?fabric=banarasi">• Banarasi Brocades</a></li>
+              <li><a href="collections.html?fabric=soft-silk">• Mulberry Soft Silk</a></li>
+              <li><a href="collections.html?fabric=cotton">• Chettinad Cotton Sarees</a></li>
+              <li><a href="collections.html?fabric=linen">• Linen Sarees</a></li>
+              <li><a href="collections.html?fabric=organza">• Organza & Tissue Silks</a></li>
+              <li><a href="collections.html?fabric=handloom">• Handloom Classics</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <a href="bridal.html" class="mobile-nav-link d-flex justify-content-between align-items-center">
+            <span>Bridal Sarees & Muhurtham</span>
+            <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+          </a>
+        </li>
+
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#mobileFabricsSubmenu" role="button" aria-expanded="false">
+            <span>Fabrics</span>
+            <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+          </a>
+          <div class="collapse" id="mobileFabricsSubmenu">
+            <ul class="mobile-subnav-list">
+              <li><a href="collections.html?fabric=kanchipuram">• Pure Kanchipuram Silk</a></li>
+              <li><a href="collections.html?fabric=banarasi">• Banarasi Katan Silk</a></li>
+              <li><a href="collections.html?fabric=soft-silk">• Mulberry Soft Silk</a></li>
+              <li><a href="collections.html?fabric=cotton">• Chettinad Cotton</a></li>
+              <li><a href="collections.html?fabric=organza">• Tissue & Organza</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <a href="index.html#heritage" class="mobile-nav-link d-flex justify-content-between align-items-center">
+            <span>Our Heritage</span>
+            <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+          </a>
+        </li>
+
+        <li class="mobile-nav-item">
+          <a href="contact.html" class="mobile-nav-link d-flex justify-content-between align-items-center active">
+            <span>Showroom & Contact</span>
+            <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+          </a>
+        </li>
       </ul>
 
+      <!-- Quick Action Pills inside Drawer (Wishlist, Cart, Search, WhatsApp) -->
       <div class="mobile-actions-bar">
         <div class="mobile-action-pill open-wishlist-btn" data-bs-dismiss="offcanvas">
           <i data-lucide="heart" style="width: 18px; height: 18px;"></i>
@@ -313,18 +383,23 @@
         </a>
       </div>
 
+      <!-- Theme & RTL Toggles inside Hamburger Drawer -->
       <div class="mobile-toggles-row">
-        <button class="btn btn-outline-gold w-50 py-2 d-flex align-items-center justify-content-center gap-2 theme-toggle-btn" style="font-size: 0.78rem;">
-          <i data-lucide="moon" class="theme-icon" style="width: 16px; height: 16px;"></i> Theme Mode
+        <button class="btn btn-outline-gold w-50 py-2 d-flex align-items-center justify-content-center gap-2 theme-toggle-btn" style="height: 42px; font-size: 0.8rem;">
+          <i data-lucide="moon" class="theme-icon" style="width: 18px; height: 18px;"></i>
+          <span>Theme Mode</span>
         </button>
-        <button class="btn btn-outline-gold w-50 py-2 d-flex align-items-center justify-content-center gap-2 rtl-toggle-btn" style="font-size: 0.78rem;">
-          <span class="rtl-label" style="font-weight: 700;">RTL</span> Direction
+        <button class="btn btn-outline-gold w-50 py-2 d-flex align-items-center justify-content-center gap-2 rtl-toggle-btn" style="height: 42px; font-size: 0.8rem;">
+          <span class="rtl-label" style="font-weight: 700;">RTL</span>
+          <span>Direction</span>
         </button>
       </div>
 
+      <!-- Book Showroom Visit Button inside Drawer -->
       <div class="mt-3">
-        <button class="btn-gold w-100 py-3" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-bs-dismiss="offcanvas">
-          <i data-lucide="calendar" style="width: 16px; height: 16px;"></i> Book Private Styling Salon
+        <button class="btn-gold w-100 py-3 d-flex align-items-center justify-content-center gap-2" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-bs-dismiss="offcanvas" style="height: 46px; font-size: 0.86rem; font-weight: 700;">
+          <i data-lucide="calendar" style="width: 18px; height: 18px;"></i>
+          <span>Book Private Styling Salon</span>
         </button>
       </div>
 
@@ -755,9 +830,18 @@
       <div class="row g-4 justify-content-between">
         
         <div class="col-lg-4 col-md-6">
-          <h3 style="font-family: var(--font-serif-display); font-size: 1.4rem; color: #FFFFFF; letter-spacing: 0.12em; margin-bottom: 1rem;">
-            SAREE SHOWROOM
-          </h3>
+          <a href="index.html" class="brand-logo-group mb-3 d-inline-flex align-items-center gap-3" aria-label="Saree Showroom Home" style="text-decoration: none;">
+            <svg class="brand-emblem-svg" viewBox="0 0 100 100" style="width: 44px; height: 44px; flex-shrink: 0;">
+              <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="2.5" stroke-dasharray="4 2"/>
+              <path d="M50 18 C38 18 30 28 30 42 C30 58 44 72 56 80 C52 70 56 60 62 54 C68 48 70 40 68 32 C66 24 58 18 50 18 Z" fill="#641C2D"/>
+              <circle cx="48" cy="38" r="5" fill="#C49A45"/>
+              <polygon points="50,8 52,14 50,16 48,14" fill="#C49A45"/>
+            </svg>
+            <div class="brand-title-wrap" style="display: flex; flex-direction: column;">
+              <span class="brand-name" style="font-family: var(--font-serif-display); font-size: 1.35rem; color: #FFFFFF; letter-spacing: 0.12em; line-height: 1.15;">SAREE SHOWROOM</span>
+              <span class="brand-tagline" style="font-size: 0.58rem; color: var(--color-gold); letter-spacing: 0.18em; text-transform: uppercase; font-family: var(--font-sans-body); margin-top: 2px;">South Indian Heritage × Luxury Silk</span>
+            </div>
+          </a>
           <p style="color: #D9BEB0; font-size: 0.88rem; line-height: 1.7; margin-bottom: 1.25rem;">
             South Indian Heritage × Luxury Silk × Modern Editorial. Handpicked handloom masterpieces from master weavers since 1943.
           </p>

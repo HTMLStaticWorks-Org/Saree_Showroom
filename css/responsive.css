@@ -48,8 +48,24 @@
    ALL OTHER NAV LINKS & ICONS RESIDE INSIDE THE HAMBURGER DRAWER.
    ========================================================================== */
 @media (max-width: 1024px) {
-  /* Hide Tier 1 and Tier 3 on mobile/tablet */
-  .header-tier-top,
+  /* Tier 1 (Announcement Bar) remains visible before navbar as requested */
+  .header-tier-top {
+    display: block !important;
+    padding: 0.4rem 0.75rem !important;
+    font-size: 0.75rem !important;
+  }
+
+  .header-top-inner {
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 0.75rem !important;
+  }
+
+  .header-top-item {
+    font-size: 0.74rem !important;
+  }
+
+  /* Hide Tier 3 desktop link ribbon on mobile/tablet (lives inside hamburger) */
   .header-tier-nav {
     display: none !important;
   }
@@ -84,6 +100,162 @@
 
   .brand-tagline {
     font-size: 0.55rem;
+  }
+
+  /* Point 1: Unified button and icon sizes in mobile/tablet hamburger drawer */
+  .mobile-actions-bar {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 0.5rem !important;
+    padding: 1rem 0 !important;
+  }
+
+  .mobile-action-pill {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 64px !important;
+    padding: 0.4rem 0.25rem !important;
+    border-radius: 4px !important;
+    background: var(--color-surface) !important;
+    border: 1px solid var(--color-border) !important;
+    color: var(--color-dark-brown) !important;
+    font-size: 0.72rem !important;
+    font-weight: 600 !important;
+    gap: 0.35rem !important;
+    transition: var(--transition-fast) !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+  }
+
+  .mobile-action-pill svg,
+  .mobile-action-pill i {
+    width: 18px !important;
+    height: 18px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .mobile-action-pill:hover {
+    background: var(--color-gold) !important;
+    color: #1A0D08 !important;
+    border-color: var(--color-gold) !important;
+  }
+
+  .mobile-toggles-row {
+    display: flex !important;
+    gap: 0.5rem !important;
+    margin-top: 0.75rem !important;
+  }
+
+  .mobile-toggles-row .btn {
+    height: 44px !important;
+    font-size: 0.82rem !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    border-radius: 4px !important;
+  }
+
+  .mobile-toggles-row .btn svg,
+  .mobile-toggles-row .btn i {
+    width: 18px !important;
+    height: 18px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .offcanvas-luxury .btn-gold {
+    height: 48px !important;
+    font-size: 0.88rem !important;
+    font-weight: 700 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    border-radius: 4px !important;
+  }
+
+  .offcanvas-luxury .btn-gold svg,
+  .offcanvas-luxury .btn-gold i {
+    width: 18px !important;
+    height: 18px !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Point 3: Hero section high-contrast buttons in mobile/tablet view */
+  .hero-editorial .btn-gold {
+    background: #C49A45 !important;
+    color: #1A0D08 !important;
+    font-weight: 700 !important;
+    border: 1px solid #C49A45 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  .hero-editorial .btn-outline-gold {
+    background: rgba(26, 13, 8, 0.88) !important;
+    backdrop-filter: blur(8px) !important;
+    color: #FFFFFF !important;
+    border: 1.5px solid #C49A45 !important;
+    font-weight: 700 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  .hero-editorial .btn-outline-gold:hover {
+    background: #C49A45 !important;
+    color: #1A0D08 !important;
+  }
+
+  /* Point 4: Value pillars text and icon alignment in mobile and tablet */
+  .value-pillars-bar .pillar-item {
+    flex-direction: column !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.75rem 0.5rem !important;
+    gap: 0.5rem !important;
+  }
+
+  .value-pillars-bar .pillar-icon-box {
+    margin: 0 auto 0.25rem !important;
+  }
+
+  .value-pillars-bar .pillar-title {
+    font-size: 0.86rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 2px !important;
+  }
+
+  .value-pillars-bar .pillar-sub {
+    font-size: 0.72rem !important;
+    line-height: 1.35 !important;
+  }
+
+  /* Point 7: Cinematic reels card alignment in tab view */
+  .video-reels-section .row {
+    justify-content: center !important;
+  }
+
+  .video-reel-card {
+    max-width: 320px;
+    margin: 0 auto !important;
+  }
+
+  /* Point 8: Arched testimonial image centering on tab view */
+  .arched-testimonial-section .testimonial-arch-frame {
+    margin: 0 auto 1.5rem !important;
+  }
+
+  .arched-testimonial-section .testimonial-quote-wrap {
+    text-align: center !important;
+    padding: 0 !important;
+  }
+
+  .arched-testimonial-section .testimonial-quote-mark {
+    margin: 0 auto 0.5rem !important;
+    display: inline-block !important;
   }
 
   /* Grid adjustments for tablets and smaller screens */

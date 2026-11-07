@@ -472,6 +472,7 @@
   border-top: 1px solid var(--color-gold);
   border-bottom: 1px solid var(--color-gold);
   text-align: center;
+  margin-bottom: 0 !important;
 }
 
 .showroom-cta-box {
@@ -998,30 +999,40 @@
   transform: scale(1.04);
 }
 
-/* Video Play Badge on Overlap Gallery */
+/* Video Play Badge on Overlap Gallery - High Contrast */
 .btn-video-play-floating {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 64px;
-  height: 64px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
-  background: rgba(100, 28, 45, 0.9);
-  border: 2px solid var(--color-gold);
-  color: var(--color-gold);
+  background: var(--color-gold);
+  border: 2.5px solid #FFFFFF;
+  color: #1A0D08;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 0 25px rgba(196, 154, 69, 0.5);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
   transition: var(--transition-fast);
   z-index: 3;
 }
 
+.btn-video-play-floating svg,
+.btn-video-play-floating i {
+  fill: #1A0D08 !important;
+  color: #1A0D08 !important;
+  width: 26px;
+  height: 26px;
+  margin-left: 3px;
+}
+
 .btn-video-play-floating:hover {
-  background: var(--color-gold);
-  color: #1A0D08;
+  background: #FFFFFF;
+  color: #641C2D;
+  border-color: var(--color-gold);
   transform: translate(-50%, -50%) scale(1.1);
 }
 

@@ -1139,6 +1139,31 @@ img {
   padding-left: 6px;
 }
 
+.mobile-subnav-list {
+  list-style: none;
+  padding: 0.5rem 0 0.5rem 1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.mobile-subnav-list li a {
+  font-family: var(--font-sans-body) !important;
+  font-size: 0.92rem !important;
+  text-transform: none !important;
+  letter-spacing: 0.02em !important;
+  color: var(--color-text-muted) !important;
+  border-bottom: none !important;
+  padding: 0.25rem 0 !important;
+}
+
+.mobile-subnav-list li a:hover,
+.mobile-subnav-list li a.active {
+  color: var(--color-gold) !important;
+  padding-left: 4px !important;
+}
+
 .mobile-actions-bar {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1450,6 +1475,7 @@ img {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 0.5rem;
+  align-items: center;
 }
 
 .btn-card-add {
@@ -1461,14 +1487,23 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  padding: 0.65rem 0.75rem;
-  border-radius: 2px;
+  height: 38px;
+  padding: 0 0.85rem;
+  border-radius: 4px;
   cursor: pointer;
   transition: var(--transition-fast);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.4rem;
+  gap: 0.45rem;
+  line-height: 1;
+}
+
+.btn-card-add svg,
+.btn-card-add i {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 
 .btn-card-add:hover {
@@ -1483,17 +1518,26 @@ img {
   color: #FFFFFF;
   width: 38px;
   height: 38px;
-  border-radius: 2px;
-  display: flex;
+  border-radius: 4px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: var(--transition-fast);
+  text-decoration: none;
+}
+
+.btn-card-whatsapp svg,
+.btn-card-whatsapp i {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 
 .btn-card-whatsapp:hover {
   background: #1DA851;
-  transform: scale(1.05);
+  color: #FFFFFF;
+  transform: translateY(-2px);
 }
 
 /* ==========================================================================
@@ -1634,7 +1678,7 @@ img {
   position: relative;
   padding-top: 4.5rem;
   padding-bottom: 2rem;
-  margin-top: 5rem;
+  margin-top: 0;
 }
 
 .footer-top-ornament {

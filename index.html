@@ -277,53 +277,96 @@
        Mobile Offcanvas Drawer (Active at 360px, 768px, 1024px)
        ========================================================================== -->
   <div class="offcanvas offcanvas-end offcanvas-luxury" tabindex="-1" id="mobileNavOffcanvas" aria-labelledby="mobileNavOffcanvasLabel">
-    <div class="offcanvas-header">
-      <div class="d-flex align-items-center gap-2">
-        <svg style="width: 24px; height: 24px;" viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="3"/>
+    <div class="offcanvas-header border-bottom border-light">
+      <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+        <svg style="width: 28px; height: 28px; flex-shrink: 0;" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="2.5" stroke-dasharray="4 2"/>
           <path d="M50 18 C38 18 30 28 30 42 C30 58 44 72 56 80 C52 70 56 60 62 54 C68 48 70 40 68 32 C66 24 58 18 50 18 Z" fill="#641C2D"/>
+          <circle cx="48" cy="38" r="5" fill="#C49A45"/>
+          <polygon points="50,8 52,14 50,16 48,14" fill="#C49A45"/>
         </svg>
-        <span style="font-family: var(--font-serif-heading); font-weight: 700; color: var(--color-maroon); font-size: 1.1rem; letter-spacing: 0.1em;">SAREE SHOWROOM</span>
-      </div>
+        <div class="d-flex flex-column">
+          <span style="font-family: var(--font-serif-display); font-weight: 700; color: var(--color-maroon); font-size: 1.05rem; letter-spacing: 0.1em; line-height: 1.1;">SAREE SHOWROOM</span>
+          <span style="font-size: 0.55rem; color: var(--color-gold); letter-spacing: 0.15em; text-transform: uppercase;">South Indian Heritage × Luxury Silk</span>
+        </div>
+      </a>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
 
     <div class="offcanvas-body">
-      <!-- Navigation Links -->
+      <!-- Navigation Links (Matching Web View Hierarchy) -->
       <ul class="mobile-nav-links">
-        <li>
-          <a href="index.html" class="active">Home 1 — Classical Heritage <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link d-flex justify-content-between align-items-center active" data-bs-toggle="collapse" href="#mobileHomeSubmenu" role="button" aria-expanded="true">
+            <span>Home</span>
+            <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+          </a>
+          <div class="collapse show" id="mobileHomeSubmenu">
+            <ul class="mobile-subnav-list">
+              <li><a href="index.html" class="active">• Home 1 — Classical Heritage</a></li>
+              <li><a href="home-2.html">• Home 2 — Royal Editorial Atelier</a></li>
+            </ul>
+          </div>
         </li>
-        <li>
-          <a href="home-2.html">Home 2 — Royal Editorial Atelier <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#mobileCollectionsSubmenu" role="button" aria-expanded="false">
+            <span>Collections</span>
+            <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+          </a>
+          <div class="collapse" id="mobileCollectionsSubmenu">
+            <ul class="mobile-subnav-list">
+              <li><a href="collections.html">• All Vault Collections</a></li>
+              <li><a href="collections.html?fabric=kanchipuram">• Kanchipuram Silk (GI Certified)</a></li>
+              <li><a href="collections.html?fabric=banarasi">• Banarasi Brocades</a></li>
+              <li><a href="collections.html?fabric=soft-silk">• Mulberry Soft Silk</a></li>
+              <li><a href="collections.html?fabric=cotton">• Chettinad Cotton Sarees</a></li>
+              <li><a href="collections.html?fabric=linen">• Linen Sarees</a></li>
+              <li><a href="collections.html?fabric=organza">• Organza & Tissue Silks</a></li>
+              <li><a href="collections.html?fabric=handloom">• Handloom Classics</a></li>
+            </ul>
+          </div>
         </li>
-        <li>
-          <a href="collections.html">All Collections <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
-        </li>
-        <li>
-          <a href="collections.html?fabric=kanchipuram" style="font-size: 0.95rem; padding-left: 1rem; color: var(--color-text-muted);">
-            • Kanchipuram Silk Sarees
+
+        <li class="mobile-nav-item">
+          <a href="bridal.html" class="mobile-nav-link d-flex justify-content-between align-items-center">
+            <span>Bridal Sarees & Muhurtham</span>
+            <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
           </a>
         </li>
-        <li>
-          <a href="collections.html?fabric=banarasi" style="font-size: 0.95rem; padding-left: 1rem; color: var(--color-text-muted);">
-            • Banarasi Brocades
+
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#mobileFabricsSubmenu" role="button" aria-expanded="false">
+            <span>Fabrics</span>
+            <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+          </a>
+          <div class="collapse" id="mobileFabricsSubmenu">
+            <ul class="mobile-subnav-list">
+              <li><a href="collections.html?fabric=kanchipuram">• Pure Kanchipuram Silk</a></li>
+              <li><a href="collections.html?fabric=banarasi">• Banarasi Katan Silk</a></li>
+              <li><a href="collections.html?fabric=soft-silk">• Mulberry Soft Silk</a></li>
+              <li><a href="collections.html?fabric=cotton">• Chettinad Cotton</a></li>
+              <li><a href="collections.html?fabric=organza">• Tissue & Organza</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mobile-nav-item">
+          <a href="#heritage" class="mobile-nav-link d-flex justify-content-between align-items-center" data-bs-dismiss="offcanvas">
+            <span>Our Heritage</span>
+            <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
           </a>
         </li>
-        <li>
-          <a href="collections.html?fabric=cotton" style="font-size: 0.95rem; padding-left: 1rem; color: var(--color-text-muted);">
-            • Handloom Cotton Sarees
+
+        <li class="mobile-nav-item">
+          <a href="contact.html" class="mobile-nav-link d-flex justify-content-between align-items-center">
+            <span>Showroom & Contact</span>
+            <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
           </a>
-        </li>
-        <li>
-          <a href="bridal.html">Bridal Sarees & Muhurtham <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
-        </li>
-        <li>
-          <a href="contact.html">Showroom & Contact <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
         </li>
       </ul>
 
-      <!-- Quick Action Pills inside Drawer (Wishlist, Cart, Search, Call) -->
+      <!-- Quick Action Pills inside Drawer (Wishlist, Cart, Search, WhatsApp) -->
       <div class="mobile-actions-bar">
         <div class="mobile-action-pill open-wishlist-btn" data-bs-dismiss="offcanvas">
           <i data-lucide="heart" style="width: 18px; height: 18px;"></i>
@@ -345,18 +388,21 @@
 
       <!-- Theme & RTL Toggles inside Hamburger Drawer -->
       <div class="mobile-toggles-row">
-        <button class="btn btn-outline-gold w-50 py-2 d-flex align-items-center justify-content-center gap-2 theme-toggle-btn" style="font-size: 0.78rem;">
-          <i data-lucide="moon" class="theme-icon" style="width: 16px; height: 16px;"></i> Theme Mode
+        <button class="btn btn-outline-gold w-50 py-2 d-flex align-items-center justify-content-center gap-2 theme-toggle-btn" style="height: 42px; font-size: 0.8rem;">
+          <i data-lucide="moon" class="theme-icon" style="width: 18px; height: 18px;"></i>
+          <span>Theme Mode</span>
         </button>
-        <button class="btn btn-outline-gold w-50 py-2 d-flex align-items-center justify-content-center gap-2 rtl-toggle-btn" style="font-size: 0.78rem;">
-          <span class="rtl-label" style="font-weight: 700;">RTL</span> Direction
+        <button class="btn btn-outline-gold w-50 py-2 d-flex align-items-center justify-content-center gap-2 rtl-toggle-btn" style="height: 42px; font-size: 0.8rem;">
+          <span class="rtl-label" style="font-weight: 700;">RTL</span>
+          <span>Direction</span>
         </button>
       </div>
 
       <!-- Book Showroom Visit Button inside Drawer -->
       <div class="mt-3">
-        <button class="btn-gold w-100 py-3" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-bs-dismiss="offcanvas">
-          <i data-lucide="calendar" style="width: 16px; height: 16px;"></i> Book Private Styling Salon
+        <button class="btn-gold w-100 py-3 d-flex align-items-center justify-content-center gap-2" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-bs-dismiss="offcanvas" style="height: 46px; font-size: 0.86rem; font-weight: 700;">
+          <i data-lucide="calendar" style="width: 18px; height: 18px;"></i>
+          <span>Book Private Styling Salon</span>
         </button>
       </div>
 
@@ -868,8 +914,8 @@
             <a href="collections.html" class="btn-white-pill">
               <span>EXPLORE OUR COLLECTION —</span>
             </a>
-            <button class="btn btn-outline-light rounded-circle p-2" onclick="openVideoLightbox('v/17110135_2160_3840_30fps.mp4', 'The Master Pit Loom Film')" title="Watch Heritage Weaving Film" style="width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border-color: rgba(255,255,255,0.4);">
-              <i data-lucide="play" style="width: 18px; height: 18px; fill: currentColor;"></i>
+            <button class="btn rounded-circle p-2" onclick="openVideoLightbox('v/17110135_2160_3840_30fps.mp4', 'The Master Pit Loom Film')" title="Watch Heritage Weaving Film" style="width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; background: var(--color-gold); color: #1A0D08; border: 2px solid #FFFFFF; box-shadow: 0 4px 15px rgba(0,0,0,0.4); cursor: pointer;" aria-label="Play Heritage Loom Video">
+              <i data-lucide="play" style="width: 18px; height: 18px; fill: #1A0D08; margin-left: 2px;"></i>
             </button>
             <span style="font-size: 0.82rem; color: #E8DCD4; text-transform: uppercase; letter-spacing: 0.1em;">Watch Loom Film</span>
           </div>
@@ -919,10 +965,10 @@
         </div>
       </div>
 
-      <div class="row g-4">
+      <div class="row g-4 justify-content-center">
         
         <!-- Video Reel 1 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
           <div class="video-reel-card">
             <video id="reelVideo1" class="video-reel-player" src="v/16399930_1080_1920_30fps.mp4" autoplay muted loop playsinline></video>
             <div class="video-reel-overlay">
@@ -944,7 +990,7 @@
         </div>
 
         <!-- Video Reel 2 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
           <div class="video-reel-card">
             <video id="reelVideo2" class="video-reel-player" src="v/17110135_2160_3840_30fps.mp4" autoplay muted loop playsinline></video>
             <div class="video-reel-overlay">
@@ -966,7 +1012,7 @@
         </div>
 
         <!-- Video Reel 3 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="300">
           <div class="video-reel-card">
             <video id="reelVideo3" class="video-reel-player" src="v/17129963_2160_3840_30fps.mp4" autoplay muted loop playsinline></video>
             <div class="video-reel-overlay">
@@ -996,24 +1042,24 @@
   <section class="arched-testimonial-section">
     <div class="container">
       
-      <div class="row align-items-center g-4 justify-content-between">
+      <div class="row align-items-center g-4 justify-content-center justify-content-lg-between">
         
-        <!-- Left Prev Nav Arrow -->
-        <div class="col-auto d-none d-md-block">
+        <!-- Left Prev Nav Arrow (Desktop) -->
+        <div class="col-auto d-none d-lg-block">
           <button class="btn-testimonial-nav" onclick="prevTestimonial()" title="Previous Story" aria-label="Previous">
             <i data-lucide="chevron-left" style="width: 20px; height: 20px;"></i>
           </button>
         </div>
 
-        <!-- Arched Photo Column -->
-        <div class="col-md-4 col-lg-3 text-center" data-aos="fade-right">
+        <!-- Arched Photo Column (Centered on Mobile & Tab) -->
+        <div class="col-12 col-lg-4 text-center" data-aos="fade-up">
           <div class="testimonial-arch-frame mx-auto">
             <img id="archedTestimonialImg" src="IMGAE/bulbul-ahmed-v9nCfAKxxx4-unsplash.jpg" alt="Dr. Sindhuja Rajgopal in Banarasi Saree" class="testimonial-arch-img" />
           </div>
         </div>
 
-        <!-- Testimonial Content Column -->
-        <div class="col-md-7 col-lg-7" data-aos="fade-left">
+        <!-- Testimonial Content Column (Centered on Mobile & Tab) -->
+        <div class="col-12 col-lg-6 text-center text-lg-start" data-aos="fade-up">
           <div class="testimonial-quote-wrap">
             <span class="testimonial-quote-mark">“</span>
             <p id="archedTestimonialQuote" class="testimonial-quote-text">
@@ -1026,8 +1072,8 @@
               Bangalore • Banarasi Chiffon Saree
             </div>
 
-            <!-- Mobile Nav Arrows -->
-            <div class="d-flex gap-2 mt-3 d-md-none">
+            <!-- Mobile & Tablet Nav Arrows -->
+            <div class="d-flex gap-2 mt-3 justify-content-center justify-content-lg-start d-lg-none">
               <button class="btn-testimonial-nav" onclick="prevTestimonial()" aria-label="Previous">
                 <i data-lucide="chevron-left" style="width: 18px; height: 18px;"></i>
               </button>
@@ -1038,8 +1084,8 @@
           </div>
         </div>
 
-        <!-- Right Next Nav Arrow -->
-        <div class="col-auto d-none d-md-block">
+        <!-- Right Next Nav Arrow (Desktop) -->
+        <div class="col-auto d-none d-lg-block">
           <button class="btn-testimonial-nav" onclick="nextTestimonial()" title="Next Story" aria-label="Next">
             <i data-lucide="chevron-right" style="width: 20px; height: 20px;"></i>
           </button>
@@ -1091,6 +1137,125 @@
       </div>
     </div>
   </section>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-top-ornament">
+      <svg viewBox="0 0 100 100" style="width: 32px; height: 32px;">
+        <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="2"/>
+        <path d="M50 18 C38 18 30 28 30 42 C30 58 44 72 56 80 C52 70 56 60 62 54 C68 48 70 40 68 32 C66 24 58 18 50 18 Z" fill="#C49A45"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        
+        <!-- Brand Narrative & Heritage -->
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="brand-logo-group mb-3 d-inline-flex align-items-center gap-3" aria-label="Saree Showroom Home" style="text-decoration: none;">
+            <svg class="brand-emblem-svg" viewBox="0 0 100 100" style="width: 44px; height: 44px; flex-shrink: 0;">
+              <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="2.5" stroke-dasharray="4 2"/>
+              <path d="M50 18 C38 18 30 28 30 42 C30 58 44 72 56 80 C52 70 56 60 62 54 C68 48 70 40 68 32 C66 24 58 18 50 18 Z" fill="#641C2D"/>
+              <circle cx="48" cy="38" r="5" fill="#C49A45"/>
+              <polygon points="50,8 52,14 50,16 48,14" fill="#C49A45"/>
+            </svg>
+            <div class="brand-title-wrap" style="display: flex; flex-direction: column;">
+              <span class="brand-name" style="font-family: var(--font-serif-display); font-size: 1.35rem; color: #FFFFFF; letter-spacing: 0.12em; line-height: 1.15;">SAREE SHOWROOM</span>
+              <span class="brand-tagline" style="font-size: 0.58rem; color: var(--color-gold); letter-spacing: 0.18em; text-transform: uppercase; font-family: var(--font-sans-body); margin-top: 2px;">South Indian Heritage × Luxury Silk</span>
+            </div>
+          </a>
+          <p style="color: #D9BEB0; font-size: 0.88rem; line-height: 1.7; margin-bottom: 1.25rem;">
+            South Indian Heritage × Luxury Silk × Modern Editorial. Handpicked handloom masterpieces from master weavers since 1943. Pure Kanchipuram, Banarasi, and sacred bridal Muhurtham silks.
+          </p>
+          <div class="footer-cert-badges">
+            <span class="badge-gold">Silk Mark India</span>
+            <span class="badge-gold">Handloom Mark</span>
+            <span class="badge-gold">100% Pure Zari</span>
+          </div>
+
+          <div class="footer-social-row">
+            <a href="https://instagram.com" target="_blank" class="social-link-btn" title="Instagram" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="social-link-btn" title="Facebook" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://wa.me/919876543210" target="_blank" class="social-link-btn" title="WhatsApp" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="social-link-btn" title="YouTube" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"></polygon></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Collections Links -->
+        <div class="col-lg-2 col-6">
+          <h4 class="footer-title">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="collections.html?fabric=kanchipuram">Kanchipuram Silk</a></li>
+            <li><a href="collections.html?fabric=banarasi">Banarasi Brocades</a></li>
+            <li><a href="collections.html?fabric=soft-silk">Soft Silk Sarees</a></li>
+            <li><a href="collections.html?fabric=cotton">Cotton Sarees</a></li>
+            <li><a href="collections.html?fabric=linen">Linen Sarees</a></li>
+            <li><a href="collections.html?fabric=organza">Organza Sarees</a></li>
+            <li><a href="collections.html?fabric=handloom">Handloom Classics</a></li>
+          </ul>
+        </div>
+
+        <!-- Bridal & Heritage Links -->
+        <div class="col-lg-2 col-6">
+          <h4 class="footer-title">Bridal & Craft</h4>
+          <ul class="footer-links">
+            <li><a href="bridal.html">Muhurtham Trousseau</a></li>
+            <li><a href="bridal.html#zari-details">Korvai Triple Warp</a></li>
+            <li><a href="bridal.html#zari-details">Real Gold Zari Test</a></li>
+            <li><a href="bridal.html#styling">Bridal Draping Guide</a></li>
+            <li><a href="contact.html">Private Styling Salon</a></li>
+            <li><a href="contact.html">Store Video Consultation</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Flagship Address -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">The Silk Gazette</h4>
+          <p style="color: #D9BEB0; font-size: 0.85rem;">
+            Receive exclusive invitations to private vault unveils and festive handloom releases.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required />
+            <button type="submit" class="newsletter-submit" aria-label="Subscribe">
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </button>
+          </form>
+
+          <div class="mt-4" style="font-size: 0.82rem; color: #D9BEB0;">
+            <div class="mb-1"><strong style="color: var(--color-gold);">Flagship Showroom:</strong></div>
+            <div>2nd Avenue, Anna Nagar, Chennai - 600040</div>
+            <div>Helpline: +91 98765 43210</div>
+            <div>Hours: 10:00 AM – 9:00 PM (All 7 Days)</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Saree Showroom Private Limited. All Rights Reserved. Handcrafted with pride in Tamil Nadu & Varanasi.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="contact.html" style="color: inherit;">Privacy Policy</a>
+          <span>•</span>
+          <a href="contact.html" style="color: inherit;">Terms of Heritage</a>
+          <span>•</span>
+          <a href="contact.html" style="color: inherit;">Silk Mark Certification</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- ==========================================================================
        Drawers & Modals (Cart, Wishlist, Quick View, Appointment)
@@ -1244,118 +1409,6 @@
       </div>
     </div>
   </div>
-
-  <!-- ==========================================================================
-       Site Footer
-       ========================================================================== -->
-  <footer class="site-footer">
-    <div class="footer-top-ornament">
-      <svg viewBox="0 0 100 100" style="width: 32px; height: 32px;">
-        <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="2"/>
-        <path d="M50 18 C38 18 30 28 30 42 C30 58 44 72 56 80 C52 70 56 60 62 54 C68 48 70 40 68 32 C66 24 58 18 50 18 Z" fill="#C49A45"/>
-      </svg>
-    </div>
-
-    <div class="container">
-      <div class="row g-4 justify-content-between">
-        
-        <!-- Brand Narrative & Heritage -->
-        <div class="col-lg-4 col-md-6">
-          <div class="d-flex align-items-center gap-2 mb-3">
-            <h3 style="font-family: var(--font-serif-display); font-size: 1.4rem; color: #FFFFFF; letter-spacing: 0.12em; margin: 0;">
-              SAREE SHOWROOM
-            </h3>
-          </div>
-          <p style="color: #D9BEB0; font-size: 0.88rem; line-height: 1.7; margin-bottom: 1.25rem;">
-            South Indian Heritage × Luxury Silk × Modern Editorial. Handpicked handloom masterpieces from master weavers since 1943. Pure Kanchipuram, Banarasi, and sacred bridal Muhurtham silks.
-          </p>
-          <div class="footer-cert-badges">
-            <span class="badge-gold">Silk Mark India</span>
-            <span class="badge-gold">Handloom Mark</span>
-            <span class="badge-gold">100% Pure Zari</span>
-          </div>
-
-          <div class="footer-social-row">
-            <a href="https://instagram.com" target="_blank" class="social-link-btn" title="Instagram" aria-label="Instagram">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-            </a>
-            <a href="https://facebook.com" target="_blank" class="social-link-btn" title="Facebook" aria-label="Facebook">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-            </a>
-            <a href="https://wa.me/919876543210" target="_blank" class="social-link-btn" title="WhatsApp" aria-label="WhatsApp">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path></svg>
-            </a>
-            <a href="https://youtube.com" target="_blank" class="social-link-btn" title="YouTube" aria-label="YouTube">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"></polygon></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Collections Links -->
-        <div class="col-lg-2 col-6">
-          <h4 class="footer-title">Collections</h4>
-          <ul class="footer-links">
-            <li><a href="collections.html?fabric=kanchipuram">Kanchipuram Silk</a></li>
-            <li><a href="collections.html?fabric=banarasi">Banarasi Brocades</a></li>
-            <li><a href="collections.html?fabric=soft-silk">Soft Silk Sarees</a></li>
-            <li><a href="collections.html?fabric=cotton">Cotton Sarees</a></li>
-            <li><a href="collections.html?fabric=linen">Linen Sarees</a></li>
-            <li><a href="collections.html?fabric=organza">Organza Sarees</a></li>
-            <li><a href="collections.html?fabric=handloom">Handloom Classics</a></li>
-          </ul>
-        </div>
-
-        <!-- Bridal & Heritage Links -->
-        <div class="col-lg-2 col-6">
-          <h4 class="footer-title">Bridal & Craft</h4>
-          <ul class="footer-links">
-            <li><a href="bridal.html">Muhurtham Trousseau</a></li>
-            <li><a href="bridal.html#zari-details">Korvai Triple Warp</a></li>
-            <li><a href="bridal.html#zari-details">Real Gold Zari Test</a></li>
-            <li><a href="bridal.html#styling">Bridal Draping Guide</a></li>
-            <li><a href="contact.html">Private Styling Salon</a></li>
-            <li><a href="contact.html">Store Video Consultation</a></li>
-          </ul>
-        </div>
-
-        <!-- Newsletter & Flagship Address -->
-        <div class="col-lg-3 col-md-6">
-          <h4 class="footer-title">The Silk Gazette</h4>
-          <p style="color: #D9BEB0; font-size: 0.85rem;">
-            Receive exclusive invitations to private vault unveils and festive handloom releases.
-          </p>
-          <form class="newsletter-form">
-            <input type="email" class="newsletter-input" placeholder="Your email address" required />
-            <button type="submit" class="newsletter-submit" aria-label="Subscribe">
-              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
-            </button>
-          </form>
-
-          <div class="mt-4" style="font-size: 0.82rem; color: #D9BEB0;">
-            <div class="mb-1"><strong style="color: var(--color-gold);">Flagship Showroom:</strong></div>
-            <div>2nd Avenue, Anna Nagar, Chennai - 600040</div>
-            <div>Helpline: +91 98765 43210</div>
-            <div>Hours: 10:00 AM – 9:00 PM (All 7 Days)</div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Footer Bottom Bar -->
-      <div class="footer-bottom-bar">
-        <div>
-          © 2026 Saree Showroom Private Limited. All Rights Reserved. Handcrafted with pride in Tamil Nadu & Varanasi.
-        </div>
-        <div class="d-flex gap-3">
-          <a href="contact.html" style="color: inherit;">Privacy Policy</a>
-          <span>•</span>
-          <a href="contact.html" style="color: inherit;">Terms of Heritage</a>
-          <span>•</span>
-          <a href="contact.html" style="color: inherit;">Silk Mark Certification</a>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
