@@ -1972,3 +1972,724 @@ img {
   }
 }
 
+/* ==========================================================================
+   Point 24: Bridal & Showroom CTA Equal Buttons Before Footer
+   ========================================================================== */
+.showroom-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.showroom-cta-actions .btn-gold,
+.showroom-cta-actions .btn-outline-gold {
+  min-width: 280px !important;
+  height: 52px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 1.75rem !important;
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  border-radius: 4px !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  transition: all 0.3s ease !important;
+}
+
+.showroom-cta-actions .btn-outline-gold:hover {
+  background: var(--color-gold) !important;
+  color: #1A0D08 !important;
+  border-color: var(--color-gold) !important;
+}
+
+@media (max-width: 600px) {
+  .showroom-cta-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .showroom-cta-actions .btn-gold,
+  .showroom-cta-actions .btn-outline-gold {
+    width: 100% !important;
+    min-width: unset !important;
+  }
+}
+
+/* ==========================================================================
+   Point 29: Curated Edits Section Alignment
+   ========================================================================== */
+.collections-carousel-section {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Point 29: Curated Edits Swiper & Cards Alignment
+   ========================================================================== */
+.collections-swiper {
+  width: 100% !important;
+  overflow: hidden !important;
+  padding: 0.5rem 0 1.5rem !important;
+}
+
+.collections-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.collection-card-item {
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  background: var(--color-surface);
+}
+
+.collection-card-item:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-luxury);
+}
+
+.collection-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.collection-card-item:hover .collection-card-img {
+  transform: scale(1.08);
+}
+
+.collection-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.05) 40%, rgba(32, 11, 19, 0.92) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  color: #FFFFFF;
+}
+
+.collection-card-title {
+  font-family: var(--font-serif-heading);
+  font-size: 1.25rem;
+  color: #FFFFFF;
+  margin-bottom: 0.25rem;
+}
+
+.collection-card-link {
+  color: var(--color-gold);
+  font-family: var(--font-serif-heading);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.25s ease;
+}
+
+.collection-card-link:hover {
+  gap: 10px;
+  color: var(--color-gold-light);
+}
+
+/* ==========================================================================
+   Point 30: Our Heritage Overlapping Images Base & RTL Alignment
+   ========================================================================== */
+.kankatala-overlap-gallery {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  min-height: 460px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.overlap-bg-card {
+  position: relative;
+  width: 58%;
+  height: 440px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.overlap-bg-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlap-fg-card {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 52%;
+  height: 340px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  border: 4px solid #641C2D;
+}
+
+.overlap-fg-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-video-play-floating {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  color: #1A0D08;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-video-play-floating:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  background: #E5B869;
+}
+
+/* RTL Mode Alignment (Issue 30) */
+[dir="rtl"] .kankatala-overlap-gallery {
+  justify-content: flex-start !important;
+}
+
+[dir="rtl"] .overlap-fg-card {
+  left: auto !important;
+  right: 0 !important;
+}
+
+[dir="rtl"] .btn-video-play-floating {
+  left: auto !important;
+  right: 45% !important;
+  transform: translate(50%, -50%) !important;
+}
+
+[dir="rtl"] .btn-video-play-floating:hover {
+  transform: translate(50%, -50%) scale(1.1) !important;
+}
+
+@media (max-width: 767.98px) {
+  .kankatala-overlap-gallery {
+    min-height: 380px;
+    max-width: 100%;
+  }
+  .overlap-bg-card {
+    width: 65%;
+    height: 340px;
+  }
+  .overlap-fg-card {
+    width: 58%;
+    height: 260px;
+    bottom: 15px;
+  }
+}
+
+/* ==========================================================================
+   Point 32 & 33: Collections Page Dark Mode High Contrast & Accordion
+   ========================================================================== */
+[data-theme="dark"] .collections-toolbar {
+  background: #1C0B12 !important;
+  border-color: rgba(229, 184, 105, 0.4) !important;
+}
+
+[data-theme="dark"] .filter-pill {
+  background: #250E16 !important;
+  border: 1.5px solid rgba(229, 184, 105, 0.45) !important;
+  color: #FFFDF8 !important;
+  font-weight: 600 !important;
+}
+
+[data-theme="dark"] .filter-pill:hover {
+  background: var(--color-gold) !important;
+  color: #1A0D08 !important;
+  border-color: var(--color-gold) !important;
+}
+
+[data-theme="dark"] .filter-pill.active {
+  background: var(--color-gold) !important;
+  color: #1A0D08 !important;
+  border-color: var(--color-gold) !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="dark"] .input-group-text {
+  background: #250E16 !important;
+  border-color: rgba(229, 184, 105, 0.45) !important;
+  color: var(--color-gold) !important;
+}
+
+[data-theme="dark"] .form-control-luxury {
+  background: #250E16 !important;
+  border-color: rgba(229, 184, 105, 0.45) !important;
+  color: #FFFDF8 !important;
+}
+
+[data-theme="dark"] .form-control-luxury::placeholder {
+  color: rgba(255, 253, 248, 0.75) !important;
+}
+
+[data-theme="dark"] .input-group-text {
+  background: #250E16 !important;
+  border-color: rgba(229, 184, 105, 0.45) !important;
+  color: var(--color-gold) !important;
+}
+
+[data-theme="dark"] select.form-control-luxury option {
+  background: #200B13 !important;
+  color: #FFFDF8 !important;
+}
+
+[data-theme="dark"] #resetFiltersBtn {
+  color: var(--color-gold-light) !important;
+}
+
+[data-theme="dark"] #mobileFilterToggleBtn {
+  background: #250E16 !important;
+  border-color: rgba(229, 184, 105, 0.45) !important;
+  color: #FFFDF8 !important;
+}
+
+[data-theme="dark"] #filteredCountDisplay {
+  color: var(--color-gold-light) !important;
+}
+
+[data-theme="dark"] .accordion-item {
+  background: #250E16 !important;
+  border-color: rgba(229, 184, 105, 0.4) !important;
+}
+
+[data-theme="dark"] .accordion-button {
+  background: #250E16 !important;
+  color: #FFFDF8 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="dark"] .accordion-button:not(.collapsed) {
+  background: #33131F !important;
+  color: var(--color-gold) !important;
+  box-shadow: none !important;
+}
+
+[data-theme="dark"] .accordion-button::after {
+  filter: invert(1) brightness(1.6) sepia(1) hue-rotate(5deg) saturate(3) !important;
+}
+
+[data-theme="dark"] .accordion-body {
+  color: #F8EFE9 !important;
+  background: #200B13 !important;
+  line-height: 1.75 !important;
+}
+
+/* ==========================================================================
+   Point 33: Connoisseur Guide Accordion Contrast (Light & Dark Mode)
+   ========================================================================== */
+.accordion-item {
+  background: var(--color-card-bg) !important;
+  border: 1px solid var(--color-border) !important;
+  overflow: hidden;
+  margin-bottom: 0.75rem !important;
+  border-radius: 6px !important;
+}
+
+.accordion-button {
+  background: transparent !important;
+  color: var(--color-dark-brown) !important;
+  font-family: var(--font-serif-heading) !important;
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  padding: 1.15rem 1.25rem !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(196, 154, 69, 0.08) !important;
+  color: var(--color-maroon) !important;
+  box-shadow: none !important;
+}
+
+.accordion-body {
+  color: var(--color-text-muted) !important;
+  font-size: 0.94rem !important;
+  line-height: 1.8 !important;
+  padding: 1rem 1.25rem 1.25rem !important;
+}
+
+[data-theme="dark"] .accordion-item {
+  background: #250E16 !important;
+  border: 1px solid rgba(229, 184, 105, 0.45) !important;
+}
+
+[data-theme="dark"] .accordion-button,
+[data-theme="dark"] .accordion-button.collapsed {
+  background: #250E16 !important;
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="dark"] .accordion-button:not(.collapsed) {
+  background: #361421 !important;
+  color: var(--color-gold) !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid rgba(229, 184, 105, 0.3) !important;
+}
+
+[data-theme="dark"] .accordion-button::after {
+  filter: invert(1) brightness(2) sepia(1) hue-rotate(5deg) saturate(3) !important;
+}
+
+[data-theme="dark"] .accordion-body {
+  color: #F8EFE9 !important;
+  background: #1C0A10 !important;
+  line-height: 1.8 !important;
+}
+
+[data-theme="dark"] .accordion-body strong {
+  color: var(--color-gold) !important;
+}
+
+/* ==========================================================================
+   Point 34: Contact Page High Contrast Text, Labels & Inputs
+   ========================================================================== */
+.form-label {
+  color: var(--color-dark-brown) !important;
+  font-weight: 700 !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 0.04em !important;
+}
+
+[data-theme="dark"] .form-label {
+  color: #FFFDF8 !important;
+}
+
+.form-control,
+.form-select,
+.form-control-luxury {
+  border: 1px solid var(--color-border);
+  transition: border-color 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+}
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select,
+[data-theme="dark"] .form-control-luxury,
+[data-theme="dark"] textarea.form-control {
+  background-color: #250E16 !important;
+  color: #FFFFFF !important;
+  border-color: rgba(229, 184, 105, 0.45) !important;
+}
+
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus,
+[data-theme="dark"] .form-control-luxury:focus {
+  background-color: #2E121B !important;
+  color: #FFFFFF !important;
+  border-color: var(--color-gold) !important;
+  box-shadow: 0 0 0 3px rgba(196, 154, 69, 0.25) !important;
+}
+
+.form-control-luxury::placeholder,
+.form-control::placeholder,
+textarea::placeholder {
+  color: #7A6960 !important;
+  opacity: 1 !important;
+}
+
+[data-theme="dark"] .form-control-luxury::placeholder,
+[data-theme="dark"] .form-control::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: rgba(255, 253, 248, 0.75) !important;
+}
+
+[data-theme="dark"] select.form-select option,
+[data-theme="dark"] select.form-control-luxury option {
+  background-color: #200B13 !important;
+  color: #FFFFFF !important;
+}
+
+/* ==========================================================================
+   Point 35: Book a Visit Menu (Modal) Exit Icon & Text Contrast
+   ========================================================================== */
+.modal-luxury .modal-content,
+#appointmentModal .modal-content {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-gold);
+}
+
+[data-theme="dark"] .modal-luxury .modal-content,
+[data-theme="dark"] #appointmentModal .modal-content,
+[data-theme="dark"] #quickViewModal .modal-content {
+  background: #200B13 !important;
+  border: 1px solid rgba(229, 184, 105, 0.5) !important;
+  color: #FFFDF8 !important;
+}
+
+[data-theme="dark"] .modal-header {
+  border-bottom: 1px solid rgba(229, 184, 105, 0.3) !important;
+}
+
+[data-theme="dark"] .modal-title,
+[data-theme="dark"] #appointmentModalLabel {
+  color: #FFFFFF !important;
+  font-family: var(--font-serif-heading) !important;
+}
+
+/* High Contrast Exit (Close) Buttons */
+[data-theme="dark"] .modal-header .btn-close,
+[data-theme="dark"] .btn-close,
+[data-theme="dark"] .drawer-close-btn,
+[data-theme="dark"] .close-cart-btn,
+[data-theme="dark"] .close-wishlist-btn {
+  filter: invert(1) brightness(2) !important;
+  opacity: 0.9 !important;
+}
+
+.modal-header .btn-close:hover,
+.drawer-close-btn:hover,
+.close-cart-btn:hover,
+.close-wishlist-btn:hover {
+  opacity: 1 !important;
+  transform: scale(1.15) !important;
+}
+
+/* ==========================================================================
+   Point 36: Cart & Wishlist (Like) Drawer Exit Icon & Content Contrast
+   ========================================================================== */
+.drawer-close-btn,
+.close-cart-btn,
+.close-wishlist-btn {
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+[data-theme="dark"] .luxury-drawer {
+  background: #1C0A10 !important;
+  color: #FFFDF8 !important;
+}
+
+[data-theme="dark"] .drawer-header {
+  background: #250E16 !important;
+  border-bottom: 1px solid rgba(229, 184, 105, 0.3) !important;
+}
+
+[data-theme="dark"] .drawer-title {
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .drawer-footer {
+  background: #250E16 !important;
+  border-top: 1px solid rgba(229, 184, 105, 0.3) !important;
+}
+
+[data-theme="dark"] .drawer-subtotal-row span {
+  color: #FFFDF8 !important;
+}
+
+[data-theme="dark"] #cartSubtotalAmount {
+  color: var(--color-gold) !important;
+}
+
+/* ==========================================================================
+   Point 37: 1024px Contact Page Showroom Cards Alignment
+   ========================================================================== */
+.contact-showroom-card {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  padding: 1.75rem 1.5rem !important;
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-showroom-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-luxury);
+}
+
+.contact-showroom-card .d-flex.gap-2 {
+  margin-top: auto !important;
+  display: flex !important;
+  gap: 8px !important;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
+}
+
+.contact-showroom-card .btn-gold,
+.contact-showroom-card .btn-outline-gold {
+  flex: 1 1 0 !important;
+  white-space: nowrap !important;
+  padding: 10px 8px !important;
+  font-size: 0.76rem !important;
+  letter-spacing: 0.04em !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 42px !important;
+  box-sizing: border-box !important;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .contact-showroom-card {
+    padding: 1.5rem 1.25rem !important;
+  }
+  .contact-showroom-card .btn-gold,
+  .contact-showroom-card .btn-outline-gold {
+    font-size: 0.72rem !important;
+    padding: 8px 4px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contact-showroom-card {
+    margin-bottom: 1.25rem !important;
+    width: 100% !important;
+    max-width: 680px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* ==========================================================================
+   Point 38: Quick View Modal Buttons Equal Size (Add to Bag & WhatsApp)
+   ========================================================================== */
+.qv-action-buttons-group,
+#quickViewModal .d-flex.flex-wrap.gap-2,
+#quickViewModal .d-flex.gap-3:last-child {
+  display: flex !important;
+  gap: 12px !important;
+  width: 100% !important;
+  flex-wrap: nowrap !important;
+}
+
+.qv-btn-action,
+#qvModalAddToCartBtn,
+#qvAddToCartBtn,
+#qvModalWhatsAppBtn {
+  flex: 1 1 0 !important;
+  height: 48px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  border-radius: 4px !important;
+  padding: 0 16px !important;
+  box-sizing: border-box !important;
+  white-space: nowrap !important;
+  text-decoration: none !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 575.98px) {
+  .qv-action-buttons-group,
+  #quickViewModal .d-flex.flex-wrap.gap-2,
+  #quickViewModal .d-flex.gap-3:last-child {
+    flex-direction: column !important;
+  }
+}
+
+/* ==========================================================================
+   Point 39: 1024px Footer Section Alignment (12-Column Symmetrical Grid)
+   ========================================================================== */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .site-footer .container {
+    max-width: 100% !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  .site-footer .row {
+    justify-content: space-between !important;
+  }
+  .site-footer .col-lg-4:first-child {
+    width: 32% !important;
+  }
+  .site-footer .col-lg-2 {
+    width: 18% !important;
+  }
+  .site-footer .col-lg-4:last-child,
+  .site-footer .col-lg-3 {
+    width: 30% !important;
+  }
+}
+
+/* ==========================================================================
+   Point 40: 1024px Home 2 Hero Mode Tags Alignment (Editorial Still, 4K Drape, Live Atelier)
+   ========================================================================== */
+.hero-mode-pill-bar,
+.hero-atelier-portrait-wrap .d-flex.align-items-center.justify-content-between.mb-3 {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 10px !important;
+  width: 100% !important;
+  margin-bottom: 0.75rem !important;
+}
+
+#heroPhotoToggleBtn,
+#heroVideoToggleBtn,
+.hero-mode-pill-bar .badge-gold,
+.hero-atelier-portrait-wrap .badge-gold {
+  height: 36px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 14px !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  border-radius: 4px !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 1024px) {
+  #heroPhotoToggleBtn,
+  #heroVideoToggleBtn,
+  .hero-mode-pill-bar .badge-gold,
+  .hero-atelier-portrait-wrap .badge-gold {
+    height: 34px !important;
+    padding: 0 10px !important;
+    font-size: 0.68rem !important;
+  }
+}
+
+
+

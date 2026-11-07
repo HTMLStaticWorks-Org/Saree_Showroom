@@ -451,12 +451,13 @@ function openQuickView(productId) {
    9. Swiper Carousels Initialization
    ========================================================================== */
 function initSwipers() {
-  // Collections Swiper Carousel
+  // Collections Swiper Carousel (Curated Edits)
   if (document.querySelector('.collections-swiper')) {
     new Swiper('.collections-swiper', {
       slidesPerView: 1,
-      spaceBetween: 24,
+      spaceBetween: 20,
       loop: true,
+      centeredSlides: false,
       autoplay: {
         delay: 4500,
         disableOnInteraction: false
@@ -469,6 +470,10 @@ function initSwipers() {
         576: {
           slidesPerView: 2,
           spaceBetween: 20
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 24
         },
         992: {
           slidesPerView: 3,

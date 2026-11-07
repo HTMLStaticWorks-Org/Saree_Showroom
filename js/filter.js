@@ -248,8 +248,8 @@ function renderProducts() {
     const discountPercent = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
 
     html += `
-      <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4" data-aos="fade-up">
-        <div class="product-card">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4 d-flex" data-aos="fade-up">
+        <div class="product-card w-100 d-flex flex-column">
           <!-- Floating Badges -->
           <div class="product-badges-group">
             ${product.badge ? `<span class="product-badge ${product.badge.toLowerCase().includes('royal') || product.badge.toLowerCase().includes('heirloom') ? 'gold' : ''}">${product.badge}</span>` : ''}

@@ -235,21 +235,22 @@
 
           <!-- Fabrics Direct Dropdown -->
           <li class="nav-tier-item">
-            <a href="collections.html" class="nav-tier-link">
+            <a href="fabrics.html" class="nav-tier-link">
               Fabrics <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
             </a>
             <ul class="dropdown-menu-luxury">
-              <li><a href="collections.html?fabric=kanchipuram">Pure Kanchipuram Silk</a></li>
-              <li><a href="collections.html?fabric=banarasi">Banarasi Katan Silk</a></li>
-              <li><a href="collections.html?fabric=soft-silk">Mulberry Soft Silk</a></li>
-              <li><a href="collections.html?fabric=cotton">Chettinad Cotton</a></li>
-              <li><a href="collections.html?fabric=organza">Tissue & Organza</a></li>
+              <li><a href="fabrics.html">Explore All 6 Fabrics</a></li>
+              <li><a href="fabrics.html#kanchipuram">Pure Kanchipuram Silk</a></li>
+              <li><a href="fabrics.html#banarasi">Banarasi Katan Silk</a></li>
+              <li><a href="fabrics.html#soft-silk">Mulberry Soft Silk</a></li>
+              <li><a href="fabrics.html#cotton">Chettinad Cotton</a></li>
+              <li><a href="fabrics.html#organza">Tissue & Organza</a></li>
             </ul>
           </li>
 
           <!-- Our Heritage -->
           <li class="nav-tier-item">
-            <a href="index.html#heritage" class="nav-tier-link">Our Heritage</a>
+            <a href="heritage.html" class="nav-tier-link">Our Heritage</a>
           </li>
 
           <!-- Showroom & Contact -->
@@ -339,6 +340,7 @@
           </a>
           <div class="collapse" id="mobileFabricsSubmenu">
             <ul class="mobile-subnav-list">
+              <li><a href="fabrics.html" style="font-weight: 700; color: var(--color-gold);">• Explore All 6 Signature Fabrics</a></li>
               <li><a href="collections.html?fabric=kanchipuram">• Pure Kanchipuram Silk</a></li>
               <li><a href="collections.html?fabric=banarasi">• Banarasi Katan Silk</a></li>
               <li><a href="collections.html?fabric=soft-silk">• Mulberry Soft Silk</a></li>
@@ -349,7 +351,7 @@
         </li>
 
         <li class="mobile-nav-item">
-          <a href="index.html#heritage" class="mobile-nav-link d-flex justify-content-between align-items-center">
+          <a href="heritage.html" class="mobile-nav-link d-flex justify-content-between align-items-center">
             <span>Our Heritage</span>
             <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
           </a>
@@ -491,16 +493,16 @@
         <div class="col-lg-6" data-aos="fade-left">
           
           <!-- Mode Switcher Pill Bar (Unique to Home 2) -->
-          <div class="d-flex align-items-center justify-content-between mb-3">
-            <div class="d-flex gap-2">
-              <button id="heroPhotoToggleBtn" class="btn btn-sm btn-outline-gold active" onclick="toggleHeroVideoMode(false)" style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase;">
+          <div class="hero-mode-pill-bar d-flex align-items-center justify-content-between mb-3">
+            <div class="d-flex align-items-center gap-2">
+              <button id="heroPhotoToggleBtn" class="btn btn-sm btn-outline-gold active" onclick="toggleHeroVideoMode(false)">
                 <i data-lucide="image" style="width: 14px; height: 14px;"></i> Editorial Still
               </button>
-              <button id="heroVideoToggleBtn" class="btn btn-sm btn-outline-gold" onclick="toggleHeroVideoMode(true)" style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase;">
+              <button id="heroVideoToggleBtn" class="btn btn-sm btn-outline-gold" onclick="toggleHeroVideoMode(true)">
                 <i data-lucide="play" style="width: 14px; height: 14px;"></i> 4K Drape in Motion
               </button>
             </div>
-            <span class="badge-gold d-none d-sm-inline-flex" style="font-size: 0.65rem;">LIVE ATELIER</span>
+            <span class="badge-gold d-none d-sm-inline-flex">LIVE ATELIER</span>
           </div>
 
           <div class="hero-atelier-portrait">
@@ -1113,12 +1115,12 @@
 
               <p id="qvModalDesc" style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 1.5rem;"></p>
 
-              <div class="d-flex flex-wrap gap-2">
-                <button id="qvModalAddToCartBtn" class="btn-gold flex-grow-1">
+              <div class="qv-action-buttons-group">
+                <button id="qvModalAddToCartBtn" class="btn-gold qv-btn-action">
                   <i data-lucide="shopping-bag" style="width: 16px; height: 16px;"></i> Add to Bag
                 </button>
-                <a id="qvModalWhatsAppBtn" href="#" target="_blank" class="btn-outline-gold" style="border-color: #25D366; color: #25D366;">
-                  <i data-lucide="message-circle" style="width: 16px; height: 16px;"></i> WhatsApp Enquiry
+                <a id="qvModalWhatsAppBtn" href="#" target="_blank" class="btn-outline-gold qv-btn-action" style="border-color: #25D366; color: #25D366;">
+                  <i data-lucide="message-circle" style="width: 16px; height: 16px; color: #25D366;"></i> WhatsApp Enquiry
                 </a>
               </div>
             </div>
@@ -1133,10 +1135,10 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header border-bottom border-light">
-          <h5 class="modal-title" style="font-family: var(--font-serif-heading); color: var(--color-maroon);">
+          <h5 class="modal-title modal-luxury-title" id="appointmentModalLabel">
             <i data-lucide="calendar" style="width: 18px; height: 18px; color: var(--color-gold);"></i> Book VIP Showroom Experience
           </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body p-4">
           <form class="appointment-form">
@@ -1184,6 +1186,7 @@
     <div class="container">
       <div class="row g-4 justify-content-between">
         
+        <!-- Brand Narrative & Heritage -->
         <div class="col-lg-4 col-md-6">
           <a href="index.html" class="brand-logo-group mb-3 d-inline-flex align-items-center gap-3" aria-label="Saree Showroom Home" style="text-decoration: none;">
             <svg class="brand-emblem-svg" viewBox="0 0 100 100" style="width: 44px; height: 44px; flex-shrink: 0;">
@@ -1198,7 +1201,7 @@
             </div>
           </a>
           <p style="color: #D9BEB0; font-size: 0.88rem; line-height: 1.7; margin-bottom: 1.25rem;">
-            South Indian Heritage × Luxury Silk × Modern Editorial. Handpicked handloom masterpieces from master weavers since 1943.
+            South Indian Heritage × Luxury Silk × Modern Editorial. Handpicked handloom masterpieces from master weavers since 1943. Pure Kanchipuram, Banarasi, and sacred bridal Muhurtham silks.
           </p>
           <div class="footer-cert-badges">
             <span class="badge-gold">Silk Mark India</span>
@@ -1222,48 +1225,67 @@
           </div>
         </div>
 
+        <!-- Collections Links -->
         <div class="col-lg-2 col-6">
-          <h4 class="footer-title">Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home 1 — Heritage Classic</a></li>
-            <li><a href="home-2.html">Home 2 — Royal Atelier</a></li>
-            <li><a href="collections.html">All Collections</a></li>
-            <li><a href="bridal.html">Bridal Sarees</a></li>
-            <li><a href="contact.html">Showroom & Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6">
-          <h4 class="footer-title">Fabrics</h4>
+          <h4 class="footer-title">Collections</h4>
           <ul class="footer-links">
             <li><a href="collections.html?fabric=kanchipuram">Kanchipuram Silk</a></li>
-            <li><a href="collections.html?fabric=banarasi">Banarasi Silk</a></li>
-            <li><a href="collections.html?fabric=soft-silk">Soft Silk</a></li>
+            <li><a href="collections.html?fabric=banarasi">Banarasi Brocades</a></li>
+            <li><a href="collections.html?fabric=soft-silk">Soft Silk Sarees</a></li>
             <li><a href="collections.html?fabric=cotton">Cotton Sarees</a></li>
+            <li><a href="collections.html?fabric=linen">Linen Sarees</a></li>
             <li><a href="collections.html?fabric=organza">Organza Sarees</a></li>
+            <li><a href="collections.html?fabric=handloom">Handloom Classics</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-6">
-          <h4 class="footer-title">Flagship Hours</h4>
-          <div style="font-size: 0.85rem; color: #D9BEB0; line-height: 1.8;">
-            <div><strong>Anna Nagar, Chennai:</strong> 10 AM – 9 PM</div>
-            <div><strong>Jubilee Hills, Hyderabad:</strong> 10 AM – 9 PM</div>
-            <div>Open All 7 Days including Holidays</div>
-            <div class="mt-2 text-gold">Helpline: +91 98765 43210</div>
+        <!-- Bridal & Heritage Links -->
+        <div class="col-lg-2 col-6">
+          <h4 class="footer-title">Bridal & Craft</h4>
+          <ul class="footer-links">
+            <li><a href="bridal.html">Muhurtham Trousseau</a></li>
+            <li><a href="bridal.html#zari-details">Korvai Triple Warp</a></li>
+            <li><a href="bridal.html#zari-details">Real Gold Zari Test</a></li>
+            <li><a href="bridal.html#styling">Bridal Draping Guide</a></li>
+            <li><a href="contact.html">Private Styling Salon</a></li>
+            <li><a href="contact.html">Store Video Consultation</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Flagship Address -->
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-title">The Silk Gazette</h4>
+          <p style="color: #D9BEB0; font-size: 0.85rem;">
+            Receive exclusive invitations to private vault unveils and festive handloom releases.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required />
+            <button type="submit" class="newsletter-submit" aria-label="Subscribe">
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </button>
+          </form>
+
+          <div class="mt-4" style="font-size: 0.82rem; color: #D9BEB0;">
+            <div class="mb-1"><strong style="color: var(--color-gold);">Flagship Showroom:</strong></div>
+            <div>2nd Avenue, Anna Nagar, Chennai - 600040</div>
+            <div>Helpline: +91 98765 43210</div>
+            <div>Hours: 10:00 AM – 9:00 PM (All 7 Days)</div>
           </div>
         </div>
 
       </div>
 
+      <!-- Footer Bottom Bar -->
       <div class="footer-bottom-bar">
-        <div>© 2026 Saree Showroom Private Limited. All Rights Reserved.</div>
+        <div>
+          © 2026 Saree Showroom Private Limited. All Rights Reserved. Handcrafted with pride in Tamil Nadu & Varanasi.
+        </div>
         <div class="d-flex gap-3">
-          <a href="contact.html" style="color: inherit;">Privacy</a>
+          <a href="contact.html" style="color: inherit;">Privacy Policy</a>
           <span>•</span>
-          <a href="contact.html" style="color: inherit;">Terms</a>
+          <a href="contact.html" style="color: inherit;">Terms of Heritage</a>
           <span>•</span>
-          <a href="contact.html" style="color: inherit;">Silk Mark India</a>
+          <a href="contact.html" style="color: inherit;">Silk Mark Certification</a>
         </div>
       </div>
     </div>
