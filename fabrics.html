@@ -1,95 +1,57 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-theme="light">
+<html lang="en" data-theme="light" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Authentic Handloom Fabrics | Saree Showroom - Pure Silk, Banarasi, Cotton, Linen & Organza</title>
   <meta name="description" content="Explore India's six revered handloom textile lineages: Pure Kanchipuram Mulberry Silk, Banarasi Katan Brocades, Soft Silk, Chettinad Cotton, French Flax Linen, and Organza Tissue." />
   
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&family=Alex+Brush&display=swap" rel="stylesheet" />
-
-  <!-- Bootstrap 5.3.3 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  
-  <!-- Swiper 11 CSS -->
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  
-  <!-- AOS Animation CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 
-  <!-- Custom Core Design System CSS -->
+  <!-- Custom Stylesheets -->
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
 
-  <!-- ==========================================================================
-       Top Notification Ribbon (Tier 1)
-       ========================================================================== -->
-  <div class="top-announcement-ribbon">
-    <div class="announcement-track">
-      <div class="announcement-content">
-        <span class="announcement-item">
-          <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i> Free Insured Express Shipping on Orders Over ₹25,000
-        </span>
-        <span class="announcement-item">
-          <i data-lucide="award" style="width: 14px; height: 14px;"></i> Silk Mark India & Handloom Mark Certified Heritage
-        </span>
-        <span class="announcement-item">
-          <i data-lucide="video" style="width: 14px; height: 14px;"></i> Book a Live 1-on-1 HD Video Styling Session
-        </span>
-        <span class="announcement-item">
-          <i data-lucide="map-pin" style="width: 14px; height: 14px;"></i> Flagship Sanctuaries: Anna Nagar, Chennai & Jubilee Hills, Hyderabad
-        </span>
-      </div>
-      <div class="announcement-content" aria-hidden="true">
-        <span class="announcement-item">
-          <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i> Free Insured Express Shipping on Orders Over ₹25,000
-        </span>
-        <span class="announcement-item">
-          <i data-lucide="award" style="width: 14px; height: 14px;"></i> Silk Mark India & Handloom Mark Certified Heritage
-        </span>
-        <span class="announcement-item">
-          <i data-lucide="video" style="width: 14px; height: 14px;"></i> Book a Live 1-on-1 HD Video Styling Session
-        </span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ==========================================================================
-       Main Luxury Brand Header & 3-Tier Navigation
-       ========================================================================== -->
-  <header class="site-header" id="siteHeader">
+  <header class="site-header">
     
-    <!-- Tier 1: Luxury Top Ribbon -->
-    <div class="header-top-tier">
-      <div class="container header-top-inner">
-        <div class="header-top-left">
-          <span><i data-lucide="gift" style="width: 13px; height: 13px;"></i> Free insured packaging &amp; blouse finishing over ₹25,000</span>
-          <span class="text-gold">• Pure Zari Certified</span>
+    <!-- Tier 1: Top Ribbon (Offers & Showroom Timings) -->
+    <div class="header-tier-top">
+      <div class="header-tier-top-inner">
+        <div class="header-top-item">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 12 20 22 4 22 4 12"/>
+            <rect x="2" y="7" width="20" height="5"/>
+            <line x1="12" y1="22" x2="12" y2="7"/>
+            <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+            <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+          </svg>
+          <span>Free insured packaging & blouse finishing over ₹25,000 · Pure Zari Certified</span>
         </div>
-        <div class="header-top-right">
-          <span><i data-lucide="clock" style="width: 13px; height: 13px;"></i> Flagships Open Daily: 10:00–21:00</span>
-          <a href="tel:+919876543210" class="header-top-tel"><i data-lucide="phone" style="width: 13px; height: 13px;"></i> VIP Concierge: +91 98765 43210</a>
+        <div class="header-top-item d-none d-md-inline-flex">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <span>Flagships Open Daily: 10:00–21:00 · VIP Concierge: +91 98765 43210</span>
         </div>
       </div>
     </div>
 
-    <!-- Tier 2: Brand Identity, Live Search & Customer Suite -->
-    <div class="header-mid-tier">
-      <div class="container header-mid-inner">
+    <!-- Tier 2: Main Brand & Utility Bar -->
+    <div class="header-tier-main">
+      <div class="header-tier-main-inner">
         
-        <!-- Mobile Offcanvas Menu Toggle (Left) -->
-        <button class="mobile-toggle-btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavDrawer" aria-controls="mobileNavDrawer" aria-label="Toggle navigation">
-          <i data-lucide="menu" style="width: 24px; height: 24px;"></i>
-        </button>
-
-        <!-- Brand Emblem & Identity -->
+        <!-- Brand Logo (Tier 2 Left) -->
         <a href="index.html" class="brand-logo-group" aria-label="Saree Showroom Home">
           <svg class="brand-emblem-svg" viewBox="0 0 100 100">
             <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="2.5" stroke-dasharray="4 2"/>
@@ -103,83 +65,125 @@
           </div>
         </a>
 
-        <!-- Center Global Search Bar -->
-        <div class="header-search-wrap d-none d-lg-block">
-          <form class="header-search-form" action="collections.html" method="GET">
-            <i data-lucide="search" class="header-search-icon"></i>
-            <input type="text" name="search" class="header-search-input" placeholder="Search Kanchipuram silk, Banarasi brocades, pure zari..." />
-          </form>
+        <!-- Pill Search Bar (Tier 2 Center) -->
+        <div class="header-search-wrapper">
+          <div class="header-search-pill">
+            <svg class="header-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input type="text" class="header-search-input" placeholder="Search pure Kanchipuram silks, Banarasi brocades, motifs, colors..." aria-label="Search Catalog" />
+            <!-- Quick Silk Swatches in Search Bar -->
+            <div class="search-swatches-quick d-none d-lg-flex" title="Quick Color Filters">
+              <span class="search-swatch-dot" style="background: #641C2D;" onclick="window.location.href='collections.html?search=maroon'"></span>
+              <span class="search-swatch-dot" style="background: #C49A45;" onclick="window.location.href='collections.html?search=gold'"></span>
+              <span class="search-swatch-dot" style="background: #1B5E20;" onclick="window.location.href='collections.html?search=emerald'"></span>
+              <span class="search-swatch-dot" style="background: #4A1521;" onclick="window.location.href='collections.html?search=wine'"></span>
+            </div>
+          </div>
+
+          <!-- Suggestions Dropdown Popup -->
+          <div class="search-suggestions-popup">
+            <div class="suggestions-title">Trending Weaves & Motifs:</div>
+            <div class="suggestions-tags">
+              <a href="collections.html?fabric=kanchipuram" class="suggestion-tag">Pure Kanchipuram Korvai</a>
+              <a href="collections.html?occasion=wedding" class="suggestion-tag">Sacred Muhurtham Crimson</a>
+              <a href="collections.html?fabric=banarasi" class="suggestion-tag">Banarasi Shikargah</a>
+              <a href="collections.html?fabric=cotton" class="suggestion-tag">Chettinad Mango Buta</a>
+              <a href="collections.html?fabric=soft-silk" class="suggestion-tag">Mulberry Soft Silk</a>
+            </div>
+            <div class="d-flex align-items-center justify-content-between pt-2 border-top border-light" style="font-size: 0.78rem; color: var(--color-text-muted);">
+              <span>Press <strong>Enter</strong> to explore all matches</span>
+              <a href="collections.html" style="color: var(--color-gold); font-weight: 600;">View Entire Vault →</a>
+            </div>
+          </div>
         </div>
 
-        <!-- Right Quick Action Controls -->
-        <div class="header-actions-group">
-          <!-- RTL Switcher -->
-          <button class="header-action-pill d-none d-sm-inline-flex" id="rtlToggleBtn" title="Toggle RTL Reading Direction" aria-label="Toggle RTL Reading Direction">
-            <span>RTL</span>
+        <!-- Utility Controls (Tier 2 Right) -->
+        <div class="header-utility-controls">
+          <!-- RTL Toggle Pill Button -->
+          <button class="btn-pill-utility rtl-toggle-btn" title="Toggle Text Direction" aria-label="Toggle Direction">
+            <span class="rtl-label" style="font-weight: 700;">RTL</span>
           </button>
 
-          <!-- Dark/Light Mode Switcher -->
-          <button class="header-action-pill" id="themeToggleBtn" title="Toggle Day / Night Sanctuary Mood" aria-label="Toggle Color Theme">
-            <i data-lucide="moon" class="theme-moon-icon" style="width: 15px; height: 15px;"></i>
-            <i data-lucide="sun" class="theme-sun-icon d-none" style="width: 15px; height: 15px;"></i>
-            <span class="theme-label-text d-none d-md-inline ms-1">Dark</span>
+          <!-- Light / Dark Mode Toggle Pill Button -->
+          <button class="btn-pill-utility theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+            <i data-lucide="moon" class="theme-icon" style="width: 15px; height: 15px;"></i>
+            <span class="theme-label">Dark</span>
           </button>
 
-          <!-- Wishlist Pill Button -->
-          <button class="header-action-btn" id="openWishlistBtn" title="View Wishlist" aria-label="Wishlist">
-            <i data-lucide="heart" style="width: 19px; height: 19px;"></i>
-            <span class="badge-count" id="wishlistCountBadge">0</span>
+          <!-- Wishlist Round Icon Button -->
+          <button class="btn-icon-utility open-wishlist-btn" title="Saved Weaves" aria-label="Wishlist">
+            <i data-lucide="heart" style="width: 18px; height: 18px;"></i>
+            <span class="badge-count wishlist-count-badge">0</span>
           </button>
 
-          <!-- Shopping Bag Pill Button -->
-          <button class="header-action-btn" id="openCartBtn" title="View Shopping Bag" aria-label="Shopping Bag">
-            <i data-lucide="shopping-bag" style="width: 19px; height: 19px;"></i>
-            <span class="badge-count" id="cartCountBadge">0</span>
+          <!-- Shopping Bag Round Icon Button -->
+          <button class="btn-icon-utility open-cart-btn" title="Shopping Bag" aria-label="Bag">
+            <i data-lucide="shopping-bag" style="width: 18px; height: 18px;"></i>
+            <span class="badge-count cart-count-badge">0</span>
           </button>
 
-          <!-- Book Visit CTA Button -->
-          <button class="btn-book-visit d-none d-xl-inline-flex" data-bs-toggle="modal" data-bs-target="#appointmentModal">
-            <i data-lucide="calendar" style="width: 15px; height: 15px;"></i>
+          <!-- Book a Visit Deep Maroon Pill CTA -->
+          <button class="btn-book-visit-pill" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
             <span>Book a Visit</span>
           </button>
         </div>
 
+        <!-- Hamburger Button (<= 1024px, 768px, 360px) -->
+        <button class="hamburger-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Open Mobile Menu">
+          <div class="hamburger-icon">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+        </button>
+
       </div>
     </div>
 
-    <!-- Tier 3: Editorial Navigation Bar -->
-    <div class="header-bottom-tier d-none d-lg-block">
-      <div class="container header-nav-inner">
-        <ul class="nav-tier-list">
+    <!-- Tier 3: Bottom Navigation Bar & Certified Handloom Ribbon -->
+    <div class="header-tier-nav">
+      <div class="header-tier-nav-inner">
+        
+        <!-- Navigation Links with Dropdowns & Mega Menu -->
+        <ul class="desktop-nav-links">
           
-          <!-- Home Multi-Page Dropdown -->
+          <!-- Home Dropdown -->
           <li class="nav-tier-item">
             <a href="index.html" class="nav-tier-link">
               Home <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
             </a>
             <ul class="dropdown-menu-luxury">
-              <li><a href="index.html">Home 1 — Heritage Classic</a></li>
-              <li><a href="home-2.html">Home 2 — Royal Atelier &amp; Swatches</a></li>
+              <li><a href="index.html">Home 1 — Classical Heritage</a></li>
+              <li><a href="home-2.html">Home 2 — Royal Editorial Atelier</a></li>
             </ul>
           </li>
 
-          <!-- Collections Mega Menu Trigger -->
+          <!-- Collections Mega Menu Dropdown -->
           <li class="nav-tier-item has-mega-menu">
             <a href="collections.html" class="nav-tier-link">
-              All Collections <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+              Collections <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
             </a>
-            
-            <div class="mega-menu-luxury">
+
+            <!-- Mega Menu -->
+            <div class="mega-menu-wrapper">
               <div class="mega-menu-grid">
                 <div>
-                  <h4 class="mega-column-title">By Weave &amp; Fabric</h4>
+                  <h4 class="mega-column-title">Shop by Fabric</h4>
                   <ul class="mega-link-list">
-                    <li><a href="collections.html?fabric=kanchipuram">Pure Kanchipuram Silk</a></li>
-                    <li><a href="collections.html?fabric=banarasi">Banarasi Katan Silk</a></li>
-                    <li><a href="collections.html?fabric=soft-silk">Mulberry Soft Silk</a></li>
-                    <li><a href="collections.html?fabric=cotton">Chettinad Handloom Cotton</a></li>
-                    <li><a href="collections.html?fabric=linen">Organic French Flax Linen</a></li>
-                    <li><a href="collections.html?fabric=organza">Pure Tissue Organza</a></li>
+                    <li><a href="collections.html?fabric=kanchipuram">Kanchipuram Silk <span class="badge-gold">GI</span></a></li>
+                    <li><a href="collections.html?fabric=banarasi">Banarasi Silk</a></li>
+                    <li><a href="collections.html?fabric=soft-silk">Soft Silk</a></li>
+                    <li><a href="collections.html?fabric=cotton">Cotton Sarees</a></li>
+                    <li><a href="collections.html?fabric=linen">Linen Sarees</a></li>
+                    <li><a href="collections.html?fabric=organza">Organza Sarees</a></li>
                     <li><a href="collections.html?fabric=handloom">Handloom Sarees</a></li>
                   </ul>
                 </div>
@@ -199,7 +203,7 @@
                     <li><a href="bridal.html#zari-details">Korvai Triple Warp</a></li>
                     <li><a href="bridal.html#zari-details">24K Pure Gold Zari</a></li>
                     <li><a href="bridal.html#zari-details">Temple Gopuram Spire</a></li>
-                    <li><a href="bridal.html#zari-details">Mayil &amp; Mango Buta</a></li>
+                    <li><a href="bridal.html#zari-details">Mayil & Mango Buta</a></li>
                     <li><a href="contact.html">Live Video Styling</a></li>
                   </ul>
                 </div>
@@ -222,18 +226,18 @@
             <a href="bridal.html" class="nav-tier-link">Bridal Sarees</a>
           </li>
 
-          <!-- Fabrics Direct Dropdown (Active Page) -->
+          <!-- Fabrics Direct Dropdown -->
           <li class="nav-tier-item">
-            <a href="fabrics.html" class="nav-tier-link active" style="color: var(--color-gold); font-weight: 700;">
+            <a href="fabrics.html" class="nav-tier-link active">
               Fabrics <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
             </a>
             <ul class="dropdown-menu-luxury">
+              <li><a href="fabrics.html">Explore All 6 Fabrics</a></li>
               <li><a href="fabrics.html#kanchipuram">Pure Kanchipuram Silk</a></li>
               <li><a href="fabrics.html#banarasi">Banarasi Katan Silk</a></li>
               <li><a href="fabrics.html#soft-silk">Mulberry Soft Silk</a></li>
               <li><a href="fabrics.html#cotton">Chettinad Cotton</a></li>
-              <li><a href="fabrics.html#linen">Pure Flax Linen</a></li>
-              <li><a href="fabrics.html#organza">Tissue &amp; Organza</a></li>
+              <li><a href="fabrics.html#organza">Tissue & Organza</a></li>
             </ul>
           </li>
 
@@ -244,20 +248,17 @@
 
           <!-- Showroom & Contact -->
           <li class="nav-tier-item">
-            <a href="contact.html" class="nav-tier-link">Showroom &amp; Contact</a>
+            <a href="contact.html" class="nav-tier-link">Showroom & Contact</a>
           </li>
 
         </ul>
 
-        <!-- Tier 3 Right Handloom Trust Ribbon -->
+        <!-- Tier 3 Right Handloom Trust Ribbon (Like "Hand-delivered today" in user's image) -->
         <div class="header-nav-trust-badge">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="1" y="3" width="15" height="13"></rect>
-            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
-            <circle cx="5.5" cy="18.5" r="2.5"></circle>
-            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
           </svg>
-          <span>Hand-delivered in Chennai &amp; Hyderabad today</span>
+          <span>Hand-woven on Pit Looms · 100% Certified Pure Zari</span>
         </div>
 
       </div>
@@ -266,72 +267,80 @@
   </header>
 
   <!-- ==========================================================================
-       Mobile Navigation Offcanvas Drawer
+       Mobile Offcanvas Drawer (Active at 360px, 768px, 1024px)
        ========================================================================== -->
-  <div class="offcanvas offcanvas-start mobile-nav-drawer" tabindex="-1" id="mobileNavDrawer" aria-labelledby="mobileNavDrawerLabel">
+  <div class="offcanvas offcanvas-end offcanvas-luxury" tabindex="-1" id="mobileNavOffcanvas" aria-labelledby="mobileNavOffcanvasLabel">
     <div class="offcanvas-header border-bottom border-light">
-      <a href="index.html" class="brand-logo-group" aria-label="Saree Showroom Home">
-        <svg class="brand-emblem-svg" viewBox="0 0 100 100" style="width: 36px; height: 36px;">
-          <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="2.5"/>
+      <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+        <svg style="width: 28px; height: 28px; flex-shrink: 0;" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="2.5" stroke-dasharray="4 2"/>
           <path d="M50 18 C38 18 30 28 30 42 C30 58 44 72 56 80 C52 70 56 60 62 54 C68 48 70 40 68 32 C66 24 58 18 50 18 Z" fill="#641C2D"/>
+          <circle cx="48" cy="38" r="5" fill="#C49A45"/>
+          <polygon points="50,8 52,14 50,16 48,14" fill="#C49A45"/>
         </svg>
-        <span class="brand-name" style="font-size: 1.15rem;">SAREE SHOWROOM</span>
+        <div class="d-flex flex-column">
+          <span style="font-family: var(--font-serif-display); font-weight: 700; color: var(--color-maroon); font-size: 1.05rem; letter-spacing: 0.1em; line-height: 1.1;">SAREE SHOWROOM</span>
+          <span style="font-size: 0.55rem; color: var(--color-gold); letter-spacing: 0.15em; text-transform: uppercase;">South Indian Heritage × Luxury Silk</span>
+        </div>
       </a>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
 
     <div class="offcanvas-body">
-      <!-- Search Input inside Mobile Drawer -->
-      <form class="mb-4" action="collections.html" method="GET">
-        <div class="input-group">
-          <input type="text" name="search" class="form-control form-control-luxury" placeholder="Search rare handlooms..." />
-          <button class="btn btn-gold" type="submit"><i data-lucide="search" style="width: 16px; height: 16px;"></i></button>
-        </div>
-      </form>
-
-      <!-- Mobile Links List -->
-      <ul class="mobile-nav-list">
+      <!-- Navigation Links (Matching Web View Hierarchy) -->
+      <ul class="mobile-nav-links">
         <li class="mobile-nav-item">
-          <a class="mobile-nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#mobileHomeSubmenu" role="button" aria-expanded="false">
+          <a class="mobile-nav-link d-flex justify-content-between align-items-center active" data-bs-toggle="collapse" href="#mobileHomeSubmenu" role="button" aria-expanded="true">
             <span>Home</span>
             <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
           </a>
-          <div class="collapse" id="mobileHomeSubmenu">
+          <div class="collapse show" id="mobileHomeSubmenu">
             <ul class="mobile-subnav-list">
-              <li><a href="index.html">• Home 1 — Heritage Classic</a></li>
-              <li><a href="home-2.html">• Home 2 — Royal Atelier</a></li>
+              <li><a href="index.html" class="active">• Home 1 — Classical Heritage</a></li>
+              <li><a href="home-2.html">• Home 2 — Royal Editorial Atelier</a></li>
             </ul>
           </div>
         </li>
 
         <li class="mobile-nav-item">
-          <a href="collections.html" class="mobile-nav-link d-flex justify-content-between align-items-center">
-            <span>All Collections</span>
-            <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+          <a class="mobile-nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#mobileCollectionsSubmenu" role="button" aria-expanded="false">
+            <span>Collections</span>
+            <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
           </a>
+          <div class="collapse" id="mobileCollectionsSubmenu">
+            <ul class="mobile-subnav-list">
+              <li><a href="collections.html">• All Vault Collections</a></li>
+              <li><a href="collections.html?fabric=kanchipuram">• Kanchipuram Silk (GI Certified)</a></li>
+              <li><a href="collections.html?fabric=banarasi">• Banarasi Brocades</a></li>
+              <li><a href="collections.html?fabric=soft-silk">• Mulberry Soft Silk</a></li>
+              <li><a href="collections.html?fabric=cotton">• Chettinad Cotton Sarees</a></li>
+              <li><a href="collections.html?fabric=linen">• Linen Sarees</a></li>
+              <li><a href="collections.html?fabric=organza">• Organza & Tissue Silks</a></li>
+              <li><a href="collections.html?fabric=handloom">• Handloom Classics</a></li>
+            </ul>
+          </div>
         </li>
 
         <li class="mobile-nav-item">
           <a href="bridal.html" class="mobile-nav-link d-flex justify-content-between align-items-center">
-            <span>Bridal Sarees &amp; Muhurtham</span>
+            <span>Bridal Sarees & Muhurtham</span>
             <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
           </a>
         </li>
 
         <li class="mobile-nav-item">
-          <a class="mobile-nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#mobileFabricsSubmenu" role="button" aria-expanded="true">
-            <span style="color: var(--color-gold); font-weight: 700;">Fabrics</span>
+          <a class="mobile-nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#mobileFabricsSubmenu" role="button" aria-expanded="false">
+            <span>Fabrics</span>
             <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
           </a>
-          <div class="collapse show" id="mobileFabricsSubmenu">
+          <div class="collapse" id="mobileFabricsSubmenu">
             <ul class="mobile-subnav-list">
               <li><a href="fabrics.html" style="font-weight: 700; color: var(--color-gold);">• Explore All 6 Signature Fabrics</a></li>
               <li><a href="collections.html?fabric=kanchipuram">• Pure Kanchipuram Silk</a></li>
               <li><a href="collections.html?fabric=banarasi">• Banarasi Katan Silk</a></li>
               <li><a href="collections.html?fabric=soft-silk">• Mulberry Soft Silk</a></li>
               <li><a href="collections.html?fabric=cotton">• Chettinad Cotton</a></li>
-              <li><a href="collections.html?fabric=linen">• Organic Flax Linen</a></li>
-              <li><a href="collections.html?fabric=organza">• Tissue &amp; Organza</a></li>
+              <li><a href="collections.html?fabric=organza">• Tissue & Organza</a></li>
             </ul>
           </div>
         </li>
@@ -345,46 +354,53 @@
 
         <li class="mobile-nav-item">
           <a href="contact.html" class="mobile-nav-link d-flex justify-content-between align-items-center">
-            <span>Showroom &amp; Contact</span>
+            <span>Showroom & Contact</span>
             <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
           </a>
         </li>
       </ul>
 
-      <!-- Quick Action Pills inside Drawer -->
+      <!-- Quick Action Pills inside Drawer (Wishlist, Cart, Search, WhatsApp) -->
       <div class="mobile-actions-bar">
-        <button class="mobile-act-btn" id="mobileWishlistBtn">
+        <div class="mobile-action-pill open-wishlist-btn" data-bs-dismiss="offcanvas">
           <i data-lucide="heart" style="width: 18px; height: 18px;"></i>
-          <span>Wishlist (<span class="mobileWishlistNum">0</span>)</span>
-        </button>
-        <button class="mobile-act-btn" id="mobileCartBtn">
+          <span>Wishlist (<span class="wishlist-count-badge">0</span>)</span>
+        </div>
+        <div class="mobile-action-pill open-cart-btn" data-bs-dismiss="offcanvas">
           <i data-lucide="shopping-bag" style="width: 18px; height: 18px;"></i>
-          <span>Bag (<span class="mobileCartNum">0</span>)</span>
-        </button>
-        <a href="collections.html" class="mobile-act-btn">
+          <span>Bag (<span class="cart-count-badge">0</span>)</span>
+        </div>
+        <div class="mobile-action-pill" onclick="window.location.href='collections.html'">
           <i data-lucide="search" style="width: 18px; height: 18px;"></i>
           <span>Search</span>
-        </a>
-        <a href="https://wa.me/919876543210" target="_blank" class="mobile-act-btn">
-          <i data-lucide="message-circle" style="width: 18px; height: 18px;"></i>
+        </div>
+        <a href="https://wa.me/919876543210" target="_blank" class="mobile-action-pill" style="text-decoration: none;">
+          <i data-lucide="message-circle" style="width: 18px; height: 18px; color: #25D366;"></i>
           <span>WhatsApp</span>
         </a>
       </div>
 
-      <!-- Theme & Direction Switchers -->
-      <div class="row g-2 mt-3">
-        <div class="col-6">
-          <button class="btn btn-outline-luxury w-100 py-2 d-flex align-items-center justify-content-center gap-2" id="mobileThemeToggleBtn" style="font-size: 0.78rem;">
-            <i data-lucide="moon" style="width: 15px; height: 15px;"></i> Theme Mode
-          </button>
-        </div>
-        <div class="col-6">
-          <button class="btn btn-outline-luxury w-100 py-2 d-flex align-items-center justify-content-center gap-2" id="mobileRtlToggleBtn" style="font-size: 0.78rem;">
-            <i data-lucide="languages" style="width: 15px; height: 15px;"></i> RTL Direction
-          </button>
-        </div>
+      <!-- Theme & RTL Toggles inside Hamburger Drawer -->
+      <div class="mobile-toggles-row">
+        <button class="btn btn-outline-gold w-50 py-2 d-flex align-items-center justify-content-center gap-2 theme-toggle-btn" style="height: 42px; font-size: 0.8rem;">
+          <i data-lucide="moon" class="theme-icon" style="width: 18px; height: 18px;"></i>
+          <span>Theme Mode</span>
+        </button>
+        <button class="btn btn-outline-gold w-50 py-2 d-flex align-items-center justify-content-center gap-2 rtl-toggle-btn" style="height: 42px; font-size: 0.8rem;">
+          <span class="rtl-label" style="font-weight: 700;">RTL</span>
+          <span>Direction</span>
+        </button>
       </div>
 
+      <!-- Book Showroom Visit Button inside Drawer -->
+      <div class="mt-3">
+        <button class="btn-gold w-100 py-3 d-flex align-items-center justify-content-center gap-2" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-bs-dismiss="offcanvas" style="height: 46px; font-size: 0.86rem; font-weight: 700;">
+          <i data-lucide="calendar" style="width: 18px; height: 18px;"></i>
+          <span>Book Private Styling Salon</span>
+        </button>
+      </div>
+
+      <!-- Showroom Contact Info Footer -->
       <div class="mt-4 pt-3 border-top" style="font-size: 0.8rem; color: var(--color-text-muted);">
         <div><strong>Anna Nagar Flagship:</strong> +91 98765 43210</div>
         <div>Open Daily: 10:00 AM – 9:00 PM</div>
@@ -657,14 +673,8 @@
   <!-- ==========================================================================
        Site Footer (Identical 4-Column Architecture Across All Pages)
        ========================================================================== -->
-  <footer class="site-footer">
-    <div class="footer-top-ornament">
-      <svg viewBox="0 0 100 100" style="width: 32px; height: 32px;">
-        <circle cx="50" cy="50" r="44" fill="none" stroke="#C49A45" stroke-width="2"/>
-        <path d="M50 18 C38 18 30 28 30 42 C30 58 44 72 56 80 C52 70 56 60 62 54 C68 48 70 40 68 32 C66 24 58 18 50 18 Z" fill="#C49A45"/>
-      </svg>
-    </div>
 
+  <footer class="site-footer">
     <div class="container">
       <div class="row g-4 justify-content-between">
         
@@ -723,7 +733,7 @@
 
         <!-- Bridal & Heritage Links -->
         <div class="col-lg-2 col-6">
-          <h4 class="footer-title">Bridal &amp; Craft</h4>
+          <h4 class="footer-title">Bridal & Craft</h4>
           <ul class="footer-links">
             <li><a href="bridal.html">Muhurtham Trousseau</a></li>
             <li><a href="bridal.html#zari-details">Korvai Triple Warp</a></li>
@@ -760,7 +770,7 @@
       <!-- Footer Bottom Bar -->
       <div class="footer-bottom-bar">
         <div>
-          © 2026 Saree Showroom Private Limited. All Rights Reserved. Handcrafted with pride in Tamil Nadu &amp; Varanasi.
+          © 2026 Saree Showroom Private Limited. All Rights Reserved. Handcrafted with pride in Tamil Nadu & Varanasi.
         </div>
         <div class="d-flex gap-3">
           <a href="contact.html" style="color: inherit;">Privacy Policy</a>
@@ -773,22 +783,20 @@
     </div>
   </footer>
 
-  <!-- ==========================================================================
-       Drawers & Modals (Cart, Wishlist, Quick View, Appointment)
-       ========================================================================== -->
-  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <!-- Drawer Backdrop -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
 
   <!-- Cart Drawer -->
-  <aside class="luxury-drawer" id="cartDrawer" aria-label="Shopping Bag Drawer">
+  <div class="luxury-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
     <div class="drawer-header">
-      <div class="d-flex align-items-center gap-2">
+      <div class="drawer-title" id="cartDrawerTitle">
         <i data-lucide="shopping-bag" style="width: 20px; height: 20px; color: var(--color-gold);"></i>
-        <h3 class="drawer-title">Your Trousseau Bag (<span id="cartDrawerCount">0</span>)</h3>
+        <span>Your Shopping Bag</span>
       </div>
-      <button class="drawer-close-btn" id="closeCartBtn" aria-label="Close Shopping Bag">&times;</button>
+      <button class="btn-close close-cart-btn" aria-label="Close Bag"></button>
     </div>
-    <div class="drawer-body" id="cartItemsList">
-      <!-- Populated via main.js -->
+    <div class="drawer-body" id="cartDrawerItems">
+      <!-- Items dynamically populated via main.js -->
     </div>
     <div class="drawer-footer">
       <div class="drawer-subtotal-row">
@@ -796,28 +804,27 @@
         <span id="cartSubtotalAmount" style="color: var(--color-maroon); font-weight: 700;">₹0</span>
       </div>
       <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-bottom: 1rem;">
-        Complimentary insured shipping &amp; hand-stitched fall/pico finish included.
+        *Includes GST, silk purity certificate, and insured delivery across India.
       </p>
-      <button class="btn-gold w-100 py-3" id="checkoutBtn">Proceed to Sacred Checkout</button>
+      <a href="https://wa.me/919876543210" target="_blank" class="btn-gold w-100 justify-content-center" id="cartCheckoutWhatsAppBtn" style="display: none;">
+        <i data-lucide="message-circle" style="width: 17px; height: 17px;"></i> Inquire & Checkout via WhatsApp
+      </a>
     </div>
-  </aside>
+  </div>
 
   <!-- Wishlist Drawer -->
-  <aside class="luxury-drawer" id="wishlistDrawer" aria-label="Wishlist Drawer">
+  <div class="luxury-drawer" id="wishlistDrawer" role="dialog" aria-modal="true" aria-labelledby="wishlistDrawerTitle">
     <div class="drawer-header">
-      <div class="d-flex align-items-center gap-2">
+      <div class="drawer-title" id="wishlistDrawerTitle">
         <i data-lucide="heart" style="width: 20px; height: 20px; color: var(--color-gold);"></i>
-        <h3 class="drawer-title">Your Curated Vault (<span id="wishlistDrawerCount">0</span>)</h3>
+        <span>Saved Weaves (Wishlist)</span>
       </div>
-      <button class="drawer-close-btn" id="closeWishlistBtn" aria-label="Close Wishlist">&times;</button>
+      <button class="btn-close close-wishlist-btn" aria-label="Close Wishlist"></button>
     </div>
-    <div class="drawer-body" id="wishlistItemsList">
-      <!-- Populated via main.js -->
+    <div class="drawer-body" id="wishlistDrawerItems">
+      <!-- Items dynamically populated via main.js -->
     </div>
-    <div class="drawer-footer">
-      <button class="btn-gold w-100" id="addAllWishlistToCartBtn">Transfer All to Bag</button>
-    </div>
-  </aside>
+  </div>
 
   <!-- Quick View Modal -->
   <div class="modal fade modal-luxury" id="quickViewModal" tabindex="-1" aria-hidden="true">
@@ -843,7 +850,8 @@
                 <span id="qvModalOriginalPrice" style="font-size: 1rem; text-decoration: line-through; color: var(--color-text-muted);"></span>
               </div>
 
-              <div class="p-3 mb-3 rounded" style="background: var(--color-surface); font-size: 0.82rem; line-height: 1.7;">
+              <!-- Specs Box -->
+              <div class="p-3 mb-3" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 4px; font-size: 0.82rem;">
                 <div class="mb-1"><strong>Zari Purity:</strong> <span id="qvModalZari"></span></div>
                 <div class="mb-1"><strong>Weaving:</strong> <span id="qvModalWeave"></span></div>
                 <div class="mb-1"><strong>Blouse Piece:</strong> <span id="qvModalBlouse"></span></div>
@@ -867,10 +875,10 @@
     </div>
   </div>
 
-  <!-- Appointment Modal -->
-  <div class="modal fade" id="appointmentModal" tabindex="-1" aria-hidden="true">
+  <!-- VIP Showroom & Bridal Appointment Modal -->
+  <div class="modal fade modal-luxury" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content" style="background: var(--color-card-bg); border: 1px solid var(--color-gold);">
+      <div class="modal-content">
         <div class="modal-header border-bottom border-light">
           <h5 class="modal-title modal-luxury-title" id="appointmentModalLabel">
             <i data-lucide="calendar" style="width: 18px; height: 18px; color: var(--color-gold);"></i> Book VIP Showroom Experience
@@ -879,58 +887,49 @@
         </div>
         <div class="modal-body p-4">
           <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">
-            Reserve an exclusive 1-on-1 session with our Master Drapers at Anna Nagar or via private HD Video Call.
+            Enjoy a dedicated master draper, private bridal vault access, and refreshments at our flagship boutique.
           </p>
-          <form id="appointmentForm">
+          <form class="appointment-form">
             <div class="mb-3">
-              <label class="form-label">Full Name</label>
-              <input type="text" class="form-control form-control-luxury" placeholder="e.g. Priyadarshini Ramachandran" required />
+              <label class="form-label" style="font-size: 0.82rem; font-weight: 600;">Full Name *</label>
+              <input type="text" class="form-control form-control-luxury" placeholder="e.g. Radhika Sundaram" required />
             </div>
             <div class="row g-2 mb-3">
               <div class="col-6">
-                <label class="form-label">Phone Number</label>
+                <label class="form-label" style="font-size: 0.82rem; font-weight: 600;">Phone Number *</label>
                 <input type="tel" class="form-control form-control-luxury" placeholder="+91 98765 43210" required />
               </div>
               <div class="col-6">
-                <label class="form-label">Experience Type</label>
-                <select class="form-select form-control-luxury">
-                  <option>In-Store Flagship</option>
-                  <option>HD Video Call</option>
+                <label class="form-label" style="font-size: 0.82rem; font-weight: 600;">Email Address</label>
+                <input type="email" class="form-control form-control-luxury" placeholder="name@domain.com" />
+              </div>
+            </div>
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <label class="form-label" style="font-size: 0.82rem; font-weight: 600;">Showroom Location *</label>
+                <select class="form-select form-control-luxury" required>
+                  <option value="anna-nagar">Anna Nagar, Chennai</option>
+                  <option value="t-nagar">T. Nagar, Chennai</option>
+                  <option value="jubilee-hills">Jubilee Hills, Hyderabad</option>
+                  <option value="video-call">Virtual Video Consultation</option>
                 </select>
+              </div>
+              <div class="col-6">
+                <label class="form-label" style="font-size: 0.82rem; font-weight: 600;">Preferred Date *</label>
+                <input type="date" class="form-control form-control-luxury" required />
               </div>
             </div>
             <div class="mb-3">
-              <label class="form-label">Preferred Date</label>
-              <input type="date" class="form-control form-control-luxury" required />
+              <label class="form-label" style="font-size: 0.82rem; font-weight: 600;">Occasion / Sarees of Interest</label>
+              <input type="text" class="form-control form-control-luxury" placeholder="e.g. South Indian Muhurtham, Sangeet Korvai" />
             </div>
-            <button type="submit" class="btn-gold w-100 py-2">Confirm Sanctuary Appointment</button>
+            <button type="submit" class="btn-gold w-100 py-3 mt-2">
+              <i data-lucide="check" style="width: 16px; height: 16px;"></i> Confirm Appointment Request
+            </button>
           </form>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Toast Notification System -->
-  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1090;">
-    <div id="actionToast" class="toast align-items-center text-white bg-maroon border-0" role="alert" aria-live="assertive" aria-atomic="true" style="background: var(--color-maroon);">
-      <div class="d-flex">
-        <div class="toast-body d-flex align-items-center gap-2" id="toastMessage">
-          <i data-lucide="check-circle" style="width: 18px; height: 18px; color: var(--color-gold);"></i>
-          <span>Item added to your trousseau bag.</span>
-        </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Top to Bottom & Bottom to Top Floating Scroll Widget -->
-  <div class="floating-scroll-widget" id="floatingScrollWidget">
-    <button class="scroll-widget-btn" id="scrollTopBtn" title="Scroll to Top" aria-label="Scroll to top of page">
-      <i data-lucide="chevron-up" style="width: 20px; height: 20px;"></i>
-    </button>
-    <button class="scroll-widget-btn" id="scrollBottomBtn" title="Scroll to Bottom" aria-label="Scroll to bottom of page">
-      <i data-lucide="chevron-down" style="width: 20px; height: 20px;"></i>
-    </button>
   </div>
 
   <!-- Scripts -->
@@ -942,5 +941,21 @@
   
   <script src="js/products-data.js"></script>
   <script src="js/main.js"></script>
+  <!-- Floating Scroll Navigation Widget (Top & Bottom) -->
+  <div class="floating-scroll-widget" id="floatingScrollWidget" aria-label="Page Scroll Navigation">
+    <button type="button" class="scroll-nav-btn scroll-to-top-btn" id="scrollTopBtn" title="Scroll to Top" aria-label="Scroll to Top">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+    <button type="button" class="scroll-nav-btn scroll-to-bottom-btn" id="scrollBottomBtn" title="Scroll to Bottom" aria-label="Scroll to Bottom">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+  </div>
+
 </body>
 </html>
+
+

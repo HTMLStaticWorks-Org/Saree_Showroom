@@ -82,7 +82,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
 }
 
@@ -98,7 +98,7 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
   position: relative;
   transition: background-color 0.4s ease, color 0.4s ease;
@@ -942,15 +942,20 @@ img {
   position: relative;
 }
 
+.nav-tier-item.has-mega-menu,
+.nav-tier-item:has(.mega-menu-wrapper) {
+  position: static !important;
+}
+
 .mega-menu-wrapper {
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 100%;
-  max-width: 1080px;
-  background: var(--color-card-bg);
+  width: 1080px;
+  max-width: calc(100vw - 40px);
+  background: var(--color-card-bg) !important;
   border: 1px solid var(--color-border);
   box-shadow: 0 16px 45px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -963,7 +968,14 @@ img {
   z-index: 1050;
 }
 
-.nav-tier-item:hover .mega-menu-wrapper {
+[data-theme="dark"] .mega-menu-wrapper {
+  background: #1F0B12 !important;
+  border-color: rgba(196, 154, 69, 0.35);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.nav-tier-item:hover .mega-menu-wrapper,
+.nav-tier-item.has-mega-menu:hover .mega-menu-wrapper {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -1694,13 +1706,10 @@ img {
 }
 
 .footer-top-ornament {
-  position: absolute;
-  top: -16px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--color-maroon-deep);
-  padding: 0 1.5rem;
-  color: var(--color-gold);
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 .footer-title {
@@ -1977,7 +1986,7 @@ img {
 }
 
 /* ==========================================================================
-   Point 24: Bridal & Showroom CTA Equal Buttons Before Footer
+   Point 24 & Point 6: Bridal & Showroom CTA Equal Buttons Before Footer
    ========================================================================== */
 .showroom-cta-actions {
   display: flex;
@@ -1989,18 +1998,20 @@ img {
 
 .showroom-cta-actions .btn-gold,
 .showroom-cta-actions .btn-outline-gold {
-  min-width: 280px !important;
+  width: 360px !important;
+  max-width: 100% !important;
   height: 52px !important;
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  padding: 0 1.75rem !important;
+  padding: 0 1.5rem !important;
   font-size: 0.88rem !important;
   font-weight: 700 !important;
   letter-spacing: 0.08em !important;
   text-transform: uppercase !important;
   border-radius: 4px !important;
   box-sizing: border-box !important;
+  text-align: center !important;
   margin: 0 !important;
   transition: all 0.3s ease !important;
 }
@@ -2011,15 +2022,24 @@ img {
   border-color: var(--color-gold) !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 991.98px) {
   .showroom-cta-actions {
     flex-direction: column !important;
+    align-items: center !important;
     width: 100% !important;
+    gap: 1rem !important;
   }
   .showroom-cta-actions .btn-gold,
   .showroom-cta-actions .btn-outline-gold {
+    width: 360px !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .showroom-cta-actions .btn-gold,
+  .showroom-cta-actions .btn-outline-gold {
     width: 100% !important;
-    min-width: unset !important;
   }
 }
 
@@ -2586,7 +2606,7 @@ textarea::placeholder {
 }
 
 /* ==========================================================================
-   Point 38: Quick View Modal Buttons Equal Size (Add to Bag & WhatsApp)
+   Point 38 & Point 3: Quick View Modal Buttons Tablet & Mobile Alignment
    ========================================================================== */
 .qv-action-buttons-group,
 #quickViewModal .d-flex.flex-wrap.gap-2,
@@ -2594,7 +2614,6 @@ textarea::placeholder {
   display: flex !important;
   gap: 12px !important;
   width: 100% !important;
-  flex-wrap: nowrap !important;
 }
 
 .qv-btn-action,
@@ -2619,11 +2638,19 @@ textarea::placeholder {
   margin: 0 !important;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .qv-action-buttons-group,
   #quickViewModal .d-flex.flex-wrap.gap-2,
   #quickViewModal .d-flex.gap-3:last-child {
     flex-direction: column !important;
+    width: 100% !important;
+  }
+  .qv-btn-action,
+  #qvModalAddToCartBtn,
+  #qvAddToCartBtn,
+  #qvModalWhatsAppBtn {
+    width: 100% !important;
+    flex: none !important;
   }
 }
 
@@ -2801,6 +2828,69 @@ textarea::placeholder {
     flex: 0 0 50% !important;
   }
 }
+
+/* ==========================================================================
+   Point 4 & 5: Bridal Saree Hero & Editorial Lookbook Ultra-Contrast
+   ========================================================================== */
+.bridal-hero {
+  position: relative !important;
+  min-height: 85vh !important;
+  display: flex !important;
+  align-items: center !important;
+  background: linear-gradient(180deg, rgba(20, 5, 10, 0.88) 0%, rgba(15, 3, 7, 0.94) 100%),
+              url('../IMGAE/happysurd-photography-7q-Z4IrqyYY-unsplash.jpg') center 22% / cover no-repeat !important;
+  color: #FFFFFF !important;
+  padding: 6rem 0 !important;
+}
+
+.bridal-hero .section-tag {
+  color: #F3D295 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.22em !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7) !important;
+}
+
+.bridal-hero .hero-headline,
+.bridal-hero h1,
+.bridal-hero .hero-headline h1 {
+  color: #F8F2E8 !important;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.85) !important;
+}
+
+.bridal-hero .highlight-italic {
+  color: #E9C885 !important;
+  font-family: var(--font-serif-editorial) !important;
+  font-style: italic !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8) !important;
+}
+
+.bridal-hero .hero-description {
+  color: #EDE3D5 !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75) !important;
+  font-size: 1.05rem !important;
+  line-height: 1.8 !important;
+}
+
+/* Editorial Lookbook Cards High Contrast */
+.bridal-lookbook-overlay,
+.bridal-lookbook-swiper .position-absolute {
+  background: linear-gradient(180deg, transparent 0%, rgba(15, 4, 8, 0.75) 35%, rgba(15, 4, 8, 0.96) 100%) !important;
+  color: #FFFFFF !important;
+}
+
+.bridal-lookbook-overlay h4,
+.bridal-lookbook-swiper .position-absolute h4 {
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9) !important;
+  font-weight: 700 !important;
+}
+
+.bridal-lookbook-overlay p,
+.bridal-lookbook-swiper .position-absolute p {
+  color: #F8F2E8 !important;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.85) !important;
+}
+
 
 
 

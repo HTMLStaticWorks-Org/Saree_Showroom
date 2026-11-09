@@ -442,9 +442,36 @@ function openQuickView(productId) {
 
   const modalEl = document.getElementById('quickViewModal');
   if (modalEl) {
-    const modalInstance = new bootstrap.Modal(modalEl);
+    const modalInstance = bootstrap.Modal.getOrCreateInstance(modalEl);
     modalInstance.show();
   }
+}
+
+function initModals() {
+  // Ensure Quick View Modal and its exit/close button work reliably
+  const qvModalEl = document.getElementById('quickViewModal');
+  if (qvModalEl) {
+    const closeButtons = qvModalEl.querySelectorAll('.btn-close, [data-bs-dismiss="modal"]');
+    closeButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const instance = bootstrap.Modal.getOrCreateInstance(qvModalEl);
+        if (instance) instance.hide();
+      });
+    });
+  }
+
+  // Document delegation for all modal close triggers
+  document.addEventListener('click', (e) => {
+    const dismissBtn = e.target.closest('#quickViewModal .btn-close, #quickViewModal [data-bs-dismiss="modal"]');
+    if (dismissBtn) {
+      const qvModal = document.getElementById('quickViewModal');
+      if (qvModal) {
+        const instance = bootstrap.Modal.getInstance(qvModal) || bootstrap.Modal.getOrCreateInstance(qvModal);
+        if (instance) instance.hide();
+      }
+    }
+  });
 }
 
 /* ==========================================================================
@@ -649,9 +676,6 @@ function initForms() {
   });
 }
 
-function initModals() {
-  // Empty helper if needed
-}
 
 /* ==========================================================================
    13. Kankatala-Style Arched Testimonials Engine
