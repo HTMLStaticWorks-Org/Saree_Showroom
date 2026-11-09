@@ -107,6 +107,12 @@ function initRTL() {
       localStorage.setItem('saree_dir', newDir);
       updateRTLButtons(newDir);
       showToast(`Direction updated to ${newDir.toUpperCase()}`);
+
+      // Recalculate and re-align Swipers and AOS for seamless RTL layout
+      setTimeout(() => {
+        initSwipers();
+        if (typeof AOS !== 'undefined') AOS.refresh();
+      }, 150);
     });
   });
 }
@@ -475,12 +481,26 @@ function initModals() {
 }
 
 /* ==========================================================================
-   9. Swiper Carousels Initialization
+   9. Swiper Carousels Initialization (With Full RTL Support)
    ========================================================================== */
+let collectionsSwiperInstance = null;
+let testimonialsSwiperInstance = null;
+let bridalLookbookSwiperInstance = null;
+
 function initSwipers() {
+  if (collectionsSwiperInstance && collectionsSwiperInstance.destroy) {
+    try { collectionsSwiperInstance.destroy(true, true); } catch (e) {}
+  }
+  if (testimonialsSwiperInstance && testimonialsSwiperInstance.destroy) {
+    try { testimonialsSwiperInstance.destroy(true, true); } catch (e) {}
+  }
+  if (bridalLookbookSwiperInstance && bridalLookbookSwiperInstance.destroy) {
+    try { bridalLookbookSwiperInstance.destroy(true, true); } catch (e) {}
+  }
+
   // Collections Swiper Carousel (Curated Edits)
   if (document.querySelector('.collections-swiper')) {
-    new Swiper('.collections-swiper', {
+    collectionsSwiperInstance = new Swiper('.collections-swiper', {
       slidesPerView: 1,
       spaceBetween: 20,
       loop: true,
@@ -516,7 +536,7 @@ function initSwipers() {
 
   // Testimonials Swiper Carousel
   if (document.querySelector('.testimonials-swiper')) {
-    new Swiper('.testimonials-swiper', {
+    testimonialsSwiperInstance = new Swiper('.testimonials-swiper', {
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
@@ -543,7 +563,7 @@ function initSwipers() {
 
   // Bridal Lookbook Swiper - Clean alignment across tab, mobile, desktop
   if (document.querySelector('.bridal-lookbook-swiper')) {
-    new Swiper('.bridal-lookbook-swiper', {
+    bridalLookbookSwiperInstance = new Swiper('.bridal-lookbook-swiper', {
       slidesPerView: 1,
       spaceBetween: 20,
       loop: true,
